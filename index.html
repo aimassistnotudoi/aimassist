@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Shadowverse カード検索</title>
+  <style>
+    body { font-family: sans-serif; }
+    input { margin: 10px; padding: 5px; width: 300px; }
+    .card { border: 1px solid #ccc; padding: 10px; margin: 5px 0; }
+  </style>
+</head>
+<body>
+
+<h1>Shadowverse カード検索</h1>
+<input type="text" id="searchInput" placeholder="カード名を入力..." />
+
+<div id="results"></div>
+
+<button id="random">random</button>
+<div id="rResults"></div>
+<script>
+    let cards = [];
+    
+    // JSONを読み込み
+    fetch('cards.json')
+      .then(response => response.json())
+      .then(data => {
+        // ここでユニークなカードだけ抽出！
+        cards = Array.from(
+            new Map(data.data.cards.map(card => [card.card_id, card])).values()
+        );
+        setupSearch();
+      });
+    
+    // 検索処理
+    function setupSearch() {
+      const input = document.getElementById('searchInput');
+      const results = document.getElementById('results');
+    
+      input.addEventListener('input', () => {
+        const keyword = input.value.trim().toLowerCase();
+        results.innerHTML = '';
+    
+        const filtered = cards.filter(card => 
+          card.card_name && card.card_name.toLowerCase().includes(keyword)
+        );
+    
+        filtered.slice(0, 20).forEach(card => {
+          const div = document.createElement('div');
+          div.className = 'card';
+          div.innerHTML = `
+            <strong>${card.card_name}</strong><br/>
+            コスト: ${card.cost} / 攻撃: ${card.atk} / 体力: ${card.life} / ID: ${card.card_id} / rID: ${card.resource_card_id}
+          `;
+          results.appendChild(div);
+        });
+      });
+    }
+    const r_button = document.querySelector("#random")
+    r_button.addEventListener("click", () => {
+      //カード名
+      document.querySelector("#rResults").innerHTML = ""
+      const name = document.createElement("div")
+
+      //カードが存在する乱数生成
+      function randomCard() {
+        var random = Math.floor(Math.random()*cards.length)
+
+        if(cards[random].card_name != null && cards[random].resource_card_id == 0){
+          return random
+        }else{
+          return randomCard()
+        }
+      }
+
+      //カード名追加
+      var random = randomCard()
+      const card = cards[random]
+
+      name.innerHTML = `${card.card_name} : ${card.card_id}`
+      document.querySelector("#rResults").appendChild(name)
+
+      //画像追加
+      const img = document.createElement("img")
+      img.width = 200
+      img.src = `https://shadowverse-portal.com/image/card/phase2/common/C/C_${card.card_id}.png`
+      img.onload = () => {
+        document.querySelector("#rResults").appendChild(img)}
+      
+      if(card.atk){
+        const imgE = document.createElement("img")
+        imgE.width = 200
+        imgE.src = `https://shadowverse-portal.com/image/card/phase2/common/E/E_${card.card_id}.png`
+        imgE.onload = () => {
+          document.querySelector("#rResults").appendChild(imgE)
+        }
+      }
+
+
+      //テキスト追加
+      const text = document.createElement("div")
+      let status = card.cost
+      if(card.atk){
+        status = card.cost + "/" + card.atk + "/" + card.life + `(${card.evo_atk}/${card.evo_life})`
+        text.innerHTML = `${status} <br> 進化前 <br> ${card.skill_disc}
+      <br><br> 進化後 <br>${card.evo_skill_disc}`
+      }else{
+        text.innerHTML = `${status} <br> ${card.skill_disc}`
+      }
+      document.querySelector("#rResults").appendChild(text)
+
+
+      //フレーバーテキスト追加
+      const disc = document.createElement("div")
+      if(card.atk){
+        disc.innerHTML = `進化前 <br> ${card.description} <br><br> 進化後 <br> ${card.description}`
+      }else{
+        disc.innerHTML = `${card.description}`
+      }
+      document.querySelector("#rResults").appendChild(disc)
+
+    })
+    </script>
+    
