@@ -24,10 +24,9 @@
     fetch('cards.json')
       .then(response => response.json())
       .then(data => {
-        // ここでユニークなカードだけ抽出！
-        cards = Array.from(
-            new Map(data.data.cards.map(card => [card.base_card_id, card])).values()
-        );
+        cards = data.data.cards.filter(card => 
+          String(card.card_id).substr(0,3) == "910" && card.resource_card_id == 0 || card.card_name != null && !["910", "810"].includes(String(card.card_id).substr(0,3)) && !["930", "810", "800"].includes(String(card.base_card_id).substr(0,3)))
+        //最初の三桁 930:ヒーローズバトル 800:アクセラレート 810:テキスト変更前 910:レーヴァテインドラゴン
         setupSearch();
       });
     
@@ -49,7 +48,7 @@
           div.className = 'card';
           div.innerHTML = `
             <strong>${card.card_name}</strong><br/>
-            コスト: ${card.cost} / 攻撃: ${card.atk} / 体力: ${card.life} / ID: ${card.card_id} / rID: ${card.resource_card_id}
+            コスト: ${card.cost} / 攻撃: ${card.atk} / 体力: ${card.life} / ID: ${card.card_id}
           `;
           results.appendChild(div);
         });
@@ -62,27 +61,21 @@
       const name = document.createElement("div")
 
       //カードが存在する乱数生成
-      function randomCard() {
-        var random = Math.floor(Math.random()*cards.length)
-
-        if(cards[random].card_name != null && cards[random].resource_card_id == 0){
-          return random
-        }else{
-          return randomCard()
-        }
-      }
-
-      //カード名追加
-      var random = randomCard()
+      const random = Math.floor(Math.random()*cards.length)
       const card = cards[random]
-
+      
+      //カード名追加
       name.innerHTML = `${card.card_name} : ${card.card_id}`
       document.querySelector("#rResults").appendChild(name)
 
       //画像追加
       const img = document.createElement("img")
       img.width = 200
-      img.src = `https://shadowverse-portal.com/image/card/phase2/common/C/C_${card.card_id}.png`
+      if(String(card.card_id).substr(0,3) != "910"){
+        img.src = `https://shadowverse-portal.com/image/card/phase2/common/C/C_${card.card_id}.png`
+      }else{
+        img.src = `https://shadowverse-portal.com/image/card/phase2/common/C/C_${card.base_card_id}.png`
+      }
       img.onload = () => {
         document.querySelector("#rResults").appendChild(img)}
       
@@ -112,7 +105,7 @@
       //フレーバーテキスト追加
       const disc = document.createElement("div")
       if(card.atk){
-        disc.innerHTML = `進化前 <br> ${card.description} <br><br> 進化後 <br> ${card.description}`
+        disc.innerHTML = `進化前 <br> ${card.description} <br><br> 進化後 <br> ${card.evo_description}`
       }else{
         disc.innerHTML = `${card.description}`
       }
