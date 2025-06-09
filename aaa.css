@@ -1,0 +1,65 @@
+body {
+    background: linear-gradient(#ffbb1e, #ff9454);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 20px;
+}
+
+h1 {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-weight: 700;
+    text-align: center;
+}
+
+textarea {
+    display: block;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #ff7e5f;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    resize: vertical;
+    background: #fff7f0;
+    transition: border-color 0.3s ease;
+}
+textarea:focus {
+    border-color: #feb47b;
+    outline: none;
+    box-shadow: 0 0 8px #feb47b;
+}
+
+button {
+    display: block;
+    margin: 0 auto 30px;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 126, 95, 0.6);
+    transition: background 0.3s ease;
+}
+button:hover {
+    background: linear-gradient(45deg, #feb47b, #ff7e5f);
+}
+
+#output {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    white-space: pre-wrap; /* 改行を反映 */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: #444;
+}

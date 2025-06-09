@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>漢アあ変換</title>
+        <link rel="style" href="aaa.css">
+    </head>
+    <body>
+        <h1>漢アあ変換</h1>
+        <textarea id="input" rows="10" cols="50" placeholder="文字列を入力してください"></textarea>
+        <br>
+        <button id="copy">copy</button>
+        <br>
+        <div id="output" style="white-space: pre"></div>
+        <script src="aaa.js"></script>
+        <script>
+            const textarea = document.getElementById("input")
+            textarea.addEventListener("input", () => {
+                document.getElementById("copy").textContent = "copy"
+                document.getElementById("output").textContent = kaxnAA(textarea.value)
+            })
+
+            const button = document.getElementById("copy")
+            button.addEventListener("click", () => {
+                navigator.clipboard.writeText(document.getElementById("output").textContent)
+                document.getElementById("copy").textContent = "copied!"
+            })
+        </script>
+    </body>
+</html>
