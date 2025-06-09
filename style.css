@@ -1,13 +1,78 @@
+/* style.css */
 body {
-    font-family: sans-serif;
-    background-color: firebrick;
+  background: #ff00ff;
+  color: lime;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 8px;
+  word-spacing: 20px;
+  text-align: justify;
+  text-shadow: 1px 1px 0 red;
 }
 
+h1 {
+  font-size: 32px;
+  color: yellow;
+  background: black;
+  margin-bottom: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+}
 
-input {
-    margin: 10px; padding: 5px; width: 300px;
+#searchInput {
+  width: 60vw;
+  font-size: 18px;
+  background: black;
+  color: yellow;
+  border: 3px dashed red;
+  padding: 0.5em 1.5em;
+  margin: 2vw 20vw;
+  box-shadow: 0 0 15px cyan;
 }
 
 .card {
-    border: 1px solid #ccc; padding: 10px; margin: 5px 0;
+  border: 5px double red;
+  padding: 1em;
+  margin: 1.5em 0;
+  font-size: 14px;
+  color: cyan;
+  background: black;
+  letter-spacing: 6px;
+  word-break: break-all;
+}
+
+button#random {
+  background: lime;
+  color: black;
+  font-size: 18px;
+  border-radius: 0;
+  border: 5px solid red;
+  padding: 0.5em 1em;
+  display: block;
+  margin: 1.5vw auto;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  box-shadow: 0 0 15px magenta;
+}
+
+#rResults {
+  background: black;
+  border: 7px dashed yellow;
+  margin: 1em auto;
+  width: 80vw;
+  color: orange;
+  font-size: 16px;
+  padding: 1em;
+  word-spacing: 20px;
+}
+
+#rResults img {
+  margin: 1.5vw 0;
+  border: 3px dotted red;
+  box-shadow: 0 0 5px red;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
