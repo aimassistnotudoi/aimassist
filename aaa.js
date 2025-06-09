@@ -6,7 +6,7 @@ const smallKatakana = ["ァ", "ィ", "ゥ", "ェ", "ォ", "ッ", "ャ", "ュ", "
 const smallKatakanaUnicode = []
 for (let char of smallKatakana) smallKatakanaUnicode.push(char.charCodeAt(0))
 
-const kansuuji = ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十"]
+const kansuuji = ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "百", "千", "万"]
 const kansuujiUnicode = []
 for (let char of kansuuji) kansuujiUnicode.push(char.charCodeAt(0))
 
