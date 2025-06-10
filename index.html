@@ -60,18 +60,6 @@
 <button id="aaa">漢あア変換</button>
 
 <div id="rResults"></div>
-
-<script>
-    const aaa_button = document.querySelector("#aaa")
-    aaa_button.addEventListener(
-      "click", () => {
-        const aaa_a = document.createElement("a")
-        aaa_a.href = "aaa.html"
-        aaa_a.target = "_blank"
-        aaa_a.click()
-      }
-    )
-</script>
      
 <script>
     let cards = [];
@@ -126,6 +114,7 @@
       //カードが存在する乱数生成
       const random = Math.floor(Math.random()*cards.length)
       const card = cards[random]
+      random_card_id = card.card_id
       
       //カード名追加
       name.innerHTML = `${card.card_name} : ${card.card_id}`
@@ -254,4 +243,21 @@
       }
     })
 </script>
-    
+
+<script>
+    const aaa_button = document.querySelector("#aaa")
+    let random_card_id = ""
+    aaa_button.addEventListener(
+      "click", () => {
+        const aaa_a = document.createElement("a")
+        if (random_card_id) {
+          aaa_a.href = `aaa.html?card_id=${random_card_id}`
+        }
+        else {
+          aaa_a.href = "aaa.html"
+        }
+        aaa_a.target = "_blank"
+        aaa_a.click()
+      }
+    )
+</script>
