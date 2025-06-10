@@ -12,6 +12,8 @@
 <div id="results"></div>
 
 <button id="random">random</button>
+<button id="aaa">漢あア変換</button>
+
 <div id="rResults"></div>
 
 <footer>
@@ -111,6 +113,13 @@
       }
       document.querySelector("#rResults").appendChild(disc)
 
+    })
+
+    const aaa_button = document.querySelector("#aaa")
+    aaa_button.addEventListener("click", () => {
+      const aaa_a = document.createElement("a");
+      aaa_a.href = "aaa.html";
+      aaa_a.click();
     })
 </script>
     
