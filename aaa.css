@@ -1,4 +1,5 @@
 body {
+    text-align: center;
     background-color: #fff;
     font-family: sans-serif;
     color: #000;
@@ -30,9 +31,13 @@ textarea:focus {
     box-shadow: 0 0 8px #7bb4fe;
 }
 
+#buttons {
+    text-align: center;
+}
+
 button {
-    display: block;
-    margin: 10px auto;
+    display: inline-block;
+    margin: 10px 10px;
     padding: 12px 30px;
     font-size: 18px;
     font-weight: bold;
@@ -45,6 +50,11 @@ button {
 }
 button:hover {
     background: linear-gradient(45deg, #7badfe, #5f5fff);
+}
+button:disabled {
+    background: #B0B0B0;
+    box-shadow: 0 5px 15px rgba(176, 176, 176, 0.6);
+    cursor: default;
 }
 
 #output {
@@ -61,4 +71,8 @@ button:hover {
     white-space: pre-wrap;
     word-wrap: break-word;
     overflow-wrap: break-word;
+}
+
+footer {
+    margin: 200px;
 }

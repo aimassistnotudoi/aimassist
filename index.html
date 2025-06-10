@@ -57,11 +57,21 @@
 </div>
 
 <button id="random">random</button>
+<button id="aaa">漢あア変換</button>
+
 <div id="rResults"></div>
 
 <footer>
   <a href="aaa.html" target="_blank">あああ</a>
 </footer>
+<script>
+    const aaa_button = document.querySelector("#aaa")
+    aaa_button.addEventListener("click", () => {
+    const aaa_a = document.createElement("a")
+    aaa_a.href = "aaa.html"
+    aaa_a.click()
+</script>
+     
 <script>
     let cards = [];
     let cardsOrigin
@@ -164,7 +174,6 @@
       document.querySelector("#rResults").appendChild(disc)
 
     })
-
 
 
     //絞り込み
