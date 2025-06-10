@@ -62,6 +62,12 @@ function kaxnAA(string) {
         else if (0xFF41 <= codePoint && codePoint <= 0xFF5A) {
             resultChar = "ａ"
         }
+        else if (0x0391 <= codePoint && codePoint <= 0x03A9) {
+            resultChar = "Ω"  //アルファの大文字がAと見分けつかないからオメガで代用
+        }
+        else if (0x03B1 <= codePoint && codePoint <= 0x03C9) {
+            resultChar = "ω"  //アルファの大文字がAと見分けつかないからオメガで代用
+        }
         else if (char == "+" || char == "-") {
             resultChar = "±"
         }
