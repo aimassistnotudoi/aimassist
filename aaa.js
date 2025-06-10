@@ -1,4 +1,4 @@
-const smallHiragana = ["ぁ", "ぃ", "ぅ", "ぇ", "ぉ", "っ", "ゃ", "ゅ", "ょ", "ゎ"]
+const smallHiragana = ["ぁ", "ぃ", "ぅ", "ぇ", "ぉ", "っ", "ゃ", "ゅ", "ょ", "ゎ", "ゕ", "ゖ"]
 const smallHiraganaUnicode = []
 for (let char of smallHiragana) smallHiraganaUnicode.push(char.charCodeAt(0))
 
@@ -22,10 +22,10 @@ function kaxnAA(string) {
             (codePoint >= 0xF900 && codePoint <= 0xFAFF)) { //漢字のUnicodeたち
                 resultChar = kansuujiUnicode.includes(codePoint) ? "壱" : "漢"
             }
-        else if (0x3040 <= codePoint && codePoint <= 0x309F && !smallHiraganaUnicode.includes(codePoint)) {
+        else if (0x3041 <= codePoint && codePoint <= 0x3096 && !smallHiraganaUnicode.includes(codePoint)) {
             resultChar = "あ"
         }
-        else if (0x30A0 <= codePoint && codePoint <= 0x30FA && !smallKatakanaUnicode.includes(codePoint)) {
+        else if (0x30A1 <= codePoint && codePoint <= 0x30FA && !smallKatakanaUnicode.includes(codePoint)) {
             resultChar = "ア"
         }
         else if (smallHiraganaUnicode.includes(codePoint)) {
