@@ -11,6 +11,51 @@
 
 <div id="results"></div>
 
+<div id="narrow">
+  <div id="cost">
+    <input type="checkbox" id="0">0
+    <input type="checkbox" id="1">1
+    <input type="checkbox" id="2">2
+    <input type="checkbox" id="3">3
+    <input type="checkbox" id="4">4
+    <input type="checkbox" id="5">5
+    <input type="checkbox" id="6">6
+    <input type="checkbox" id="7">7
+    <input type="checkbox" id="8">8
+    <input type="checkbox" id="9">9
+    <input type="checkbox" id="10">10
+    <input type="checkbox" id="11" name="max">11以上
+    <input type="checkbox" name="narrowClear">clear
+  </div>
+  <div id="clan">
+    <input type="checkbox" id="1">エルフ
+    <input type="checkbox" id="2">ロイヤル
+    <input type="checkbox" id="3">ウィッチ
+    <input type="checkbox" id="4">ドラゴン
+    <input type="checkbox" id="5">ネクロマンサー
+    <input type="checkbox" id="6">ヴァンパイア
+    <input type="checkbox" id="7">ビショップ
+    <input type="checkbox" id="8">ネメシス
+    <input type="checkbox" id="0">ニュートラル
+    <input type="checkbox" name="narrowClear">clear
+  </div>
+  <div id="rarity">
+    <input type="checkbox" id="1">ブロンズ
+    <input type="checkbox" id="2">シルバー
+    <input type="checkbox" id="3">ゴールド
+    <input type="checkbox" id="4">レジェンド
+    <input type="checkbox" name="narrowClear">clear
+  </div>
+  <div id="char_type">
+    <input type="checkbox" id="1">フォロワー
+    <input type="checkbox" id="4">スペル
+    <input type="checkbox" id="2">アミュレット1
+    <input type="checkbox" id="3">アミュレット2
+    <input type="checkbox" name="narrowClear">clear
+  </div>
+  
+</div>
+
 <button id="random">random</button>
 <div id="rResults"></div>
 
@@ -19,7 +64,7 @@
 </footer>
 <script>
     let cards = [];
-    
+    let cardsOrigin
     // JSONを読み込み
     fetch('cards.json')
       .then(response => response.json())
@@ -28,7 +73,10 @@
           String(card.card_id).substr(0,3) == "910" && card.resource_card_id == 0 || card.card_name != null && !["910", "810"].includes(String(card.card_id).substr(0,3)) && !["930", "810", "800"].includes(String(card.base_card_id).substr(0,3)))
         //最初の三桁 930:ヒーローズバトル 800:アクセラレート 810:テキスト変更前 910:レーヴァテインドラゴン
         setupSearch();
+        cardsOrigin = cards
       });
+    
+
     
     // 検索処理
     function setupSearch() {
@@ -54,6 +102,10 @@
         });
       });
     }
+
+
+
+    //ランダム表示
     const r_button = document.querySelector("#random")
     r_button.addEventListener("click", () => {
       //カード名
@@ -79,7 +131,7 @@
       img.onload = () => {
         document.querySelector("#rResults").appendChild(img)}
       
-      if(card.atk){
+      if(card.char_type == 1){
         const imgE = document.createElement("img")
         imgE.width = 200
         imgE.src = `https://shadowverse-portal.com/image/card/phase2/common/E/E_${card.card_id}.png`
@@ -92,7 +144,7 @@
       //テキスト追加
       const text = document.createElement("div")
       let status = card.cost
-      if(card.atk){
+      if(card.char_type == 1){
         status = card.cost + "/" + card.atk + "/" + card.life + `(${card.evo_atk}/${card.evo_life})`
         text.innerHTML = `${status} <br> 進化前 <br> ${card.skill_disc}
       <br><br> 進化後 <br>${card.evo_skill_disc}`
@@ -104,13 +156,92 @@
 
       //フレーバーテキスト追加
       const disc = document.createElement("div")
-      if(card.atk){
+      if(card.char_type == 1){
         disc.innerHTML = `進化前 <br> ${card.description} <br><br> 進化後 <br> ${card.evo_description}`
       }else{
         disc.innerHTML = `${card.description}`
       }
       document.querySelector("#rResults").appendChild(disc)
 
+    })
+
+
+
+    //絞り込み
+    //条件clear
+    const narrowClears = document.getElementsByName("narrowClear")
+    for(let i=0;i<narrowClears.length;i++){
+      narrowClears[i].addEventListener("change", () => {
+        const parent = narrowClears[i].parentNode
+        const sibilings = parent.children
+        for(let j=0;j<sibilings.length;j++){
+          if(sibilings[j].checked){
+            sibilings[j].checked = false
+          }
+        }
+      })
+    }
+
+    //条件設定
+    const narrow = document.getElementById("narrow")
+    narrow.addEventListener("change", () => {
+      cards = cardsOrigin
+      //checedの子要素を取得
+      function checkCondi(dom){
+        const nChildren = dom.children
+        let checkedboxes = []
+        for(let i=0;i<nChildren.length;i++){
+          if(nChildren[i].checked){
+            checkedboxes[checkedboxes.length] = nChildren[i]
+          }
+        }        
+        return checkedboxes
+      }
+
+
+      //コスト制限
+      const cost = narrow.querySelector("#cost")
+      const costCondi = checkCondi(cost)
+      if(costCondi.length == 1){ 
+        if(costCondi[0].name != "max"){ //11以上を含まない
+          cards = cards.filter(card => card.cost == Number(costCondi[0].id))
+        }else{
+          cards = cards.filter(card => card.cost >= Number(costCondi[0].id))
+        }
+      }else if(costCondi.length > 1){
+        if(costCondi[costCondi.length-1].name != "max"){
+          cards = cards.filter(card => costCondi.map(cost => Number(cost.id)).includes(card.cost))
+        }else{
+          cards = cards.filter(card => costCondi.map(cost => Number(cost.id)).includes(card.cost) || card.cost >= Number(costCondi[costCondi.length-1].id))
+        }
+      }
+
+      //クラス制限
+      const clan = narrow.querySelector("#clan")
+      const clanCondi = checkCondi(clan)
+      if(clanCondi.length == 1){
+        cards = cards.filter(card => card.clan == Number(clanCondi[0].id))
+      }else if(clanCondi.length > 1){
+        cards = cards.filter(card => clanCondi.map(clan => Number(clan.id)).includes(card.clan))
+      }
+
+      //レアリティ制限
+      const rarity = narrow.querySelector("#rarity")
+      const rarityCondi = checkCondi(rarity)
+      if(rarityCondi.length == 1){
+        cards = cards.filter(card => card.rarity == Number(rarityCondi[0].id))
+      }else if(rarityCondi.length > 1){
+        cards = cards.filter(card => rarityCondi.map(rarity => Number(rarity.id)).includes(card.rarity))
+      }
+      
+      //カードの種類制限
+      const char_type = narrow.querySelector("#char_type")
+      const char_typeCondi = checkCondi(char_type)
+      if(char_typeCondi.length == 1){
+        cards = cards.filter(card => card.char_type == Number(char_typeCondi[0].id))
+      }else if(char_typeCondi.length > 1){
+        cards = cards.filter(card => char_typeCondi.map(char_type => Number(char_type.id)).includes(card.char_type))
+      }
     })
 </script>
     
