@@ -9,7 +9,7 @@
     <body>
         <h1>漢あア変換</h1>
 
-        <div id="持ってきたやつ">
+        <div id="brought">
 <!-- デュアルブレイダー : 115221020<br>
 2/2/2(3/3)<br>
 進化前<br>
@@ -26,7 +26,29 @@
 ――『永和壱年：平和の報』<br>
 不戦とは、永久に戦なきこと。戦なき世に侍は不要。<br>
 将軍は命ず。刀を捨て、名を捨てよと。 -->
-</div>
+        </div>
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            const card_id = params.get("card_id");
+
+            if (card_id) {
+                fetch('cards.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        const card_found = data.data.cards.find(i => i.card_id == card_id)
+                        const card_name = card_found.card_name
+                        const cost = card_found.cost
+                        const atk = card_found.atk
+                        const life = card_found.life
+                        const evo_atk = card_found.evo_atk
+                        const evo_life = card_found.evo_life
+                        const skill_disc = card_found.skill_disc
+
+                        const rResult = document.getElementById("brought")
+                        rResult.innerHTML = `${card_name}`
+                    })
+            }
+        </script>
 
         <textarea id="input" rows="10" placeholder="文字列を入力してください"></textarea>
 
@@ -57,13 +79,6 @@
                 }
             }
 
-            /*const params = new URLSearchParams(window.location.search);
-            const textValue = params.get('key1');
-
-            if (textValue) {
-                document.getElementById('myTextarea').value = decodeURIComponent(textValue);
-            }
-            URLにパラメータつけようとしてる*/
             button.addEventListener("click", () => {
                 if (textarea.value) {
                     navigator.clipboard.writeText(document.getElementById("output").textContent)
