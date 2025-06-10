@@ -46,6 +46,10 @@ button {
 button:hover {
     background: linear-gradient(45deg, #7badfe, #5f5fff);
 }
+button:disabled {
+    background: #B0B0B0;
+    box-shadow: 0 5px 15px rgba(176, 176, 176, 0.6);
+}
 
 #output {
     font-family: inherit;

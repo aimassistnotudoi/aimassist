@@ -15,9 +15,18 @@
         <script src="aaa.js"></script>
         <script>
             const textarea = document.getElementById("input")
+            const button = document.getElementById("copy")
+
             textarea.addEventListener("input", () => {
-                document.getElementById("copy").textContent = "copy"
-                document.getElementById("output").textContent = kaxnAA(textarea.value)
+                console.log(textarea.value)
+                if (textarea.value) {
+                    button.disabled = false
+                    document.getElementById("copy").textContent = "copy"
+                    document.getElementById("output").textContent = kaxnAA(textarea.value)
+                }
+                else {
+                    button.disabled = true
+                }
             })
 
             /*const params = new URLSearchParams(window.location.search);
@@ -27,11 +36,11 @@
                 document.getElementById('myTextarea').value = decodeURIComponent(textValue);
             }
             URLにパラメータつけようとしてる*/
-
-            const button = document.getElementById("copy")
             button.addEventListener("click", () => {
-                navigator.clipboard.writeText(document.getElementById("output").textContent)
-                document.getElementById("copy").textContent = "copied!"
+                if (textarea.value) {
+                    navigator.clipboard.writeText(document.getElementById("output").textContent)
+                    document.getElementById("copy").textContent = "copied!"
+                }
             })
         </script>
     </body>
