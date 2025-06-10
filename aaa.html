@@ -10,22 +10,12 @@
         <h1>漢あア変換</h1>
 
         <div id="brought">
-<!-- デュアルブレイダー : 115221020<br>
-2/2/2(3/3)<br>
-進化前<br>
-ファンファーレ 自分の場に指揮官・カードがあるなら、「このフォロワーはEPを消費せず進化できる」を持つ。（1ターンに1体しか進化できない制限はある）<br>
-<br>
-進化後<br>
-このフォロワーは、1ターンに2回攻撃できる。<br>
-進化前<br>
-――『永和元年：不戦の掟』<br>
-将軍もすげ変わり、長き戦も今は昔。<br>
-永久の平和を願う時代に、不戦の掟が下されん。<br>
-<br>
-進化後<br>
-――『永和壱年：平和の報』<br>
-不戦とは、永久に戦なきこと。戦なき世に侍は不要。<br>
-将軍は命ず。刀を捨て、名を捨てよと。 -->
+            <div id="card_name"></div>
+            <div id="status"></div>
+            <div id="disc"></div>
+            <div id="evo_disc"></div>
+            <div id="description"></div>
+            <div id="evo_description"></div>
         </div>
         <script>
             const params = new URLSearchParams(window.location.search);
@@ -43,9 +33,23 @@
                         const evo_atk = card_found.evo_atk
                         const evo_life = card_found.evo_life
                         const skill_disc = card_found.skill_disc
+                        const evo_skill_disc = card_found.evo_skill_disc
+                        const description = card_found.description
+                        const evo_description = card_found.evo_description
 
-                        const rResult = document.getElementById("brought")
-                        rResult.innerHTML = `${card_name}`
+                        const div1 = document.getElementById("card_name")
+                        const div2 = document.getElementById("status")
+                        const div3 = document.getElementById("disc")
+                        const div4 = document.getElementById("evo_disc")
+                        const div5 = document.getElementById("description")
+                        const div6 = document.getElementById("evo_description")
+
+                        div1.innerHTML = card_name
+                        div2.innerHTML = `${cost}/${atk}/${life}(${evo_atk}/${evo_life})`
+                        div3.innerHTML = skill_disc
+                        div4.innerHTML = evo_skill_disc
+                        div5.innerHTML = description
+                        div6.innerHTML = evo_description
                     })
             }
         </script>
