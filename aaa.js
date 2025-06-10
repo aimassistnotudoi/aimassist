@@ -37,11 +37,20 @@ function kaxnAA(string) {
         else if (/\d/.test(char)) {
             resultChar = "1"
         }
+        else if (0xFF10 <= codePoint && codePoint <= 0xFF19) {
+            resultChar = "１"
+        }
         else if (/[A-Z]/.test(char)) {
             resultChar = "A"
         }
+        else if (0xFF21 <= codePoint && codePoint <= 0xFF3A) {
+            resultChar = "Ａ"
+        }
         else if (/[a-z]/.test(char)) {
             resultChar = "a"
+        }
+        else if (0xFF41 <= codePoint && codePoint <= 0xFF5A) {
+            resultChar = "ａ"
         }
         else if (char == "+" || char == "-") {
             resultChar = "±"
