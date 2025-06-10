@@ -6,6 +6,10 @@ const smallKatakana = ["ァ", "ィ", "ゥ", "ェ", "ォ", "ッ", "ャ", "ュ", "
 const smallKatakanaUnicode = []
 for (let char of smallKatakana) smallKatakanaUnicode.push(char.charCodeAt(0))
 
+const smallHankakuKatakana = ["ｧ", "ｨ", "ｩ", "ｪ", "ｫ", "ｯ", "ｬ", "ｭ", "ｮ"]
+const smallHankakuKatakanaUnicode = []
+for (let char of smallHankakuKatakana) smallHankakuKatakanaUnicode.push(char.charCodeAt(0))
+
 const kansuuji = ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "百", "千", "万"]
 const kansuujiUnicode = []
 for (let char of kansuuji) kansuujiUnicode.push(char.charCodeAt(0))
@@ -25,14 +29,20 @@ function kaxnAA(string) {
         else if (0x3041 <= codePoint && codePoint <= 0x3096 && !smallHiraganaUnicode.includes(codePoint)) {
             resultChar = "あ"
         }
-        else if (0x30A1 <= codePoint && codePoint <= 0x30FA && !smallKatakanaUnicode.includes(codePoint)) {
-            resultChar = "ア"
-        }
         else if (smallHiraganaUnicode.includes(codePoint)) {
             resultChar = "ぁ"
         }
+        else if (0x30A1 <= codePoint && codePoint <= 0x30FA && !smallKatakanaUnicode.includes(codePoint)) {
+            resultChar = "ア"
+        }
         else if (smallKatakanaUnicode.includes(codePoint)) {
             resultChar = "ァ"
+        }
+        else if ((0xFF71 <= codePoint && codePoint <= 0xFF9D) || codePoint == 0xFF66) {
+            resultChar = "ｱ"    //Unicodeでｦ(FF66)だけなぜか分かれてるので直接指定
+        }
+        else if (smallHankakuKatakanaUnicode.includes(codePoint)) {
+            resultChar = "ｧ"
         }
         else if (/\d/.test(char)) {
             resultChar = "1"
