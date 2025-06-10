@@ -8,7 +8,7 @@
     </head>
     <body>
         <h1>漢アあ変換</h1>
-        <textarea id="input" rows="10" cols="50" placeholder="文字列を入力してください"></textarea>
+        <textarea id="input" rows="10" placeholder="文字列を入力してください"></textarea>
         <br>
         <button id="copy">copy</button>
         <br>
@@ -28,7 +28,7 @@
                 document.getElementById('myTextarea').value = decodeURIComponent(textValue);
             }
             URLにパラメータつけようとしてる*/
-            
+
             const button = document.getElementById("copy")
             button.addEventListener("click", () => {
                 navigator.clipboard.writeText(document.getElementById("output").textContent)
