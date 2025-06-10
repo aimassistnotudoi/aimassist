@@ -30,9 +30,13 @@ textarea:focus {
     box-shadow: 0 0 8px #7bb4fe;
 }
 
+#buttons {
+    text-align: center;
+}
+
 button {
-    display: block;
-    margin: 10px auto;
+    display: inline-block;
+    margin: 10px 10px;
     padding: 12px 30px;
     font-size: 18px;
     font-weight: bold;
