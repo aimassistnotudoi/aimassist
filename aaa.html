@@ -19,6 +19,7 @@
 
             textarea.addEventListener("input", () => {
                 document.getElementById("copy").textContent = "copy"
+                document.getElementById("output").textContent = ""
                 if (textarea.value) {
                     button.disabled = false
                     document.getElementById("output").textContent = kaxnAA(textarea.value)

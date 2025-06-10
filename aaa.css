@@ -49,6 +49,7 @@ button:hover {
 button:disabled {
     background: #B0B0B0;
     box-shadow: 0 5px 15px rgba(176, 176, 176, 0.6);
+    cursor: default;
 }
 
 #output {
