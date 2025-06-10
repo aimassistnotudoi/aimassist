@@ -8,10 +8,8 @@
     </head>
     <body>
         <h1>漢アあ変換</h1>
-        <textarea id="input" rows="10" cols="50" placeholder="文字列を入力してください"></textarea>
-        <br>
+        <textarea id="input" rows="10" placeholder="文字列を入力してください"></textarea>
         <button id="copy">copy</button>
-        <br>
         <div id="output"></div>
         <script src="aaa.js"></script>
         <script>
@@ -20,6 +18,14 @@
                 document.getElementById("copy").textContent = "copy"
                 document.getElementById("output").textContent = kaxnAA(textarea.value)
             })
+
+            /*const params = new URLSearchParams(window.location.search);
+            const textValue = params.get('key1');
+
+            if (textValue) {
+                document.getElementById('myTextarea').value = decodeURIComponent(textValue);
+            }
+            URLにパラメータつけようとしてる*/
 
             const button = document.getElementById("copy")
             button.addEventListener("click", () => {
