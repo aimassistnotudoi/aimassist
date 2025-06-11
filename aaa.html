@@ -9,19 +9,6 @@
     <body>
         <h1>漢あア変換</h1>
 
-        <div id="brought">
-            <div id="card_name"></div>
-            <div id="status"></div>
-            <div id="disc"></div>
-            <div id="evo_disc"></div>
-            <div id="description"></div>
-            <div id="evo_description"></div>
-        </div>
-        <script>
-            const params = new URLSearchParams(window.location.search);
-            const card_id = params.get("card_id");
-        </script>
-
         <textarea id="input" rows="10" placeholder="文字列を入力してください"></textarea>
 
         <div id="buttons">
@@ -37,6 +24,13 @@
         <script>
             const textarea = document.getElementById("input")
             const button = document.getElementById("copy")
+            const params = new URLSearchParams(window.location.search);
+            const q = params.get("q");
+            console.log(q)
+            const decoded = decodeURIComponent(q)
+            if (q) {
+                textarea.value = decoded
+            }
             outputUpdate()
             textarea.addEventListener("input", outputUpdate)
             function outputUpdate() {
@@ -58,5 +52,6 @@
                 }
             })
         </script>
+
     </body>
 </html>
