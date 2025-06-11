@@ -7,11 +7,13 @@
 </head>
 <body>
 <h1>Shadowverse カード検索</h1>
-<input type="text" id="searchInput" placeholder="カード名を入力..." />
-
-<div id="results"></div>
-
 <div id="narrow">
+  <input type="text" id="searchInput" placeholder="カード名を入力..." />
+  <input type="button" id="searchButton"><label for="searchButton">search</label>
+  <input type="checkbox" id="searchClear"><label for="searchClear">clear</label>
+
+  <div id="results"></div>
+
   <div id="cost">
     <input type="checkbox" id="0">0
     <input type="checkbox" id="1">1
@@ -72,36 +74,34 @@
         cards = data.data.cards.filter(card => 
           String(card.card_id).substr(0,3) == "910" && card.resource_card_id == 0 || card.card_name != null && !["910", "810"].includes(String(card.card_id).substr(0,3)) && !["930", "810", "800"].includes(String(card.base_card_id).substr(0,3)))
         //最初の三桁 930:ヒーローズバトル 800:アクセラレート 810:テキスト変更前 910:レーヴァテインドラゴン
-        setupSearch();
         cardsOrigin = cards
       });
     
-
-    
-    // 検索処理
-    function setupSearch() {
-      const input = document.getElementById('searchInput');
-      const results = document.getElementById('results');
-    
-      input.addEventListener('input', () => {
-        const keyword = input.value.trim().toLowerCase();
-        results.innerHTML = '';
-    
-        const filtered = cards.filter(card => 
-          card.card_name && card.card_name.toLowerCase().includes(keyword)
-        );
-    
-        filtered.slice(0, 20).forEach(card => {
-          const div = document.createElement('div');
-          div.className = 'card';
-          div.innerHTML = `
-            <strong>${card.card_name}</strong><br/>
-            コスト: ${card.cost} / 攻撃: ${card.atk} / 体力: ${card.life} / ID: ${card.card_id}
-          `;
-          results.appendChild(div);
-        });
+    //カード検索
+    document.querySelector("#searchButton").addEventListener('click', () => {
+      const input = document.querySelector("#searchInput")
+      const keyword = input.value.trim().toLowerCase();
+      const results = document.querySelector("#results")
+      results.innerHTML = '';
+  
+      cards.slice(0, 5).forEach(card => {
+        const div = document.createElement('div');
+        div.className = 'card';
+        div.innerHTML = `
+          <strong>${card.card_name}</strong><br/>
+          コスト: ${card.cost} / 攻撃: ${card.atk} / 体力: ${card.life} / ID: ${card.card_id}
+        `;
+        results.appendChild(div);
       });
-    }
+    });
+    //カード名clear
+    document.querySelector("#searchClear").addEventListener("change", () => {
+      const input = document.querySelector("#searchInput")
+      input.value = ""
+      const results = document.querySelector("#results")
+      results.innerHTML = ''
+      document.querySelector("#searchClear").checked = false
+    })
 
 
 
@@ -162,7 +162,6 @@
         disc.innerHTML = `${card.description}`
       }
       document.querySelector("#rResults").appendChild(disc)
-
     })
 
 
@@ -170,6 +169,7 @@
     //絞り込み
     //条件clear
     const narrowClears = document.getElementsByName("narrowClear")
+
     for(let i=0;i<narrowClears.length;i++){
       narrowClears[i].addEventListener("change", () => {
         const parent = narrowClears[i].parentNode
@@ -181,7 +181,7 @@
         }
       })
     }
-
+      
     //条件設定
     const narrow = document.getElementById("narrow")
     narrow.addEventListener("change", () => {
@@ -191,13 +191,12 @@
         const nChildren = dom.children
         let checkedboxes = []
         for(let i=0;i<nChildren.length;i++){
-          if(nChildren[i].checked){
+          if(nChildren[i].checked && nChildren[i].name != "narrowClear"){
             checkedboxes[checkedboxes.length] = nChildren[i]
           }
         }        
         return checkedboxes
       }
-
 
       //コスト制限
       const cost = narrow.querySelector("#cost")
@@ -233,7 +232,7 @@
       }else if(rarityCondi.length > 1){
         cards = cards.filter(card => rarityCondi.map(rarity => Number(rarity.id)).includes(card.rarity))
       }
-      
+
       //カードの種類制限
       const char_type = narrow.querySelector("#char_type")
       const char_typeCondi = checkCondi(char_type)
@@ -242,6 +241,14 @@
       }else if(char_typeCondi.length > 1){
         cards = cards.filter(card => char_typeCondi.map(char_type => Number(char_type.id)).includes(card.char_type))
       }
+
+      //名前制限
+      const input = narrow.querySelector("#searchInput")
+      const keyword = input.value.trim().toLowerCase().replace(/\s+/g, '')
+      cards = cards.filter(card => {
+        const cardName = card.card_name.toLowerCase().replace(/\s+/g, '')
+        return cardName.includes(keyword)
+      })
     })
 </script>
     
