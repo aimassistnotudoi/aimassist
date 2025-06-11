@@ -3,28 +3,59 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>漢アあ変換</title>
+        <title>漢あア変換</title>
         <link rel="stylesheet" href="aaa.css">
     </head>
     <body>
-        <h1>漢アあ変換</h1>
-        <textarea id="input" rows="10" cols="50" placeholder="文字列を入力してください"></textarea>
-        <br>
-        <button id="copy">copy</button>
-        <br>
+        <h1>漢あア変換</h1>
+
+        <div id="brought">
+            <div id="card_name"></div>
+            <div id="status"></div>
+            <div id="disc"></div>
+            <div id="evo_disc"></div>
+            <div id="description"></div>
+            <div id="evo_description"></div>
+        </div>
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            const card_id = params.get("card_id");
+        </script>
+
+        <textarea id="input" rows="10" placeholder="文字列を入力してください"></textarea>
+
+        <div id="buttons">
+            <button id="copy">copy</button>
+            <button id="paste">paste</button>
+        </div>
+
         <div id="output"></div>
+
+        <footer></footer>
+
         <script src="aaa.js"></script>
         <script>
             const textarea = document.getElementById("input")
-            textarea.addEventListener("input", () => {
-                document.getElementById("copy").textContent = "copy"
-                document.getElementById("output").textContent = kaxnAA(textarea.value)
-            })
-
             const button = document.getElementById("copy")
+            outputUpdate()
+            textarea.addEventListener("input", outputUpdate)
+            function outputUpdate() {
+                document.getElementById("copy").textContent = "copy"
+                document.getElementById("output").textContent = ""
+                if (textarea.value) {
+                    button.disabled = false
+                    document.getElementById("output").textContent = kaxnAA(textarea.value)
+                }
+                else {
+                    button.disabled = true
+                }
+            }
+
             button.addEventListener("click", () => {
-                navigator.clipboard.writeText(document.getElementById("output").textContent)
-                document.getElementById("copy").textContent = "copied!"
+                if (textarea.value) {
+                    navigator.clipboard.writeText(document.getElementById("output").textContent)
+                    document.getElementById("copy").textContent = "copied!"
+                }
             })
         </script>
     </body>
