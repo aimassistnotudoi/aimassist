@@ -246,12 +246,13 @@
 
 <script>
     const aaa_button = document.querySelector("#aaa")
-    let random_card_id = ""
     aaa_button.addEventListener(
       "click", () => {
+        const sendToAaa = document.getElementById("rResults")
         const aaa_a = document.createElement("a")
-        if (random_card_id) {
-          aaa_a.href = `aaa.html?card_id=${random_card_id}`
+        if (sendToAaa.innerText) {
+          encodedText = encodeURIComponent(sendToAaa.innerText)
+          aaa_a.href = `aaa.html?q=${encodedText}`
         }
         else {
           aaa_a.href = "aaa.html"

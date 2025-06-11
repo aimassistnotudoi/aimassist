@@ -20,38 +20,6 @@
         <script>
             const params = new URLSearchParams(window.location.search);
             const card_id = params.get("card_id");
-
-            if (card_id) {
-                fetch('cards.json')
-                    .then(response => response.json())
-                    .then(data => {
-                        const card_found = data.data.cards.find(i => i.card_id == card_id)
-                        const card_name = card_found.card_name
-                        const cost = card_found.cost
-                        const atk = card_found.atk
-                        const life = card_found.life
-                        const evo_atk = card_found.evo_atk
-                        const evo_life = card_found.evo_life
-                        const skill_disc = card_found.skill_disc
-                        const evo_skill_disc = card_found.evo_skill_disc
-                        const description = card_found.description
-                        const evo_description = card_found.evo_description
-
-                        const div1 = document.getElementById("card_name")
-                        const div2 = document.getElementById("status")
-                        const div3 = document.getElementById("disc")
-                        const div4 = document.getElementById("evo_disc")
-                        const div5 = document.getElementById("description")
-                        const div6 = document.getElementById("evo_description")
-
-                        div1.innerHTML = card_name
-                        div2.innerHTML = `${cost}/${atk}/${life}(${evo_atk}/${evo_life})`
-                        div3.innerHTML = skill_disc
-                        div4.innerHTML = evo_skill_disc
-                        div5.innerHTML = description
-                        div6.innerHTML = evo_description
-                    })
-            }
         </script>
 
         <textarea id="input" rows="10" placeholder="文字列を入力してください"></textarea>
