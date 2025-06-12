@@ -15,7 +15,7 @@ textarea {
     font-family: inherit;
     display: block;
     width: 90%;
-    max-width: 600px;
+    max-width: 700px;
     margin: 30px auto;
     padding: 15px 20px;
     font-size: 16px;
@@ -64,7 +64,7 @@ button:disabled {
     text-align: left;
     display: inline-block;
     width: 90%;
-    max-width: 600px;
+    max-width: 700px;
     margin: 30px auto;
     padding: 15px 20px;
     font-size: 16px;
