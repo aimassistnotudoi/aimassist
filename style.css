@@ -1,4 +1,80 @@
 body {
     font-family: sans-serif;
-    text-align: justify;
+    background-color: #fff;
+    color: #000;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 9, 104, 0.2);
+}
+
+#narrow {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#narrow input[type="button"] {
+    display: none;
+}
+#narrow label {
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.searchBox {
+    display: inline;
+    width: 80%;
+    margin: 12px 0;
+    padding: 8px;
+}
+
+#narrow div {
+    margin: 9px 0;
+}
+
+/* clanをどうにかして２行にする */
+
+.card {
+    background: rgb(154, 255, 82);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* #rResults {
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+#rResults div {
+    margin-bottom: 12px;
+}
+
+#rResults img {
+    display: block;
+    margin-bottom: 12px;
+} */
+
+button {
+    padding: 8px 16px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 5px;
+}
+
+button:hover {
+    background: #2980b9;
 }
