@@ -8,9 +8,9 @@
 <body>
 <h1>Shadowverse カード検索</h1>
 <div id="narrow">
-  <input type="text" id="searchInput" placeholder="カード名を入力..." />
+  <input type="search" id="searchInput" placeholder="カード名を入力..." list="searchCardList" />
+  <datalist id="searchCardList"></datalist>
   <input type="button" id="searchButton"><label for="searchButton">search</label>
-  <input type="checkbox" id="searchClear"><label for="searchClear">clear</label>
 
   <div id="results"></div>
 
@@ -127,15 +127,6 @@
         results.appendChild(div);
       });
     });
-    //カード名clear
-    document.querySelector("#searchClear").addEventListener("change", () => {
-      const input = document.querySelector("#searchInput")
-      input.value = ""
-      const results = document.querySelector("#results")
-      results.innerHTML = ''
-      document.querySelector("#searchClear").checked = false
-    })
-
 
 
     //ランダム表示
@@ -286,6 +277,18 @@
         })
       }
       narrowByName()
+      //名前予測変換
+      function resetDatalist(){
+        const datalist = document.querySelector("#searchCardList")
+        datalist.innerHTML = ""
+        for(var card of cards){
+          const option = document.createElement("option")
+          option.value = card.card_name
+          datalist.appendChild(option)
+        }
+      }
+      resetDatalist()
+      
 
       //効果、フレーバーテキスト制限
       function narrowByTexts(kind){
@@ -305,7 +308,6 @@
       }
       narrowByTexts("skill_disc")
       narrowByTexts("description")
-
     })
 </script>
 
