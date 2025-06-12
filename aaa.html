@@ -9,24 +9,12 @@
     <body>
         <h1>漢あア変換</h1>
 
-        <div id="brought">
-            <div id="card_name"></div>
-            <div id="status"></div>
-            <div id="disc"></div>
-            <div id="evo_disc"></div>
-            <div id="description"></div>
-            <div id="evo_description"></div>
-        </div>
-        <script>
-            const params = new URLSearchParams(window.location.search);
-            const card_id = params.get("card_id");
-        </script>
-
         <textarea id="input" rows="10" placeholder="文字列を入力してください"></textarea>
 
         <div id="buttons">
             <button id="copy">copy</button>
             <button id="paste">paste</button>
+            <button id="AC">AC</button>
         </div>
 
         <div id="output"></div>
@@ -36,27 +24,46 @@
         <script src="aaa.js"></script>
         <script>
             const textarea = document.getElementById("input")
-            const button = document.getElementById("copy")
+            const copy = document.getElementById("copy")
+            const paste = document.getElementById("paste")
+            const AC = document.getElementById("AC")
+            const params = new URLSearchParams(window.location.search);
+            const q = params.get("q");
+            const decoded = decodeURIComponent(q)
+            if (q) {
+                textarea.value = decoded
+            }
             outputUpdate()
             textarea.addEventListener("input", outputUpdate)
             function outputUpdate() {
                 document.getElementById("copy").textContent = "copy"
                 document.getElementById("output").textContent = ""
                 if (textarea.value) {
-                    button.disabled = false
+                    copy.disabled = false
                     document.getElementById("output").textContent = kaxnAA(textarea.value)
                 }
                 else {
-                    button.disabled = true
+                    copy.disabled = true
                 }
             }
 
-            button.addEventListener("click", () => {
+            copy.addEventListener("click", () => {
                 if (textarea.value) {
                     navigator.clipboard.writeText(document.getElementById("output").textContent)
                     document.getElementById("copy").textContent = "copied!"
                 }
             })
+            paste.addEventListener("click", () => {
+                navigator.clipboard.readText().then((clipText) => {
+                    textarea.value = clipText;
+                    outputUpdate()
+                })
+            })
+            AC.addEventListener("click", () => {
+                textarea.value = ""
+                outputUpdate()
+            })
         </script>
+
     </body>
 </html>
