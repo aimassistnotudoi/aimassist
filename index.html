@@ -15,47 +15,81 @@
   <div id="results"></div>
 
   <div id="cost">
-    <input type="checkbox" id="0">0
-    <input type="checkbox" id="1">1
-    <input type="checkbox" id="2">2
-    <input type="checkbox" id="3">3
-    <input type="checkbox" id="4">4
-    <input type="checkbox" id="5">5
-    <input type="checkbox" id="6">6
-    <input type="checkbox" id="7">7
-    <input type="checkbox" id="8">8
-    <input type="checkbox" id="9">9
-    <input type="checkbox" id="10">10
-    <input type="checkbox" id="11" name="max">11以上
+    <input type="checkbox" name="0">0
+    <input type="checkbox" name="1">1
+    <input type="checkbox" name="2">2
+    <input type="checkbox" name="3">3
+    <input type="checkbox" name="4">4
+    <input type="checkbox" name="5">5
+    <input type="checkbox" name="6">6
+    <input type="checkbox" name="7">7
+    <input type="checkbox" name="8">8
+    <input type="checkbox" name="9">9
+    <input type="checkbox" name="10">10
+    <input type="checkbox" name="11" id="maxCost">11以上
     <input type="checkbox" name="narrowClear">clear
   </div>
   <div id="clan">
-    <input type="checkbox" id="1">エルフ
-    <input type="checkbox" id="2">ロイヤル
-    <input type="checkbox" id="3">ウィッチ
-    <input type="checkbox" id="4">ドラゴン
-    <input type="checkbox" id="5">ネクロマンサー
-    <input type="checkbox" id="6">ヴァンパイア
-    <input type="checkbox" id="7">ビショップ
-    <input type="checkbox" id="8">ネメシス
-    <input type="checkbox" id="0">ニュートラル
+    <input type="checkbox" name="1">エルフ
+    <input type="checkbox" name="2">ロイヤル
+    <input type="checkbox" name="3">ウィッチ
+    <input type="checkbox" name="4">ドラゴン
+    <input type="checkbox" name="5">ネクロマンサー
+    <input type="checkbox" name="6">ヴァンパイア
+    <input type="checkbox" name="7">ビショップ
+    <input type="checkbox" name="8">ネメシス
+    <input type="checkbox" name="0">ニュートラル
     <input type="checkbox" name="narrowClear">clear
   </div>
   <div id="rarity">
-    <input type="checkbox" id="1">ブロンズ
-    <input type="checkbox" id="2">シルバー
-    <input type="checkbox" id="3">ゴールド
-    <input type="checkbox" id="4">レジェンド
+    <input type="checkbox" name="1">ブロンズ
+    <input type="checkbox" name="2">シルバー
+    <input type="checkbox" name="3">ゴールド
+    <input type="checkbox" name="4">レジェンド
     <input type="checkbox" name="narrowClear">clear
   </div>
   <div id="char_type">
-    <input type="checkbox" id="1">フォロワー
-    <input type="checkbox" id="4">スペル
-    <input type="checkbox" id="2">アミュレット1
-    <input type="checkbox" id="3">アミュレット2
+    <input type="checkbox" name="1">フォロワー
+    <input type="checkbox" name="4">スペル
+    <input type="checkbox" name="2">アミュレット1
+    <input type="checkbox" name="3">アミュレット2
     <input type="checkbox" name="narrowClear">clear
   </div>
-  
+  <div id="atk">
+    <input type="checkbox" name="0">0
+    <input type="checkbox" name="1">1
+    <input type="checkbox" name="2">2
+    <input type="checkbox" name="3">3
+    <input type="checkbox" name="4">4
+    <input type="checkbox" name="5">5
+    <input type="checkbox" name="6">6
+    <input type="checkbox" name="7">7
+    <input type="checkbox" name="8">8
+    <input type="checkbox" name="9">9
+    <input type="checkbox" name="10">10
+    <input type="checkbox" name="11">11
+    <input type="checkbox" name="12">12
+    <input type="checkbox" name="13" id="maxAtk">13
+  </div>
+  <div id="life">
+    <input type="checkbox" name="0">0
+    <input type="checkbox" name="1">1
+    <input type="checkbox" name="2">2
+    <input type="checkbox" name="3">3
+    <input type="checkbox" name="4">4
+    <input type="checkbox" name="5">5
+    <input type="checkbox" name="6">6
+    <input type="checkbox" name="7">7
+    <input type="checkbox" name="8">8
+    <input type="checkbox" name="9">9
+    <input type="checkbox" name="10">10
+    <input type="checkbox" name="11">11
+    <input type="checkbox" name="12">12
+    <input type="checkbox" name="13" id="maxLife">13
+  </div>
+
+  <input type="text" id="narrowskill_disc" placeholder="効果テキストを入力...">
+  <input type="text" id="narrowdescription" placeholder="フレーバーテキストを入力...">
 </div>
 
 <button id="random">random</button>
@@ -197,57 +231,81 @@
         return checkedboxes
       }
 
-      //コスト制限
-      const cost = narrow.querySelector("#cost")
-      const costCondi = checkCondi(cost)
-      if(costCondi.length == 1){ 
-        if(costCondi[0].name != "max"){ //11以上を含まない
-          cards = cards.filter(card => card.cost == Number(costCondi[0].id))
-        }else{
-          cards = cards.filter(card => card.cost >= Number(costCondi[0].id))
+
+      //コスト、攻撃など制限
+      function narrowByUpperInfinite(item){
+        const itemdom = narrow.querySelector(`#${item}`)
+        const itemCondi = checkCondi(itemdom)
+        if(itemCondi.length == 1){
+          if(String(itemCondi[0].id).substr(0,3) != "max"){
+            cards = cards.filter(card => card[item] == Number(itemCondi[0].name))
+          }else{
+            cards = cards.filter(card => card[item] >= Number(itemCondi[0].name))
+          }
+        }else if(itemCondi.length > 1){
+          if(String(itemCondi[itemCondi.length-1].id).substr(0,3) != "max"){
+            cards = cards.filter(card => itemCondi.map(element => Number(element.name)).includes(card[item]))
+          }else{
+            cards = cards.filter(card => itemCondi.map(element => Number(element.name)).includes(card[item]) || card[item] >= itemCondi[itemCondi.length-1].name)
+          }
         }
-      }else if(costCondi.length > 1){
-        if(costCondi[costCondi.length-1].name != "max"){
-          cards = cards.filter(card => costCondi.map(cost => Number(cost.id)).includes(card.cost))
-        }else{
-          cards = cards.filter(card => costCondi.map(cost => Number(cost.id)).includes(card.cost) || card.cost >= Number(costCondi[costCondi.length-1].id))
+      }
+      narrowByUpperInfinite("cost")
+      narrowByUpperInfinite("atk")
+      narrowByUpperInfinite("life")
+
+      //種類、クラスなど制限
+      function narrowByFinite(item){
+        const itemdom = narrow.querySelector(`#${item}`)
+        const itemCondi = checkCondi(itemdom)
+        if(itemCondi.length == 1){
+          cards = cards.filter(card => card[item] == Number(itemCondi[0].name))
+        }else if(itemCondi.length > 1){
+          cards = cards.filter(card => itemCondi.map(element => Number(element.name)).includes(card[item]))
         }
       }
+      narrowByFinite("clan")
+      narrowByFinite("rarity")
+      narrowByFinite("char_type")
 
-      //クラス制限
-      const clan = narrow.querySelector("#clan")
-      const clanCondi = checkCondi(clan)
-      if(clanCondi.length == 1){
-        cards = cards.filter(card => card.clan == Number(clanCondi[0].id))
-      }else if(clanCondi.length > 1){
-        cards = cards.filter(card => clanCondi.map(clan => Number(clan.id)).includes(card.clan))
-      }
-
-      //レアリティ制限
-      const rarity = narrow.querySelector("#rarity")
-      const rarityCondi = checkCondi(rarity)
-      if(rarityCondi.length == 1){
-        cards = cards.filter(card => card.rarity == Number(rarityCondi[0].id))
-      }else if(rarityCondi.length > 1){
-        cards = cards.filter(card => rarityCondi.map(rarity => Number(rarity.id)).includes(card.rarity))
-      }
-
-      //カードの種類制限
-      const char_type = narrow.querySelector("#char_type")
-      const char_typeCondi = checkCondi(char_type)
-      if(char_typeCondi.length == 1){
-        cards = cards.filter(card => card.char_type == Number(char_typeCondi[0].id))
-      }else if(char_typeCondi.length > 1){
-        cards = cards.filter(card => char_typeCondi.map(char_type => Number(char_type.id)).includes(card.char_type))
-      }
 
       //名前制限
-      const input = narrow.querySelector("#searchInput")
-      const keyword = input.value.trim().toLowerCase().replace(/\s+/g, '')
-      cards = cards.filter(card => {
-        const cardName = card.card_name.toLowerCase().replace(/\s+/g, '')
-        return cardName.includes(keyword)
-      })
+      function narrowByName(){
+        const input = narrow.querySelector("#searchInput")
+        const keywords = input.value.trim().toLowerCase().split(/\s+/).filter(Boolean)
+        cards = cards.filter(card => {
+          let cardName = card.card_name.toLowerCase()
+          for(const keyword of keywords){
+            const index = cardName.indexOf(keyword)
+            if(index == -1){
+              return false
+            }
+            cardName = cardName.slice(index + keyword.length)
+          }
+          return true
+        })
+      }
+      narrowByName()
+
+      //効果、フレーバーテキスト制限
+      function narrowByTexts(kind){
+        const input = narrow.querySelector(`#narrow${kind}`)
+        const keywords = input.value.trim().toLowerCase().split(/\s+/).filter(Boolean)
+        cards = cards.filter(card => {
+          let cardtext = card[kind].toLowerCase()+card["evo_"+kind].toLowerCase()
+          for(const keyword of keywords){
+            const index = cardtext.indexOf(keyword)
+            if(index == -1){
+              return false
+            }
+            cardtext = cardtext.slice(index + keyword.length)
+          }
+          return true
+        })
+      }
+      narrowByTexts("skill_disc")
+      narrowByTexts("description")
+
     })
 </script>
 
@@ -269,3 +327,5 @@
       }
     )
 </script>
+</body>
+</html>
