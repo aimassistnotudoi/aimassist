@@ -19,23 +19,20 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* #narrow input[type="text"] {
-    width: 100%;
-    padding: 8px;
-    margin: 8px 0;
-    box-sizing: border-box;
-} */
-
 #narrow input[type="button"] {
     display: none;
 }
 #narrow label {
     background-color: #3498db;
     color: #fff;
-    padding: 4px 10px;
     border-radius: 4px;
-    ;
-    /* 途中 */
+}
+
+.searchBox {
+    display: inline;
+    width: 80%;
+    margin: 12px 0;
+    padding: 8px;
 }
 
 #narrow div {
