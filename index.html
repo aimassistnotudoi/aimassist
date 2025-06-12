@@ -323,7 +323,10 @@
           aaa_a.href = "aaa.html"
         }
         aaa_a.target = "_blank"
+        aaa_a.style.display = "none"
+        document.body.appendChild(aaa_a)
         aaa_a.click()
+        document.body.removeChild(aaa_a)
       }
     )
 </script>
