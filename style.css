@@ -42,24 +42,31 @@ h1 {
     margin: 9px 0;
 }
 
-/* clanをどうにかして２行にする */
-
 .card {
     background: rgb(154, 255, 82);
-    margin: 10px 0;
     padding: 10px;
     border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 9, 104, 0.2);;
+    margin: 0 0 10px 10px;
 }
-
+#results {    
+    width: 25%;
+    display: block;
+}
 #rResults {
+    width: 75%;
     padding: 20px;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 #rResults img {
-    display: inline;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+#twoResults {
+    display: flex;
 }
 
 button {
