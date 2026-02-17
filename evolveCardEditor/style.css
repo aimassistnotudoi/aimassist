@@ -1,0 +1,123 @@
+.hidden { display: none; }
+
+header {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+#card-list, #effect-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding-right: 210px;
+}
+.card {
+  width: 160px;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+}
+.card img {
+  width: 160px;
+  height: auto;
+}
+.deck-card {
+    list-style: none;
+    margin-left: 0px;
+    margin-bottom: 8px;
+}
+.deck-card-thumbnail {
+    position: relative;
+    width: 200px;         /* 横幅（調整できる） */
+    height: 60px;         /* 高さ（細長になる） */
+    overflow: hidden;     /* トリミング */
+    border-radius: 6px;
+}
+.deck-card-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    /* 中央をトリミングする */
+    object-position: 15% 15%;
+    filter: brightness(0.6);  /* 名前を読みやすく暗くする（任意） */
+}
+.deck-card-title {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 0 3px black;
+}
+#deck-list {
+  position: fixed;
+  right: 0px;
+  top: 100px;
+  width: 210px;
+  background: #f7f7f7;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.effect-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.effect-img-wrap {
+  position: relative;
+  width: 100px;
+  height: 140px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+.effect-img-wrap img {
+  width: 80px;
+  object-fit: fill;
+}
+.card-count {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background: rgba(0,0,0,0.75);
+  padding: 3px 6px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.icon-square {
+  width: 20px;
+  height: auto;
+  vertical-align: middle;
+  -webkit-transform: translateY(-.1em);
+  transform: translateY(-.1em);
+  margin: 0 .1em;
+}
+
+#effect-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#effect-modal.show{
+  display: flex;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  width: 500px;
+  border-radius: 8px;
+}
