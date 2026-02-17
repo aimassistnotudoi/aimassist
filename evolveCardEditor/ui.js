@@ -115,17 +115,18 @@ function createPagination(totalPages, currentPage) {
 }
 
 export function renderDeck(deck, dict) {
-    const ul = document.getElementById('deck-cards');
+  const ul = document.getElementById('deck-cards');
   var text="";
-    for (var key in deck) {
-        text += `<li class="deck-card">
-        <div class="deck-card-thumbnail">
-          <img src="${dict[key].img}" alt="${dict[key].name}">
-          <span class="deck-card-title">${dict[key].name} × ${deck[key]}</span>
-        </div>
-      </li>`;
-    }
-    ul.innerHTML = text;
+  for (var key in deck) {
+    text += 
+    `<li class="deck-card">
+      <div class="deck-card-thumbnail">
+        <img src="${dict[key].img}" alt="${dict[key].name}">
+        <span class="deck-card-title">${dict[key].name} × ${deck[key]}</span>
+      </div>
+    </li>`;
+  }
+  ul.innerHTML = text;
 }
 
 
