@@ -18,7 +18,7 @@ export function bindEvents(handlers) {
         document.getElementById('effect-modal').classList.remove('show');
     })
     document.getElementById("btn-save-effect").addEventListener("click", () => {
-        const custom_effect = document.getElementById('effect-editable').value;
+        const custom_effect = document.getElementById('effect-editable').innerHTML;
         onBtnSaveEffect(custom_effect);
         document.getElementById('effect-modal').classList.remove('show');
     })
@@ -161,7 +161,7 @@ export function renderEffectList(currentDeck, cardDict, handlers) {
             onBtnEdit(cardId);
 
             const content = document.getElementById('effect-editable');
-            content.value = card.custom_effect || card.ability;
+            content.innerHTML = card.custom_effect || card.ability;
 
             document.getElementById('effect-modal').classList.add('show');
             console.log("test")
