@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>シャドウバースEvolve オリカツール</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <button id="tab-deck">デッキ作成</button>
+    <button id="tab-view">対応表確認</button>
+  </header>
+
+  <!-- デッキ作成 -->
+  <section id="deck-section">
+    <h2>デッキ作成</h2>
+    <input type="text" id="search" placeholder="カード名で検索">
+    <div id="card-list"></div>
+    <div id="page-index"></div>
+    <aside id="deck-list">
+      <h3>現在のデッキ</h3>
+      <ul id="deck-cards"></ul>
+      <button id="complete-deck">デッキ完成</button>
+    </aside>
+  </section>
+
+  <!-- 対応表確認 -->
+  <section id="view-section" class="hidden">
+    <h2>対応表確認</h2>
+    <div id="effect-list"></div>
+    <button id="save-json">JSON書き出し</button>
+    <input type="file" id="load-json" accept=".json">
+  </section>
+
+  <!-- 効果編集モーダル -->
+  <div id="effect-modal">
+    <div class="modal-content">
+      <h3>効果編集</h3>
+
+      <textarea id="effect-textarea"></textarea>
+
+      <div class="modal-buttons">
+        <button id="btn-insert-fanfare">ファンファーレ</button>
+        <button id="btn-save-effect">保存</button>
+        <button id="btn-cancel-effect">キャンセル</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module", src="main.js"></script>
+
+  
+</body>
+</html>
