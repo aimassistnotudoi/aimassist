@@ -195,4 +195,5 @@ export function renderEffectList(currentDeck, cardDict, handlers) {
     
     }
 }
-  
+
+//おほ
