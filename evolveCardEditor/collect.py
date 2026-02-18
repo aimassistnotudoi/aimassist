@@ -65,7 +65,7 @@ for j in tqdm(range(1, 18)):
 
         # 能力テキスト
         detail = box.select_one(".detail p")
-        card["ability"] = detail.decode_contents().replace("<br/>", "\n").replace('src="/wordpress/',
+        card["ability"] = detail.decode_contents().replace('src="/wordpress/',
                 f'src="{BASE_URL}/wordpress/').strip() if detail else ""
 
         # イラスト・カード番号

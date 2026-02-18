@@ -164,7 +164,6 @@ export function renderEffectList(currentDeck, cardDict, handlers) {
             content.innerHTML = card.custom_effect || card.ability;
 
             document.getElementById('effect-modal').classList.add('show');
-            console.log("test")
         });
 
         div.querySelector('.btn-reset').addEventListener('click', () => {
