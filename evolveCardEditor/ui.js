@@ -65,8 +65,8 @@ export function renderCardList(list, handlers) {
             </div>
             <p class="card-name">${c.name}</p>
             <div class="button-container">
-              <button class="add">+</button>
               <button class="remove">−</button>
+              <button class="add">+</button>
             </div>
           `;
           div.querySelector('.add').addEventListener('click', () => onAdd(c));
