@@ -123,15 +123,29 @@ export function renderDeck(deck, dict) {
   const ul = document.getElementById('deck-cards');
   var text="";
   for (var key in deck) {
-    text +=
-    `
-    <li class="deck-card">
-      <span class="deck-card-title">${dict[key].name} × ${deck[key]}</span>
-      <div class="deck-card-thumbnail">
-        <img src="${dict[key].img}" alt="${dict[key].name}">
-      </div>
-    </li>
-    `;
+    const li = document.getElementById(key);
+    if(!ul.contains(li)) {      //クソ分岐 & ゴミコード
+      text +=
+      `
+      <li class="deck-card loading" id=${key}>
+        <span class="deck-card-title">${dict[key].name} × ${deck[key]}</span>
+        <div class="deck-card-thumbnail">
+          <img src="${dict[key].img}" alt="${dict[key].name}">
+        </div>
+      </li>
+      `;
+    }
+    else {
+      text +=
+      `
+      <li class="deck-card loaded" id=${key}>
+        <span class="deck-card-title">${dict[key].name} × ${deck[key]}</span>
+        <div class="deck-card-thumbnail">
+          <img src="${dict[key].img}" alt="${dict[key].name}">
+        </div>
+      </li>
+      `;
+    }
   }
   ul.innerHTML = text;
 }
