@@ -60,9 +60,9 @@ export function renderCardList(list, handlers) {
           const div = document.createElement('div');
           div.className = 'card';
           div.innerHTML = `
-            <div class="card-img">
+            <a class="card-img add">
               <img src="${c.img}" alt="${c.name}" data-tilt data-tilt-max="10">
-            </div>
+            </a>
             <p class="card-name">${c.name}</p>
             <div class="button-container">
               <button class="remove">−</button>
