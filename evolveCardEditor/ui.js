@@ -69,7 +69,9 @@ export function renderCardList(list, handlers) {
               <button class="add">+</button>
             </div>
           `;
-          div.querySelector('.add').addEventListener('click', () => onAdd(c));
+          div.querySelectorAll('.add').forEach(el => {
+            el.addEventListener('click', () => onAdd(c));
+          });
           div.querySelector('.remove').addEventListener('click', () => onRemove(c));
           pageDiv.appendChild(div);
         });
