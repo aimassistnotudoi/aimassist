@@ -21,6 +21,12 @@
   display: flex;
 }
 
+html{
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
