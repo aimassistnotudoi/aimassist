@@ -140,34 +140,41 @@ function createPagination(totalPages, currentPage) {
 }
 
 export function renderDeck(deck, dict) {
-  const ul = document.getElementById('deck-cards');
-  var text="";
-  for (var key in deck) {
-    const li = document.getElementById(key);
-    if(!ul.contains(li)) {      //クソ分岐 & ゴミコード
-        text +=
-        `
-        <li class="deck-card loading" id=${key}>
-            <span class="deck-card-title">${dict[key].name} × ${deck[key]}</span>
-            <div class="deck-card-thumbnail">
-            <img src="${dict[key].img}" alt="${dict[key].name}">
-            </div>
-        </li>
-        `;
+    const ul = document.getElementById('deck-cards');
+    const cards = ul.querySelectorAll('li');
+    for (let card of cards) {
+        if (!deck[card.id]) { //デッキに存在しないカードは削除
+            ul.removeChild(card);
+        }
     }
-    else {
-        text +=
-        `
-        <li class="deck-card loaded" id=${key}>
-            <span class="deck-card-title">${dict[key].name} × ${deck[key]}</span>
-            <div class="deck-card-thumbnail">
-            <img src="${dict[key].img}" alt="${dict[key].name}">
-            </div>
-        </li>
-        `;
+    for (var key in deck) {
+        let li = ul.querySelector(`#${key}`);
+        if(!li) {
+            li = document.createElement('li');
+            li.className = "deck-card loading";
+            li.id = key;
+
+            const name = document.createElement('span');
+            name.className = "deck-card-title";
+            name.textContent = `${dict[key].name} × ${deck[key]}`;
+
+            const thumbnail = document.createElement('div');
+            thumbnail.className = "deck-card-thumbnail";
+
+            const img = document.createElement('img');
+            img.src = dict[key].img;
+            img.alt = dict[key].name;
+
+            thumbnail.appendChild(img);
+            li.appendChild(name);
+            li.appendChild(thumbnail);
+            ul.appendChild(li);
+        }
+        else {
+            li.className = "deck-card loaded";
+            li.querySelector('.deck-card-title').textContent = `${dict[key].name} × ${deck[key]}`;
+        }
     }
-  }
-  ul.innerHTML = text;
 }
 
 
