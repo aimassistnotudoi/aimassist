@@ -3,6 +3,27 @@ let currentDeck = {}; // 現在のデッキ（card_idをキー、枚数を値と
 let cardDict = {}; // card_idをキーとしたカード辞書
 let editingCardId;
 
+export const abilityIcons = {
+    fanfare : "ファンファーレ",
+    lastword : "ラストワード",
+    evolve : "進化",
+    stand : "起動",
+    act : "アクト",
+    quick : "クイック",
+    power : "攻撃力",
+    hp : "体力",
+    cost01 : "コスト1",
+    cost02 : "コスト2",
+    cost03 : "コスト3",
+    cost04 : "コスト4",
+    cost05 : "コスト5",
+    cost06 : "コスト6",
+    cost07 : "コスト7",
+    cost08 : "コスト8",
+    cost09 : "コスト9",
+    cost10 : "コスト10",
+}
+
 //検索条件
 let filterConditions = {
     //カード名
