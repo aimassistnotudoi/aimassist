@@ -140,34 +140,41 @@ function createPagination(totalPages, currentPage) {
 }
 
 export function renderDeck(deck, dict) {
-  const ul = document.getElementById('deck-cards');
-  var text="";
-  for (var key in deck) {
-    const li = document.getElementById(key);
-    if(!ul.contains(li)) {      //クソ分岐 & ゴミコード
-        text +=
-        `
-        <li class="deck-card loading" id=${key}>
-            <span class="deck-card-title">${dict[key].name} × ${deck[key]}</span>
-            <div class="deck-card-thumbnail">
-            <img src="${dict[key].img}" alt="${dict[key].name}">
-            </div>
-        </li>
-        `;
+    const ul = document.getElementById('deck-cards');
+    const cards = ul.querySelectorAll('li');
+    for (let card of cards) {
+        if (!deck[card.id]) { //デッキに存在しないカードは削除
+            ul.removeChild(card);
+        }
     }
-    else {
-        text +=
-        `
-        <li class="deck-card loaded" id=${key}>
-            <span class="deck-card-title">${dict[key].name} × ${deck[key]}</span>
-            <div class="deck-card-thumbnail">
-            <img src="${dict[key].img}" alt="${dict[key].name}">
-            </div>
-        </li>
-        `;
+    for (var key in deck) {
+        let li = ul.querySelector(`#${key}`);
+        if(!li) {
+            li = document.createElement('li');
+            li.className = "deck-card loading";
+            li.id = key;
+
+            const name = document.createElement('span');
+            name.className = "deck-card-title";
+            name.textContent = `${dict[key].name} × ${deck[key]}`;
+
+            const thumbnail = document.createElement('div');
+            thumbnail.className = "deck-card-thumbnail";
+
+            const img = document.createElement('img');
+            img.src = dict[key].img;
+            img.alt = dict[key].name;
+
+            thumbnail.appendChild(img);
+            li.appendChild(name);
+            li.appendChild(thumbnail);
+            ul.appendChild(li);
+        }
+        else {
+            li.className = "deck-card loaded";
+            li.querySelector('.deck-card-title').textContent = `${dict[key].name} × ${deck[key]}`;
+        }
     }
-  }
-  ul.innerHTML = text;
 }
 
 
@@ -181,20 +188,46 @@ export function renderEffectList(currentDeck, cardDict, handlers) {
 
         const div = document.createElement('div');
         div.className = 'effect-item';
-        div.innerHTML = `
-        <div class = "effect-img-wrap">
-            <img src="${card.img}">
-            <span class = "card-count">×${currentDeck[cardId]}</span>
-        </div>
-        <div class = "effect-info">
-            <strong>${card.name}</strong><br>
-            ${card.custom_effect || card.ability}
-        </div>
-            <div class="effect-buttons">
-            <button class="btn-edit">編集</button>
-            <button class="btn-reset">リセット</button>
-        </div>
-        `;
+        const imgWrap = document.createElement('div');
+        imgWrap.className = "effect-img-wrap";
+
+        const img = document.createElement('img');
+        img.src = card.img;
+        img.alt = card.name;
+
+        const count = document.createElement('span');
+        count.className = "card-count";
+        count.textContent = `×${currentDeck[cardId]}`;
+        imgWrap.appendChild(img);
+        imgWrap.appendChild(count);
+
+        const info = document.createElement('div');
+        info.className = "effect-info";
+        const strong = document.createElement('strong');
+        strong.textContent = card.name;
+        const br = document.createElement('br');
+        const effect = document.createElement('span');
+        const effectText = card.custom_effect || card.ability;
+        effect.innerHTML = effectText;
+        info.appendChild(strong);
+        info.appendChild(br);
+        info.appendChild(effect);
+
+        const buttons = document.createElement('div');
+        buttons.className = "effect-buttons";
+        const btnEdit = document.createElement('button');
+        btnEdit.className = "btn-edit";
+        btnEdit.textContent = "編集";
+        const btnReset = document.createElement('button');
+        btnReset.className = "btn-reset";
+        btnReset.textContent = "リセット";
+        buttons.appendChild(btnEdit);
+        buttons.appendChild(btnReset);
+
+        div.appendChild(imgWrap);
+        div.appendChild(info);
+        div.appendChild(buttons);
+
         area.appendChild(div);
 
         //編集ボタンへのバインド
