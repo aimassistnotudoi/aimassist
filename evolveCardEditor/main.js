@@ -15,12 +15,14 @@ import {
     // setConditionsType,
     // setConditionsTypeOperator,
     // setConditionsRarity,
+    abilityIcons,
 } from './state.js';
 import {
     bindEvents,
     renderCardList,
     renderDeck,
     renderEffectList,
+    renderAbilityIcons,
 } from './ui.js';
 import {
     loadCardJson,
@@ -36,6 +38,7 @@ async function init() {
     initCards(cards);
 
     renderAll();
+    renderAbilityIcons(abilityIcons);//一度きり
 
     // ====================
     // イベント登録

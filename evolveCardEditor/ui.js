@@ -22,6 +22,26 @@ export function bindEvents(handlers) {
         onBtnSaveEffect(custom_effect);
         document.getElementById('effect-modal').classList.remove('show');
     })
+    document.querySelector('.ability-icons').addEventListener('click', e => {
+        const editor = document.getElementById('effect-editable');
+        const sel = window.getSelection();
+        let range
+        if(sel.rangeCount === 0 || !editor.contains(sel.anchorNode)){
+            range = document.createRange();
+            range.selectNodeContents(editor);
+            range.collapse(false);
+            sel.removeAllRanges();
+            sel.addRange(range);
+        }else{
+            range = sel.getRangeAt(0);
+        }
+
+        const btn = e.target.closest('button');
+        if(!btn) return;
+        const img = btn.querySelector('img');
+        const clone = img.cloneNode();
+        insertAtCursor(clone, range);
+    })
 }
 
 function renderTabDeck(){
@@ -57,27 +77,27 @@ export function renderCardList(list, handlers) {
         const pageCards = list.slice(start, end);
     
         pageCards.forEach(c => {
-          const div = document.createElement('div');
-          div.className = 'card';
-          div.innerHTML = `
-            <div class="card-img">
-              <img src="${c.img}" alt="${c.name}" data-tilt data-tilt-max="10">
-            </div>
-            <p class="card-name">${c.name}</p>
-            <div class="button-container">
-              <button class="add">+</button>
-              <button class="remove">−</button>
-            </div>
-          `;
-          div.querySelector('.add').addEventListener('click', () => onAdd(c));
-          div.querySelector('.remove').addEventListener('click', () => onRemove(c));
-          pageDiv.appendChild(div);
+            const div = document.createElement('div');
+            div.className = 'card';
+            div.innerHTML = `
+                <div class="card-img">
+                <img src="${c.img}" alt="${c.name}" data-tilt data-tilt-max="10">
+                </div>
+                <p class="card-name">${c.name}</p>
+                <div class="button-container">
+                <button class="add">+</button>
+                <button class="remove">−</button>
+                </div>
+            `;
+            div.querySelector('.add').addEventListener('click', () => onAdd(c));
+            div.querySelector('.remove').addEventListener('click', () => onRemove(c));
+            pageDiv.appendChild(div);
         });
     
         // 最初以外は非表示にする
         if (page !== 0) pageDiv.style.display = 'none';
         area.appendChild(pageDiv);
-      }
+    }
     
       createPagination(totalPages, 1); // ページボタンを作成
       VanillaTilt.init(document.querySelectorAll("[data-tilt]"));
@@ -89,33 +109,33 @@ function createPagination(totalPages, currentPage) {
     index.innerHTML = '';
   
     const showPage = (page) => {
-      document.querySelectorAll('.page').forEach(div => {
-        div.style.display = (div.dataset.page == page) ? 'flex' : 'none';
-      });
-      createPagination(totalPages, page);
+        document.querySelectorAll('.page').forEach(div => {
+            div.style.display = (div.dataset.page == page) ? 'flex' : 'none';
+        });
+        createPagination(totalPages, page);
     };
   
     // ページ番号を生成（1 … current-1 current current+1 … last）
     const pages = [];
     if (totalPages <= 7) {
-      for (let i = 1; i <= totalPages; i++) pages.push(i);
+        for (let i = 1; i <= totalPages; i++) pages.push(i);
     } else {
-      if (currentPage > 3) pages.push(1, '…');
-      else if(currentPage === 3) pages.push(1);
-      for (let i = Math.max(1, currentPage - 1); i <= Math.min(totalPages, currentPage + 1); i++) {
-        pages.push(i);
-      }
-      if (currentPage < totalPages - 2) pages.push('…', totalPages);
-      else if(currentPage === totalPages - 2) pages.push(totalPages);
+        if (currentPage > 3) pages.push(1, '…');
+        else if(currentPage === 3) pages.push(1);
+        for (let i = Math.max(1, currentPage - 1); i <= Math.min(totalPages, currentPage + 1); i++) {
+            pages.push(i);
+        }
+        if (currentPage < totalPages - 2) pages.push('…', totalPages);
+        else if(currentPage === totalPages - 2) pages.push(totalPages);
     }
   
     // ボタンをDOMに追加
     pages.forEach(p => {
-      const btn = document.createElement('button');
-      btn.textContent = p;
-      btn.disabled = (p === currentPage || p === '…');
-      if (p !== '…') btn.addEventListener('click', () => showPage(p));
-      index.appendChild(btn);
+        const btn = document.createElement('button');
+        btn.textContent = p;
+        btn.disabled = (p === currentPage || p === '…');
+        if (p !== '…') btn.addEventListener('click', () => showPage(p));
+        index.appendChild(btn);
     });
 }
 
@@ -125,26 +145,26 @@ export function renderDeck(deck, dict) {
   for (var key in deck) {
     const li = document.getElementById(key);
     if(!ul.contains(li)) {      //クソ分岐 & ゴミコード
-      text +=
-      `
-      <li class="deck-card loading" id=${key}>
-        <span class="deck-card-title">${dict[key].name} × ${deck[key]}</span>
-        <div class="deck-card-thumbnail">
-          <img src="${dict[key].img}" alt="${dict[key].name}">
-        </div>
-      </li>
-      `;
+        text +=
+        `
+        <li class="deck-card loading" id=${key}>
+            <span class="deck-card-title">${dict[key].name} × ${deck[key]}</span>
+            <div class="deck-card-thumbnail">
+            <img src="${dict[key].img}" alt="${dict[key].name}">
+            </div>
+        </li>
+        `;
     }
     else {
-      text +=
-      `
-      <li class="deck-card loaded" id=${key}>
-        <span class="deck-card-title">${dict[key].name} × ${deck[key]}</span>
-        <div class="deck-card-thumbnail">
-          <img src="${dict[key].img}" alt="${dict[key].name}">
-        </div>
-      </li>
-      `;
+        text +=
+        `
+        <li class="deck-card loaded" id=${key}>
+            <span class="deck-card-title">${dict[key].name} × ${deck[key]}</span>
+            <div class="deck-card-thumbnail">
+            <img src="${dict[key].img}" alt="${dict[key].name}">
+            </div>
+        </li>
+        `;
     }
   }
   ul.innerHTML = text;
@@ -185,7 +205,6 @@ export function renderEffectList(currentDeck, cardDict, handlers) {
             content.innerHTML = card.custom_effect || card.ability;
 
             document.getElementById('effect-modal').classList.add('show');
-            console.log("test")
         });
 
         div.querySelector('.btn-reset').addEventListener('click', () => {
@@ -195,5 +214,31 @@ export function renderEffectList(currentDeck, cardDict, handlers) {
     
     }
 }
+export function renderAbilityIcons(icons){
+    const area = document.querySelector('.modal-buttons');
+    const div = document.createElement('div');
+    div.className = "ability-icons";
+    const baseUrl = "https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_";
+    for(const icon in icons){
+        const btn = document.createElement('button');
+        btn.type = "button";
+        const img = document.createElement('img');
+        img.alt = icons[icon];
+        img.src = baseUrl + icon + ".png";
+        img.className = "icon-square";
+        btn.appendChild(img);
+        div.appendChild(btn);
+    }
+    area.appendChild(div);
+}
 
-//おほ
+function insertAtCursor(node, range){
+    range.deleteContents();
+    range.insertNode(node);
+
+    //カーソルをノードの後ろに移動
+    range.setStartAfter(node);
+    range.setEndAfter(node);
+    sel.removeAllRanges();
+    sel.addRange(range);
+}
