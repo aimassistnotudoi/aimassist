@@ -215,6 +215,7 @@ button{
   height: 140px;
   overflow: hidden;
   border-radius: 6px;
+  flex-shrink: 0;
 }
 .effect-img-wrap img {
   width: 80px;

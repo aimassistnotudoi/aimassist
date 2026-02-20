@@ -188,20 +188,46 @@ export function renderEffectList(currentDeck, cardDict, handlers) {
 
         const div = document.createElement('div');
         div.className = 'effect-item';
-        div.innerHTML = `
-        <div class = "effect-img-wrap">
-            <img src="${card.img}">
-            <span class = "card-count">×${currentDeck[cardId]}</span>
-        </div>
-        <div class = "effect-info">
-            <strong>${card.name}</strong><br>
-            ${card.custom_effect || card.ability}
-        </div>
-            <div class="effect-buttons">
-            <button class="btn-edit">編集</button>
-            <button class="btn-reset">リセット</button>
-        </div>
-        `;
+        const imgWrap = document.createElement('div');
+        imgWrap.className = "effect-img-wrap";
+
+        const img = document.createElement('img');
+        img.src = card.img;
+        img.alt = card.name;
+
+        const count = document.createElement('span');
+        count.className = "card-count";
+        count.textContent = `×${currentDeck[cardId]}`;
+        imgWrap.appendChild(img);
+        imgWrap.appendChild(count);
+
+        const info = document.createElement('div');
+        info.className = "effect-info";
+        const strong = document.createElement('strong');
+        strong.textContent = card.name;
+        const br = document.createElement('br');
+        const effect = document.createElement('span');
+        const effectText = card.custom_effect || card.ability;
+        effect.innerHTML = effectText;
+        info.appendChild(strong);
+        info.appendChild(br);
+        info.appendChild(effect);
+
+        const buttons = document.createElement('div');
+        buttons.className = "effect-buttons";
+        const btnEdit = document.createElement('button');
+        btnEdit.className = "btn-edit";
+        btnEdit.textContent = "編集";
+        const btnReset = document.createElement('button');
+        btnReset.className = "btn-reset";
+        btnReset.textContent = "リセット";
+        buttons.appendChild(btnEdit);
+        buttons.appendChild(btnReset);
+
+        div.appendChild(imgWrap);
+        div.appendChild(info);
+        div.appendChild(buttons);
+
         area.appendChild(div);
 
         //編集ボタンへのバインド
