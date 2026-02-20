@@ -77,6 +77,23 @@ export function renderCardList(list, handlers) {
         const pageCards = list.slice(start, end);
     
         pageCards.forEach(c => {
+          const div = document.createElement('div');
+          div.className = 'card';
+          div.innerHTML = `
+            <a class="card-img add">
+              <img src="${c.img}" alt="${c.name}" data-tilt data-tilt-max="10">
+            </a>
+            <p class="card-name">${c.name}</p>
+            <div class="button-container">
+              <button class="remove">−</button>
+              <button class="add">+</button>
+            </div>
+          `;
+          div.querySelectorAll('.add').forEach(el => {
+            el.addEventListener('click', () => onAdd(c));
+          });
+          div.querySelector('.remove').addEventListener('click', () => onRemove(c));
+          pageDiv.appendChild(div);
             const div = document.createElement('div');
             div.className = 'card';
             div.innerHTML = `
