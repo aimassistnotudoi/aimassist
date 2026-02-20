@@ -2,26 +2,38 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>働く車 社会の歯車特集</title>
+
+  <!-- LINEに貼った時の見た目が変わるらしい の始点 -->
+	<meta property="og:description" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/BP01/bp01_004.png">
+  <!-- LINEに貼った時の見た目が変わるらしい の終点 -->
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <button id="tab-deck">デッキ作成</button>
     <button id="tab-view">対応表確認</button>
+    <input type="text" id="search" placeholder="カード名で検索">
   </header>
 
   <!-- デッキ作成 -->
-  <section id="deck-section">
+  <section id="deck-section" class="flex">
+    <div class="pane left">
     <h2>デッキ作成</h2>
-    <input type="text" id="search" placeholder="カード名で検索">
-    <div id="card-list"></div>
-    <div id="page-index"></div>
-    <aside id="deck-list">
-      <h3>現在のデッキ</h3>
-      <ul id="deck-cards"></ul>
-      <button id="complete-deck">デッキ完成</button>
-    </aside>
+      <div id="card-list"></div>
+      <div id="page-index"></div>
+    </div>
+    <div class="pane right">
+      <aside id="deck-list">
+        <h3>現在のデッキ</h3>
+        <ul id="deck-cards"></ul>
+        <button id="complete-deck">デッキ完成</button>
+      </aside>
+    </div>
   </section>
 
   <!-- 対応表確認 -->
@@ -49,6 +61,6 @@
 
   <script type="module", src="main.js"></script>
 
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>  
 </body>
 </html>

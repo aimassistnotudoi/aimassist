@@ -80,10 +80,14 @@ export function renderCardList(list, handlers) {
             const div = document.createElement('div');
             div.className = 'card';
             div.innerHTML = `
-                <img src="${c.img}" alt="${c.name}">
-                <p>${c.name}</p>
+                <div class="card-img">
+                <img src="${c.img}" alt="${c.name}" data-tilt data-tilt-max="10">
+                </div>
+                <p class="card-name">${c.name}</p>
+                <div class="button-container">
                 <button class="add">+</button>
                 <button class="remove">−</button>
+                </div>
             `;
             div.querySelector('.add').addEventListener('click', () => onAdd(c));
             div.querySelector('.remove').addEventListener('click', () => onRemove(c));
@@ -95,7 +99,8 @@ export function renderCardList(list, handlers) {
         area.appendChild(pageDiv);
     }
     
-    createPagination(totalPages, 1); // ページボタンを作成
+      createPagination(totalPages, 1); // ページボタンを作成
+      VanillaTilt.init(document.querySelectorAll("[data-tilt]"));
 }
 
 
@@ -135,18 +140,34 @@ function createPagination(totalPages, currentPage) {
 }
 
 export function renderDeck(deck, dict) {
-    const ul = document.getElementById('deck-cards');
-    var text="";
-    for (var key in deck) {
-        text += 
-            `<li class="deck-card">
-                <div class="deck-card-thumbnail">
-                    <img src="${dict[key].img}" alt="${dict[key].name}">
-                    <span class="deck-card-title">${dict[key].name} × ${deck[key]}</span>
-                </div>
-        </li>`;
+  const ul = document.getElementById('deck-cards');
+  var text="";
+  for (var key in deck) {
+    const li = document.getElementById(key);
+    if(!ul.contains(li)) {      //クソ分岐 & ゴミコード
+        text +=
+        `
+        <li class="deck-card loading" id=${key}>
+            <span class="deck-card-title">${dict[key].name} × ${deck[key]}</span>
+            <div class="deck-card-thumbnail">
+            <img src="${dict[key].img}" alt="${dict[key].name}">
+            </div>
+        </li>
+        `;
     }
-    ul.innerHTML = text;
+    else {
+        text +=
+        `
+        <li class="deck-card loaded" id=${key}>
+            <span class="deck-card-title">${dict[key].name} × ${deck[key]}</span>
+            <div class="deck-card-thumbnail">
+            <img src="${dict[key].img}" alt="${dict[key].name}">
+            </div>
+        </li>
+        `;
+    }
+  }
+  ul.innerHTML = text;
 }
 
 
@@ -193,7 +214,6 @@ export function renderEffectList(currentDeck, cardDict, handlers) {
     
     }
 }
-
 export function renderAbilityIcons(icons){
     const area = document.querySelector('.modal-buttons');
     const div = document.createElement('div');
