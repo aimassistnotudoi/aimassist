@@ -5,9 +5,19 @@ export function bindEvents(handlers) {
     const {
         onSearch,
         onBtnSaveEffect,
+        onClan,
     } = handlers;
     //検索
     document.getElementById('search').addEventListener('input', e => {onSearch(e.target.value)});
+    document.getElementById("filter-clan").addEventListener("change", e => {
+        if(!e.target.type === "checkbox") return;
+        const clan = e.target.value;
+        if(e.target.checked){
+            onClan(clan, "add");
+        }else{
+            onClan(clan, "remove");
+        }
+    })
     //タブ切り替え
     document.getElementById('tab-deck').addEventListener('click', renderTabDeck);
     document.getElementById('tab-view').addEventListener('click', renderTabView);

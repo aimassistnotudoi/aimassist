@@ -30,6 +30,7 @@ let filterConditions = {
     //コスト or検索
     //タイプ or,and切り替え
     //レアリティ or検索
+    //クラス
     typeOperator: "or",//タイプ検索and or
 };
 
@@ -47,6 +48,20 @@ export function setConditionsCost(cost){filterConditions.cost = cost;}
 export function setConditionsType(type){filterConditions.type = type;}
 export function setConditionsTypeOperator(operator){filterConditions.typeOperator = operator;}
 export function setConditionsRarity(rarity){filterConditions.rarity = rarity;}
+export function setConditionsClan(clan, op){
+    if(op == "add"){
+        if(!filterConditions.clan) filterConditions.clan = [clan];
+        else if(!filterConditions.clan.includes(clan)) filterConditions.clan.push(clan);
+        return;
+    }
+    if(op == "remove"){
+        if(filterConditions.clan) {
+            filterConditions.clan = filterConditions.clan.filter(c => c !== clan);
+            if(filterConditions.clan.length === 0) delete filterConditions.clan;
+        }
+        return;
+    }
+}
 export function setEditingCardId(cardId){editingCardId = cardId;}
 
 export function initCards(data) {
@@ -73,6 +88,9 @@ export function getFilteredCards(cards, conditions) {
         }
         if(conditions.rarity){
             if(!conditions.rarity.includes(card.rarity)) return false; //レアリティ検索
+        }
+        if(conditions.clan){
+            if(!conditions.clan.includes(card.clan)) return false; //種族検索
         }
         return true;
     })
