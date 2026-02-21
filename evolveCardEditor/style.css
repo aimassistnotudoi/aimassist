@@ -200,24 +200,3 @@ button{
     opacity: 1;
   }
 }
-
-/* おほ */
-
-/*応急処置*/
-.effect-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.effect-img-wrap {
-  position: relative;
-  width: 100px;
-  height: 140px;
-  overflow: hidden;
-  border-radius: 6px;
-  flex-shrink: 0;
-}
-.effect-img-wrap img {
-  width: 80px;
-  object-fit: fill;
-}

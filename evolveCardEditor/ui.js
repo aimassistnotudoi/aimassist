@@ -79,17 +79,40 @@ export function renderCardList(list, handlers) {
         pageCards.forEach(c => {
             const div = document.createElement('div');
             div.className = 'card';
-            div.innerHTML = `
-                <div class="card-img">
-                <img src="${c.img}" alt="${c.name}" data-tilt data-tilt-max="10">
-                </div>
-                <p class="card-name">${c.name}</p>
-                <div class="button-container">
-                <button class="add">+</button>
-                <button class="remove">−</button>
-                </div>
-            `;
-            div.querySelector('.add').addEventListener('click', () => onAdd(c));
+            const a = document.createElement('a');
+			div.appendChild(a);
+            a.className = 'card-img add';
+
+            const img = document.createElement('img');
+			a.appendChild(img);
+            img.src = c.img;
+            img.alt = c.name;
+            img.setAttribute("data-tilt", "");
+            img.setAttribute("data-tilt-max", "10");
+
+            const p = document.createElement('p');
+			div.appendChild(p);
+            p.className = "card-name";
+            p.textContent = c.name;
+            
+            const btnContainer = document.createElement('div');
+			div.appendChild(btnContainer);
+			btnContainer.className = "button-container";
+
+            const btnRemove = document.createElement('button');
+			btnContainer.appendChild(btnRemove);
+            btnRemove.className = "remove";
+            btnRemove.textContent = "-";
+
+            const btnAdd = document.createElement('button');
+			btnContainer.appendChild(btnAdd);
+            btnAdd.className = "add";
+            btnAdd.textContent = "+";
+
+
+            div.querySelectorAll('.add').forEach(el => {
+				el.addEventListener('click', () => onAdd(c));
+				});
             div.querySelector('.remove').addEventListener('click', () => onRemove(c));
             pageDiv.appendChild(div);
         });
