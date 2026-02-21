@@ -1,66 +1,70 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>働く車 社会の歯車特集</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>働く車 社会の歯車特集</title>
 
-  <!-- LINEに貼った時の見た目が変わるらしい の始点 -->
-	<meta property="og:description" content="">
-	<meta property="og:type" content="website">
-	<meta property="og:image" content="https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/BP01/bp01_004.png">
-  <!-- LINEに貼った時の見た目が変わるらしい の終点 -->
+    <!-- LINEに貼った時の見た目が変わるらしい の始点 -->
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/BP01/bp01_004.png">
+    <!-- LINEに貼った時の見た目が変わるらしい の終点 -->
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <button id="tab-deck">デッキ作成</button>
-    <button id="tab-view">対応表確認</button>
-    <input type="text" id="search" placeholder="カード名で検索">
-  </header>
+    <header>
+        <button id="tab-deck">デッキ作成</button>
+        <button id="tab-view">対応表確認</button>
+      
+    </header>
+    <section id="filter">
+        <input type="text" id="search" placeholder="カード名で検索">
 
-  <!-- デッキ作成 -->
-  <section id="deck-section" class="flex">
-    <div class="pane left">
-    <h2>デッキ作成</h2>
-      <div id="card-list"></div>
-      <div id="page-index"></div>
+    </section>
+
+    <!-- デッキ作成 -->
+    <section id="deck-section" class="flex">
+        <div class="pane left">
+        <h2>デッキ作成</h2>
+            <div id="card-list"></div>
+            <div id="page-index"></div>
+        </div>
+        <div class="pane right">
+            <aside id="deck-list">
+                <h3>現在のデッキ</h3>
+                <ul id="deck-cards"></ul>
+                <button id="complete-deck">デッキ完成</button>
+            </aside>
+        </div>
+    </section>
+
+    <!-- 対応表確認 -->
+    <section id="view-section" class="hidden">
+        <h2>対応表確認</h2>
+        <div id="effect-list"></div>
+        <button id="save-json">JSON書き出し</button>
+        <input type="file" id="load-json" accept=".json">
+    </section>
+
+    <!-- 効果編集モーダル -->
+    <div id="effect-modal">
+        <div class="modal-content">
+            <h3>効果編集</h3>
+
+            <div contenteditable="true" id="effect-editable">
+            </div>
+
+            <div class="modal-buttons">
+                <button id="btn-save-effect">保存</button>
+                <button id="btn-cancel-effect">キャンセル</button>
+            </div>
+        </div>
     </div>
-    <div class="pane right">
-      <aside id="deck-list">
-        <h3>現在のデッキ</h3>
-        <ul id="deck-cards"></ul>
-        <button id="complete-deck">デッキ完成</button>
-      </aside>
-    </div>
-  </section>
 
-  <!-- 対応表確認 -->
-  <section id="view-section" class="hidden">
-    <h2>対応表確認</h2>
-    <div id="effect-list"></div>
-    <button id="save-json">JSON書き出し</button>
-    <input type="file" id="load-json" accept=".json">
-  </section>
+    <script type="module", src="main.js"></script>
 
-  <!-- 効果編集モーダル -->
-  <div id="effect-modal">
-    <div class="modal-content">
-      <h3>効果編集</h3>
-
-      <div contenteditable="true" id="effect-editable">
-      </div>
-
-      <div class="modal-buttons">
-        <button id="btn-save-effect">保存</button>
-        <button id="btn-cancel-effect">キャンセル</button>
-      </div>
-    </div>
-  </div>
-
-  <script type="module", src="main.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>  
 </body>
 </html>
