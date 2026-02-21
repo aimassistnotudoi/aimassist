@@ -6,6 +6,8 @@ export function bindEvents(handlers) {
         onSearch,
         onBtnSaveEffect,
         onClan,
+        onType1,
+        onType2,
     } = handlers;
     //検索
     document.getElementById('search').addEventListener('input', e => {onSearch(e.target.value)});
@@ -16,6 +18,24 @@ export function bindEvents(handlers) {
             onClan(clan, "add");
         }else{
             onClan(clan, "remove");
+        }
+    })
+    document.getElementById("filter-type-1").addEventListener("change", e => {
+        if(!e.target.type === "checkbox") return;
+        const type = e.target.value;
+        if(e.target.checked){
+            onType1(type, "add");
+        }else{
+            onType1(type, "remove");
+        }
+    })
+    document.getElementById("filter-type-2").addEventListener("change", e => {
+        if(!e.target.type === "checkbox") return;
+        const type = e.target.value;
+        if(e.target.checked){
+            onType2(type, "add");
+        }else{
+            onType2(type, "remove");
         }
     })
     //タブ切り替え

@@ -10,7 +10,9 @@ import {
     getEditingCardId,
     setConditionsName,
     setEditingCardId,
-    setConditionsClan,
+    changeConditionsClan,
+    changeConditionsType1,
+    changeConditionsType2,
 
     // setConditionsCost,
     // setConditionsType,
@@ -54,7 +56,15 @@ async function init() {
             renderEffectList(getCurrentDeck(), getCardDict(), {onBtnEdit: setEditingCardId});
         },
         onClan: (clan, op) => {
-            setConditionsClan(clan, op);
+            changeConditionsClan(clan, op);
+            renderAll();
+        },
+        onType1: (type, op) => {
+            changeConditionsType1(type, op);
+            renderAll();
+        },
+        onType2: (type, op) => {
+            changeConditionsType2(type, op);
             renderAll();
         }
     })

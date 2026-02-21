@@ -28,10 +28,10 @@ export const abilityIcons = {
 let filterConditions = {
     //カード名
     //コスト or検索
-    //タイプ or,and切り替え
+    //タイプ1
+    //タイプ2
     //レアリティ or検索
     //クラス
-    typeOperator: "or",//タイプ検索and or
 };
 
 // ====================
@@ -45,25 +45,38 @@ export function getEditingCardId(){return editingCardId;}
 
 export function setConditionsName(name){filterConditions.name = name;}
 export function setConditionsCost(cost){filterConditions.cost = cost;}
-export function setConditionsType(type){filterConditions.type = type;}
-export function setConditionsTypeOperator(operator){filterConditions.typeOperator = operator;}
 export function setConditionsRarity(rarity){filterConditions.rarity = rarity;}
-export function setConditionsClan(clan, op){
+export function setEditingCardId(cardId){editingCardId = cardId;}
+
+export function changeConditionsClan(clan, op){
+    changeConditionsOfList("clan", clan, op);
+}
+export function changeConditionsType1(type, op){
+    changeConditionsOfList("type1", type, op);
+}
+export function changeConditionsType2(type, op){
+    changeConditionsOfList("type2", type, op);
+}
+
+function changeConditionsOfList(key, value, op){
     if(op == "add"){
-        if(!filterConditions.clan) filterConditions.clan = [clan];
-        else if(!filterConditions.clan.includes(clan)) filterConditions.clan.push(clan);
+        if(!filterConditions[key]) filterConditions[key] = [value];
+        else if(!filterConditions[key].includes(value)) filterConditions[key].push(value);
         return;
     }
     if(op == "remove"){
-        if(filterConditions.clan) {
-            filterConditions.clan = filterConditions.clan.filter(c => c !== clan);
-            if(filterConditions.clan.length === 0) delete filterConditions.clan;
+        if(filterConditions[key]) {
+            filterConditions[key] = filterConditions[key].filter(v => v !== value);
+            if(filterConditions[key].length === 0) delete filterConditions[key];
         }
         return;
     }
 }
-export function setEditingCardId(cardId){editingCardId = cardId;}
 
+
+// ====================
+// 初期化
+// ====================
 export function initCards(data) {
     allCards = data;
     data.forEach(card => {
@@ -71,6 +84,9 @@ export function initCards(data) {
     });
 }
 
+// ====================
+// カード検索
+// ====================
 export function getFilteredCards(cards, conditions) {
     let filteredCards = cards.filter(card => {
         if(conditions.name){
@@ -79,13 +95,23 @@ export function getFilteredCards(cards, conditions) {
         if(conditions.cost){
             if(!conditions.cost.includes(card.cost)) return false; //コスト検索
         }
-        if(conditions.type){
-            if(conditions.typeOperator === "or"){
-                if(!conditions.type.some(t => card.type.includes(t))) return false; //タイプor検索
-            } else {
-                if(!conditions.type.every(t => card.type.includes(t))) return false; //タイプand検索
-            }
+
+        if(conditions.type1 && conditions.type2){
+            const hasType1 = conditions.type1.some(t => card.type.includes(t));
+            const hasType2 = conditions.type2.some(t => {
+                if(t == "通常") return !card.type.includes("エボルヴ") && !card.type.includes("アドバンス") && !card.type.includes("トークン");
+                return card.type.includes(t);
+            });
+            if(!hasType1 || !hasType2) return false; //タイプ1とタイプ2両方検索
+        }else if(conditions.type1){
+            if(!conditions.type1.some(t => card.type.includes(t))) return false; //タイプ1検索
+        }else if(conditions.type2){
+            if(!conditions.type2.some(t => {
+                if(t == "通常") return !card.type.includes("エボルヴ") && !card.type.includes("アドバンス") && !card.type.includes("トークン");
+                return card.type.includes(t);
+            })) return false; //タイプ2検索
         }
+
         if(conditions.rarity){
             if(!conditions.rarity.includes(card.rarity)) return false; //レアリティ検索
         }
