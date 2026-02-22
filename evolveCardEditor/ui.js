@@ -8,10 +8,13 @@ export function bindEvents(handlers) {
         onClan,
         onType1,
         onType2,
+        onTribe1,
+        onTribe2,
+        onTribeOp,
     } = handlers;
     //検索
-    document.getElementById('search').addEventListener('input', e => {onSearch(e.target.value)});
-    document.getElementById("filter-clan").addEventListener("change", e => {
+    document.getElementById('search').addEventListener('input', e => {onSearch(e.target.value)});//name
+    document.getElementById("filter-clan").addEventListener("change", e => {//clan
         if(!e.target.type === "checkbox") return;
         const clan = e.target.value;
         if(e.target.checked){
@@ -20,7 +23,7 @@ export function bindEvents(handlers) {
             onClan(clan, "remove");
         }
     })
-    document.getElementById("filter-type-1").addEventListener("change", e => {
+    document.getElementById("filter-type-1").addEventListener("change", e => {//type1
         if(!e.target.type === "checkbox") return;
         const type = e.target.value;
         if(e.target.checked){
@@ -29,7 +32,7 @@ export function bindEvents(handlers) {
             onType1(type, "remove");
         }
     })
-    document.getElementById("filter-type-2").addEventListener("change", e => {
+    document.getElementById("filter-type-2").addEventListener("change", e => {//type2
         if(!e.target.type === "checkbox") return;
         const type = e.target.value;
         if(e.target.checked){
@@ -38,6 +41,22 @@ export function bindEvents(handlers) {
             onType2(type, "remove");
         }
     })
+    document.getElementById("filter-tribe").addEventListener("change", e => {//tribe
+        const tribe = e.target.value;
+        const id = e.target.id;
+        if(id == "tribe-select1"){
+            onTribe1(tribe);
+        }
+        if(id == "tribe-select2"){
+            onTribe2(tribe);
+        }
+    })
+    document.getElementById("filter-tribe-op").addEventListener("change", e => {//tribe and/or
+        if(e.target.checked){
+            onTribeOp(e.target.value);
+        }
+    })
+        
     //タブ切り替え
     document.getElementById('tab-deck').addEventListener('click', renderTabDeck);
     document.getElementById('tab-view').addEventListener('click', renderTabView);
@@ -327,4 +346,20 @@ function insertAtCursor(node, range){
     range.setEndAfter(node);
     sel.removeAllRanges();
     sel.addRange(range);
+}
+
+export function renderFilterTribes(tribes){
+    const select1 = document.getElementById('tribe-select1');
+    const select2 = document.getElementById('tribe-select2');
+    for(const tribe of tribes){
+        const option1 = document.createElement('option');
+        option1.value = tribe;
+        option1.textContent = tribe;
+        select1.appendChild(option1);
+
+        const option2 = document.createElement('option');
+        option2.value = tribe;
+        option2.textContent = tribe;
+        select2.appendChild(option2);
+    }
 }

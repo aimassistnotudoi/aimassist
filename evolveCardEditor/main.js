@@ -13,12 +13,16 @@ import {
     changeConditionsClan,
     changeConditionsType1,
     changeConditionsType2,
+    setConditionsTribe1,
+    setConditionsTribe2,
+    setConditionsTribeOp,
 
     // setConditionsCost,
     // setConditionsType,
     // setConditionsTypeOperator,
     // setConditionsRarity,
     abilityIcons,
+    tribes,
 } from './state.js';
 import {
     bindEvents,
@@ -26,6 +30,7 @@ import {
     renderDeck,
     renderEffectList,
     renderAbilityIcons,
+    renderFilterTribes,
 } from './ui.js';
 import {
     loadCardJson,
@@ -42,6 +47,7 @@ async function init() {
 
     renderAll();
     renderAbilityIcons(abilityIcons);//一度きり
+    renderFilterTribes(tribes);//一度きり
 
     // ====================
     // イベント登録
@@ -65,6 +71,18 @@ async function init() {
         },
         onType2: (type, op) => {
             changeConditionsType2(type, op);
+            renderAll();
+        },
+        onTribe1:(tribe) => {
+            setConditionsTribe1(tribe);
+            renderAll();
+        },
+        onTribe2:(tribe) => {
+            setConditionsTribe2(tribe);
+            renderAll();
+        },
+        onTribeOp:(op)=>{
+            setConditionsTribeOp(op);
             renderAll();
         }
     })
