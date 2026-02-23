@@ -11,6 +11,7 @@ export function bindEvents(handlers) {
         onTribe1,
         onTribe2,
         onTribeOp,
+        onRarity,
     } = handlers;
     //検索
     document.getElementById('search').addEventListener('input', e => {onSearch(e.target.value)});//name
@@ -54,6 +55,15 @@ export function bindEvents(handlers) {
     document.getElementById("filter-tribe-op").addEventListener("change", e => {//tribe and/or
         if(e.target.checked){
             onTribeOp(e.target.value);
+        }
+    })
+    document.getElementById("filter-rarity").addEventListener("change", e => {//rarity
+        if(!e.target.type === "checkbox") return;
+        const rarity = e.target.value;
+        if(e.target.checked){
+            onRarity(rarity, "add");
+        }else{
+            onRarity(rarity, "remove");
         }
     })
         

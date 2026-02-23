@@ -56,7 +56,6 @@ export function getEditingCardId(){return editingCardId;}
 
 export function setConditionsName(name){filterConditions.name = name;}
 export function setConditionsCost(cost){filterConditions.cost = cost;}
-export function setConditionsRarity(rarity){filterConditions.rarity = rarity;}
 export function setEditingCardId(cardId){editingCardId = cardId;}
 export function setConditionsTribeOp(op){filterConditions.tribeOp = op}
 export function setConditionsTribe1(tribe){filterConditions.tribe1 = tribe;}
@@ -65,6 +64,7 @@ export function setConditionsTribe2(tribe){filterConditions.tribe2 = tribe;}
 export function changeConditionsClan(clan, op){changeConditionsOfList("clan", clan, op);}
 export function changeConditionsType1(type, op){changeConditionsOfList("type1", type, op);}
 export function changeConditionsType2(type, op){changeConditionsOfList("type2", type, op);}
+export function changeConditionsRarity(rarity, op){changeConditionsOfList("rarity", rarity, op);}
 
 
 function changeConditionsOfList(key, value, op){
