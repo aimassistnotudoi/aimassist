@@ -60,6 +60,7 @@ export function setEditingCardId(cardId){editingCardId = cardId;}
 export function setConditionsTribeOp(op){filterConditions.tribeOp = op}
 export function setConditionsTribe1(tribe){filterConditions.tribe1 = tribe;}
 export function setConditionsTribe2(tribe){filterConditions.tribe2 = tribe;}
+export function setConditionsAbility(ability){filterConditions.ability = ability;}
 
 export function changeConditionsClan(clan, op){changeConditionsOfList("clan", clan, op);}
 export function changeConditionsType1(type, op){changeConditionsOfList("type1", type, op);}
@@ -121,7 +122,6 @@ export function getFilteredCards(cards, conditions) {
             })) return false; //タイプ2検索
         }
 
-        
         const tribes = card.tribe.split("・")
         const tribe1 = conditions.tribe1;
         const tribe2 = conditions.tribe2;
@@ -134,13 +134,18 @@ export function getFilteredCards(cards, conditions) {
             if(!(hasTribe(tribe1) || hasTribe(tribe2))) return false; //種族検索(or)
         }else if(!(hasTribe(tribe1) && hasTribe(tribe2))) return false; //種族検索(and)
 
-
         if(conditions.rarity){
             if(!conditions.rarity.includes(card.rarity)) return false; //レアリティ検索
         }
         if(conditions.clan){
-            if(!conditions.clan.includes(card.clan)) return false; //種族検索
+            if(!conditions.clan.includes(card.clan)) return false; //クラス検索
         }
+
+        if(conditions.ability){
+            const abilities = conditions.ability.trim().split(/\s+/);
+            if(!abilities.every(ab => card.ability.includes(ab))) return false; //能力検索（スペース区切りで複数指定可能、すべての条件を満たすカードを表示）
+        }
+        
         return true;
     })
 

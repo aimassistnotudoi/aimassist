@@ -17,6 +17,7 @@ import {
     setConditionsTribe2,
     setConditionsTribeOp,
     changeConditionsRarity,
+    setConditionsAbility,
 
     // setConditionsCost,
     // setConditionsType,
@@ -88,6 +89,10 @@ async function init() {
         },
         onRarity:(rarity, op)=>{
             changeConditionsRarity(rarity, op);
+            renderAll();
+        },
+        onAbility:(ability)=>{
+            setConditionsAbility(ability);
             renderAll();
         }
     })

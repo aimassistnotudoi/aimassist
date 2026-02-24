@@ -12,9 +12,10 @@ export function bindEvents(handlers) {
         onTribe2,
         onTribeOp,
         onRarity,
+        onAbility,
     } = handlers;
     //検索
-    document.getElementById('search').addEventListener('input', e => {onSearch(e.target.value)});//name
+    document.getElementById('filter-name').addEventListener('input', e => {onSearch(e.target.value)});//name
     document.getElementById("filter-clan").addEventListener("change", e => {//clan
         if(!e.target.type === "checkbox") return;
         const clan = e.target.value;
@@ -66,6 +67,7 @@ export function bindEvents(handlers) {
             onRarity(rarity, "remove");
         }
     })
+    document.getElementById("filter-ability").addEventListener("input", e => {onAbility(e.target.value)})//ability
         
     //タブ切り替え
     document.getElementById('tab-deck').addEventListener('click', renderTabDeck);
