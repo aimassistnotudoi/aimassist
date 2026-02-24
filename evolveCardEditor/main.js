@@ -32,7 +32,7 @@ import {
     renderDeck,
     renderEffectList,
     renderAbilityIcons,
-    renderFilterTribes,
+    renderFilterConditions,
 } from './ui.js';
 import {
     loadCardJson,
@@ -49,7 +49,7 @@ async function init() {
 
     renderAll();
     renderAbilityIcons(abilityIcons);//一度きり
-    renderFilterTribes(tribes);//一度きり
+    renderFilterConditions(tribes, abilityIcons);//一度きり
 
     // ====================
     // イベント登録
