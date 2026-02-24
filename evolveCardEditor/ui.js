@@ -11,9 +11,11 @@ export function bindEvents(handlers) {
         onTribe1,
         onTribe2,
         onTribeOp,
+        onRarity,
+        onAbility,
     } = handlers;
     //検索
-    document.getElementById('search').addEventListener('input', e => {onSearch(e.target.value)});//name
+    document.getElementById('filter-name').addEventListener('input', e => {onSearch(e.target.value)});//name
     document.getElementById("filter-clan").addEventListener("change", e => {//clan
         if(!e.target.type === "checkbox") return;
         const clan = e.target.value;
@@ -55,6 +57,27 @@ export function bindEvents(handlers) {
         if(e.target.checked){
             onTribeOp(e.target.value);
         }
+    })
+    document.getElementById("filter-rarity").addEventListener("change", e => {//rarity
+        if(!e.target.type === "checkbox") return;
+        const rarity = e.target.value;
+        if(e.target.checked){
+            onRarity(rarity, "add");
+        }else{
+            onRarity(rarity, "remove");
+        }
+    })
+    document.getElementById("filter-ability").addEventListener("change", () => {//ability
+        let ability = document.getElementById("filter-ability-text").value;
+        const labels = document.querySelectorAll("label");
+        for(const label of labels){
+            const checkbox = label.querySelector("input[type='checkbox']");
+            const img = label.querySelector("img");
+            if(img && checkbox && checkbox.checked){
+                ability = ability + " " + img.src;
+            }
+        }
+        onAbility(ability);
     })
         
     //タブ切り替え
@@ -348,7 +371,9 @@ function insertAtCursor(node, range){
     sel.addRange(range);
 }
 
-export function renderFilterTribes(tribes){
+
+export function renderFilterConditions(tribes, abilityIcons){
+    //tribe
     const select1 = document.getElementById('tribe-select1');
     const select2 = document.getElementById('tribe-select2');
     for(const tribe of tribes){
@@ -361,5 +386,20 @@ export function renderFilterTribes(tribes){
         option2.value = tribe;
         option2.textContent = tribe;
         select2.appendChild(option2);
+    }
+
+    //abilityIcons
+    const area = document.getElementById('filter-ability');
+    for (const icon in abilityIcons) {
+        const label = document.createElement('label');
+        const checkbox = document.createElement('input');
+        checkbox.type = "checkbox";
+        const img = document.createElement('img');
+        img.alt = abilityIcons[icon];
+        img.src = "https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_" + icon + ".png";
+        img.className = "icon-square";
+        label.appendChild(checkbox);
+        label.appendChild(img);
+        area.appendChild(label);
     }
 }

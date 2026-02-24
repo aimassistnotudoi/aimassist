@@ -19,46 +19,56 @@
         <button id="tab-view">対応表確認</button>
       
     </header>
-    <section id="filter">
-        <input type="text" id="search" placeholder="カード名で検索">
-        <div id="filter-clan">
-            <input type="checkbox" id="class_1" value="エルフ"><label for="class_1">エルフ</label>
-            <input type="checkbox" id="class_2" value="ロイヤル"><label for="class_2">ロイヤル</label>
-            <input type="checkbox" id="class_3" value="ウィッチ"><label for="class_3">ウィッチ</label>
-            <input type="checkbox" id="class_4" value="ドラゴン"><label for="class_4">ドラゴン</label>
-            <input type="checkbox" id="class_5" value="ナイトメア"><label for="class_5">ナイトメア</label>
-            <input type="checkbox" id="class_6" value="ビショップ"><label for="class_6">ビショップ</label>
-            <input type="checkbox" id="class_7" value="ニュートラル"><label for="class_7">ニュートラル</label>
-        </div>
-        <div id="filter-type-1">
-            <input type="checkbox" id="kind_1" value="フォロワー"><label for="kind_1">フォロワー</label>
-            <input type="checkbox" id="kind_2" value="スペル"><label for="kind_2">スペル</label>
-            <input type="checkbox" id="kind_3" value="アミュレット"><label for="kind_3">アミュレット</label>
-        </div>
-        <div id="filter-type-2">
-            <input type="checkbox" id="kind_4" value="通常"><label for="kind_4">通常</label>
-            <input type="checkbox" id="kind_5" value="エボルヴ"><label for="kind_5">エボルヴ</label>
-            <input type="checkbox" id="kind_6" value="アドバンス"><label for="kind_6">アドバンス</label>
-            <input type="checkbox" id="kind_7" value="トークン"><label for="kind_7">トークン</label>
-        </div>
-        <div id="filter-tribe">
-            <select id="tribe-select1"></select>   
-            <select id="tribe-select2"></select>
-        </div>
-        <div id="filter-tribe-op">
-            <input type="radio" name="tribe-op" id="tribe-op-or" value="or" checked><label for="tribe-op-or">or</label>
-            <input type="radio" name="tribe-op" id="tribe-op-and" value="and"><label for="tribe-op-and">and</label>
-        </div>
-        <div id="filter-rarity"></div>
-        <div id="filter-cost"></div>
-        <div id="filter-atk"></div>
-        <div id="filter-life"></div>
-        <div id="filter-product"></div>
-        <div id="filter-ability"></div>
-    </section>
 
     <!-- デッキ作成 -->
     <section id="deck-section" class="flex">
+
+        <section id="filter">
+            <input type="text" id="filter-name" placeholder="カード名で検索">
+            <div id="filter-clan">
+                <input type="checkbox" id="class_1" value="エルフ"><label for="class_1">エルフ</label>
+                <input type="checkbox" id="class_2" value="ロイヤル"><label for="class_2">ロイヤル</label>
+                <input type="checkbox" id="class_3" value="ウィッチ"><label for="class_3">ウィッチ</label>
+                <input type="checkbox" id="class_4" value="ドラゴン"><label for="class_4">ドラゴン</label>
+                <input type="checkbox" id="class_5" value="ナイトメア"><label for="class_5">ナイトメア</label>
+                <input type="checkbox" id="class_6" value="ビショップ"><label for="class_6">ビショップ</label>
+                <input type="checkbox" id="class_7" value="ニュートラル"><label for="class_7">ニュートラル</label>
+            </div>
+            <div id="filter-type-1">
+                <input type="checkbox" id="kind_1" value="フォロワー"><label for="kind_1">フォロワー</label>
+                <input type="checkbox" id="kind_2" value="スペル"><label for="kind_2">スペル</label>
+                <input type="checkbox" id="kind_3" value="アミュレット"><label for="kind_3">アミュレット</label>
+            </div>
+            <div id="filter-type-2">
+                <input type="checkbox" id="kind_4" value="通常"><label for="kind_4">通常</label>
+                <input type="checkbox" id="kind_5" value="エボルヴ"><label for="kind_5">エボルヴ</label>
+                <input type="checkbox" id="kind_6" value="アドバンス"><label for="kind_6">アドバンス</label>
+                <input type="checkbox" id="kind_7" value="トークン"><label for="kind_7">トークン</label>
+            </div>
+            <div id="filter-tribe">
+                <select id="tribe-select1"></select>   
+                <select id="tribe-select2"></select>
+            </div>
+            <div id="filter-tribe-op">
+                <input type="radio" name="tribe-op" id="tribe-op-or" value="or" checked><label for="tribe-op-or">or</label>
+                <input type="radio" name="tribe-op" id="tribe-op-and" value="and"><label for="tribe-op-and">and</label>
+            </div>
+            <div id="filter-rarity">
+                <input type="checkbox" id="rare_1" value="LG"><label for="rare_1">LG</label>
+                <input type="checkbox" id="rare_2" value="GR"><label for="rare_2">GR</label>
+                <input type="checkbox" id="rare_3" value="SR"><label for="rare_3">SR</label>
+                <input type="checkbox" id="rare_4" value="BR"><label for="rare_4">BR</label>
+            </div>
+            <div id="filter-ability">
+                <input type="text" id="filter-ability-text" placeholder="効果テキストで検索">
+            </div>
+            
+            <div id="filter-cost"></div>
+            <div id="filter-atk"></div>
+            <div id="filter-life"></div>
+            <div id="filter-product"></div>
+        </section>
+
         <div class="pane left">
         <h2>デッキ作成</h2>
             <div id="card-list"></div>
