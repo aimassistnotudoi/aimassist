@@ -3,13 +3,16 @@ import {
     addCardToDeck,
     removeCardFromDeck,
     getFilteredCards,
+    getDisplayCards,
     getAllCards,
+    getUniqueCards,
     getCardDict,
     getCurrentDeck,
     getFilterConditions,
     getEditingCardId,
     setConditionsName,
     setEditingCardId,
+    setDisplayCards,
     changeConditionsClan,
     changeConditionsType1,
     changeConditionsType2,
@@ -44,8 +47,8 @@ import {
 // 初期化
 // ====================
 async function init() {
-    const cards = await loadCardJson();
-    initCards(cards);
+    const [cards, uniqueCards] = await loadCardJson();
+    initCards(cards, uniqueCards);
 
     renderAll();
     renderAbilityIcons(abilityIcons);//一度きり
@@ -94,6 +97,11 @@ async function init() {
         onAbility:(ability)=>{
             setConditionsAbility(ability);
             renderAll();
+        },
+        onSameName:(checked)=>{
+            if(checked) setDisplayCards(getUniqueCards());
+            else setDisplayCards(getAllCards());
+            renderAll();
         }
     })
 }
@@ -118,11 +126,11 @@ function handleRemove(card) {
 }
 
 function renderAll() {
-    const allCards = getAllCards();
+    const displayCards = getDisplayCards();
     const filterConditions = getFilterConditions();
     const currentDeck = getCurrentDeck();
     const cardDict = getCardDict();
-    const cards = getFilteredCards(allCards, filterConditions);
+    const cards = getFilteredCards(displayCards, filterConditions);
 
     renderCardList(
         cards,

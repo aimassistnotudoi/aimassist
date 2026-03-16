@@ -13,6 +13,7 @@ export function bindEvents(handlers) {
         onTribeOp,
         onRarity,
         onAbility,
+        onSameName,
     } = handlers;
     //検索
     document.getElementById('filter-name').addEventListener('input', e => {onSearch(e.target.value)});//name
@@ -79,6 +80,7 @@ export function bindEvents(handlers) {
         }
         onAbility(ability);
     })
+    document.getElementById("filter-same-name").addEventListener("change", e => onSameName(e.target.checked));
         
     //タブ切り替え
     document.getElementById('tab-deck').addEventListener('click', renderTabDeck);

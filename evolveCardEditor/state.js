@@ -1,4 +1,6 @@
+let displayCards = []; //表示対象カード配列
 let allCards = []; //全カード配列
+let uniqueCards = []; //ユニークカード配列
 let currentDeck = {}; // 現在のデッキ（card_idをキー、枚数を値とした辞書）
 let cardDict = {}; // card_idをキーとしたカード辞書
 let editingCardId;
@@ -48,7 +50,9 @@ let filterConditions = {
 // ====================
 // getter/setter
 // ====================
+export function getDisplayCards(){return displayCards;}
 export function getAllCards(){return allCards;}
+export function getUniqueCards(){return uniqueCards;}
 export function getCurrentDeck(){return {...currentDeck};}
 export function getCardDict(){return cardDict;}
 export function getFilterConditions(){return {...filterConditions};}
@@ -61,6 +65,7 @@ export function setConditionsTribeOp(op){filterConditions.tribeOp = op}
 export function setConditionsTribe1(tribe){filterConditions.tribe1 = tribe;}
 export function setConditionsTribe2(tribe){filterConditions.tribe2 = tribe;}
 export function setConditionsAbility(ability){filterConditions.ability = ability;}
+export function setDisplayCards(cards){displayCards = cards;}
 
 export function changeConditionsClan(clan, op){changeConditionsOfList("clan", clan, op);}
 export function changeConditionsType1(type, op){changeConditionsOfList("type1", type, op);}
@@ -87,11 +92,13 @@ function changeConditionsOfList(key, value, op){
 // ====================
 // 初期化
 // ====================
-export function initCards(data) {
-    allCards = data;
-    data.forEach(card => {
+export function initCards(all, unique){
+    allCards = all;
+    uniqueCards = unique;
+    allCards.forEach(card => {
         cardDict[card.card_id] = card;
     });
+    displayCards = uniqueCards;
 }
 
 // ====================
