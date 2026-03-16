@@ -1,10 +1,15 @@
 export async function loadCardJson() {
     try {
-      const response = await fetch('cards.json');
-      return await response.json();
+      const cardsRes = await fetch('cards.json');
+      const uniqueRes = await fetch('unique_cards.json');
+
+      const cards = await cardsRes.json();
+      const uniqueCards = await uniqueRes.json();
+
+      return [cards, uniqueCards];
     } catch (error) {
       console.error('Error loading card JSON:', error);
-      return [];
+      return [[], []];
     }
 }
 
