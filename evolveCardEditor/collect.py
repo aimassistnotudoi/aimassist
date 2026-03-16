@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import time
 import json
 from tqdm import tqdm
+import random
 
 ALLCARD_URL = "https://shadowverse-evolve.com/cardlist/cardsearch_ex?view=image&page={}"
 BASE_URL = "https://shadowverse-evolve.com"
@@ -38,8 +39,9 @@ while True:
     if(page_index%100==0):
         print(f"ページ {page_index} までのカードURLを取得しました。")
     
-    time.sleep(1.0)  # サーバーへの負荷を避けるための待機
+    time.sleep(random.uniform(0.1, 0.3))  # サーバーへの負荷を避けるための待機
 
+print(f"合計 {len(card_urls)} 枚のカードURLを取得しました。")
 
 
 for url in tqdm(card_urls, desc="カード情報を収集中"):
@@ -49,10 +51,12 @@ for url in tqdm(card_urls, desc="カード情報を収集中"):
         print("timeout:", url)
         continue
     if response.status_code != 200:
+        print("failed to get card page:", url)
         continue
     soup = BeautifulSoup(response.text, "html.parser")
     box = soup.select_one(".cardlist-Detail_Box")
     if not box:
+        print("failed to get card box:", url)
         continue
 
     card = {}
@@ -121,7 +125,7 @@ for url in tqdm(card_urls, desc="カード情報を収集中"):
     cards.append(card)
 
     # サーバーへの負荷を避けるための待機（重要！）
-    time.sleep(1.0)
+    time.sleep(random.uniform(0.1, 0.3))
 
 # JSON保存
 with open("cards.json", "w", encoding="utf-8") as f:
