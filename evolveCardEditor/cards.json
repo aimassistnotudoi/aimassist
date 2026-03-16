@@ -60105,6 +60105,38 @@
     "related": []
   },
   {
+    "name": "リザードソルジャー ガンルー",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP03/cp03-078.png",
+    "clan": "カードファイト!! ヴァンガード",
+    "type": "フォロワー",
+    "tribe": "ヴァンガード・かげろう",
+    "rarity": "BR",
+    "product": "コラボパック「カードファイト!! ヴァンガード」",
+    "cost": "コスト1",
+    "atk": "攻撃力1",
+    "life": "体力2",
+    "ability": "<img alt=\"起動\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_stand.png\">これを<img alt=\"アクト\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_act.png\"/>：相手の場のフォロワー1体を選ぶ。それに1ダメージ。この能力は自分の場に他のかげろう・フォロワーがいるなら使える。<br/>\n<img alt=\"起動\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_stand.png\"/><img alt=\"コスト2\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost02.png\"/>：これをスタンドする。このターン、これは相手を攻撃できない。<br/>\n----------<br/>\n（ドライブチェックによってこれが捲れたなら、自分の場のフォロワー1体をスタンドする。このターン、それは相手のリーダーを攻撃できない）</img>",
+    "illustrator": "山宗",
+    "card_id": "CP03-078",
+    "related": []
+  },
+  {
+    "name": "ドラゴンモンク ゲンジョウ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP03/cp03-079.png",
+    "clan": "カードファイト!! ヴァンガード",
+    "type": "フォロワー",
+    "tribe": "ヴァンガード・かげろう",
+    "rarity": "BR",
+    "product": "コラボパック「カードファイト!! ヴァンガード」",
+    "cost": "コスト1",
+    "atk": "攻撃力1",
+    "life": "体力1",
+    "ability": "【守護】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\">自分のリーダーは<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。【覚醒】状態なら、代わりに<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+2する。（自分のPP最大値が7以上なら、【覚醒】状態になる）<br/>\n----------<br/>\n（ドライブチェックによってこれが捲れたなら、自分のリーダーは<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+3する）</img>",
+    "illustrator": "百瀬寿",
+    "card_id": "CP03-079",
+    "related": []
+  },
+  {
     "name": "アイアンテイル・ドラゴン",
     "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP03/cp03-080.png",
     "clan": "カードファイト!! ヴァンガード",
@@ -69111,6 +69143,27 @@
       {
         "name": "ホワイトヴァナラ",
         "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/BP09/bp09-003.png"
+      }
+    ]
+  },
+  {
+    "name": "ホワイトヴァナラ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/BP09/bp09-003.png",
+    "clan": "エルフ",
+    "type": "フォロワー・エボルヴ",
+    "tribe": "精霊・獣",
+    "rarity": "LG",
+    "product": "ブースターパック第9弾「光影の二重奏」",
+    "cost": "コスト-",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "これの攻撃力が4以上である限り、これは【守護】を持つ。これの攻撃力が7以上である限り、これは【疾走】を持つ。これの攻撃力が10以上である限り、これは【守護】を無視して攻撃できる。<br/>\n【攻撃時】相手の場のフォロワー1体を選ぶ。それに「これの攻撃力」と同じダメージ。",
+    "illustrator": "獅子猿",
+    "card_id": "BP09-003",
+    "related": [
+      {
+        "name": "ホワイトヴァナラ",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/BP09/bp09-002.png"
       }
     ]
   },
@@ -106366,6 +106419,2853 @@
     ]
   },
   {
+    "name": "ユキノビジン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-010.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【守護】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>場の他のカード1枚を手札に戻す：これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。（手札に戻ったトークンはゲームから取り除く）</img>",
+    "card_id": "CP01-010",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "アイネスフウジン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-011.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト6",
+    "atk": "攻撃力7",
+    "life": "体力7",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【突進】【指定攻撃】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分の他のカード1枚を選ぶ。それを手札に戻す。（手札に戻ったトークンはゲームから取り除く）</img>",
+    "card_id": "CP01-011",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "タイキシャトル",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-012.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力2",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\nこれが場から手札に戻ったとき、相手のフォロワー1体を選ぶ。それに2ダメージ。</img>",
+    "card_id": "CP01-012",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "ハルウララ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-013.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力2",
+    "life": "体力2",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。このターン、これはダメージを受けない。</img>",
+    "card_id": "CP01-013",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "トウカイテイオー",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-014.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "LG",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト5",
+    "atk": "攻撃力4",
+    "life": "体力4",
+    "ability": "<img alt=\"進化\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_evolve.png\"><img alt=\"コスト2\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost02.png\"/>：これは進化する。<br/>\n<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"/><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>相手のフォロワー1体を選ぶ。それに「自分の場のフォロワーの数」の2倍のダメージ。</img>",
+    "card_id": "CP01-014",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "トウカイテイオー",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-015.png"
+      },
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "トウカイテイオー",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-015.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー・エボルヴ",
+    "tribe": "ウマ娘",
+    "rarity": "LG",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト-",
+    "atk": "攻撃力5",
+    "life": "体力5",
+    "ability": "【疾走】",
+    "card_id": "CP01-015",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "トウカイテイオー",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-014.png"
+      }
+    ]
+  },
+  {
+    "name": "ナリタブライアン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-016.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "LG",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト8",
+    "atk": "攻撃力6",
+    "life": "体力8",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【必殺】【守護】【オーラ】<br/>\n<img alt=\"起動\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_stand.png\"/>これを<img alt=\"アクト\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_act.png\"/>：相手のリーダー1人か相手のフォロワー1体を選ぶ。それに5ダメージ。</img>",
+    "card_id": "CP01-016",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "ウイニングチケット",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-017.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘・BNW",
+    "rarity": "GR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力2",
+    "life": "体力2",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【疾走】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分の墓場に『検証、開始』と『ナリタタイシン』があるなら、これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+3/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。</img>",
+    "card_id": "CP01-017",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "検証、開始",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-021.png"
+      },
+      {
+        "name": "ナリタタイシン",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-023.png"
+      },
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "迫る熱に押されて",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-018.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "スペル",
+    "tribe": "ウマ娘",
+    "rarity": "GR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "自分のフォロワー1体を選ぶ。それは【疾走】を持つ。それがウマ娘・フォロワーなら、それは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\">+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。</img>",
+    "card_id": "CP01-018",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "エアグルーヴ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-019.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "SR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力2",
+    "life": "体力2",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。自分の他のフォロワー1体まで選ぶ。それをスタンドする。このターン、それは相手を攻撃できない。</img>",
+    "card_id": "CP01-019",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "ヒシアマゾン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-020.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "SR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力4",
+    "life": "体力2",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【突進】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/><img alt=\"コスト3\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost03.png\"/>：自分のデッキからコスト3のウマ娘・フォロワー1枚を探し、場に出す。</img>",
+    "card_id": "CP01-020",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "検証、開始",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-021.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "スペル",
+    "tribe": "ウマ娘・BNW",
+    "rarity": "SR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト1",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "下記から1つチョイスする。【1】自分のデッキの上2枚を見る。その中から、ウマ娘・カード1枚を公開して手札に加えてよい。残りを好きな順にデッキの下に置く。【2】自分の墓場のBNW・フォロワー1枚を選ぶ。それを手札に加える。",
+    "card_id": "CP01-021",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "シリウスシンボリ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-022.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト4",
+    "atk": "攻撃力4",
+    "life": "体力4",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【必殺】</img>",
+    "card_id": "CP01-022",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "ナリタタイシン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-023.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘・BNW",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力3",
+    "life": "体力2",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【突進】</img>",
+    "card_id": "CP01-023",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "シンボリルドルフ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-024.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ラストワード\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_lastword.png\"/>自分のデッキから『トウカイテイオー』1枚を探し、手札に加える。</img>",
+    "card_id": "CP01-024",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "トウカイテイオー",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-014.png"
+      },
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "ビコーペガサス",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-025.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト1",
+    "atk": "攻撃力2",
+    "life": "体力1",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】相手のフォロワー1体を選ぶ。それをアクトする。</img>",
+    "card_id": "CP01-025",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "フジキセキ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-026.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力3",
+    "life": "体力2",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"起動\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_stand.png\"/><img alt=\"コスト3\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost03.png\"/>これを<img alt=\"アクト\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_act.png\"/>：相手のフォロワー1体を選ぶ。それに3ダメージ。</img>",
+    "card_id": "CP01-026",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "アグネスタキオン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-027.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "LG",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力2",
+    "life": "体力2",
+    "ability": "<img alt=\"進化\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_evolve.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは進化する。<br/>\n<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"/><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n自分がスペルをプレイしたとき、相手のフォロワー1体を選ぶ。それは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>-1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>-1する。</img>",
+    "card_id": "CP01-027",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "アグネスタキオン",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-028.png"
+      },
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "アグネスタキオン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-028.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー・エボルヴ",
+    "tribe": "ウマ娘",
+    "rarity": "LG",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト-",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "自分がスペルをプレイしたとき、相手のフォロワー1体を選ぶ。それは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\">-1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>-1する。<br/>\n【進化時】自分の墓場のスペル1枚を選ぶ。それを手札に加える。</img>",
+    "card_id": "CP01-028",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "アグネスタキオン",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-027.png"
+      }
+    ]
+  },
+  {
+    "name": "ダイワスカーレット",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-029.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "LG",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト4",
+    "atk": "攻撃力3",
+    "life": "体力4",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\nこれがいる限り、自分がウマ娘・スペルをプレイする際、このターン中に1枚目のウマ娘・スペルなら、コストを-1する。<br/>\n自分がスペルをプレイしたとき、このターン中に3枚目のスペルなら、自分のウマ娘・フォロワー1体を選ぶ。それとこれは【疾走】を持つ。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分のデッキからウマ娘・スペル1枚を探し、手札に加える。</img>",
+    "card_id": "CP01-029",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "ウオッカ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-030.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "GR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "これをプレイする際、自分の場に『ダイワスカーレット』がいるなら、コストを-2する。<br/>\n<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\nターンごとに1回、自分がスペルをプレイしたとき、自分のウマ娘・フォロワーすべては<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1して、【突進】を持つ。</img>",
+    "card_id": "CP01-030",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "ダイワスカーレット",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-029.png"
+      },
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "おどれ・さわげ・フェスれ！",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-031.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "スペル",
+    "tribe": "ウマ娘",
+    "rarity": "GR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "<img alt=\"クイック\" class=\"icon-rectangle\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_quick.png\"><br/>\n相手のフォロワー1体を選ぶ。それに3ダメージ。自分の場にウマ娘・カードがあるなら、代わりに4ダメージ。</img>",
+    "card_id": "CP01-031",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "ゼンノロブロイ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-032.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "SR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト1",
+    "atk": "攻撃力0",
+    "life": "体力2",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n自分の他のフォロワーが出走したとき、自分のデッキの上4枚を見る。その中から、スペルかアミュレット1枚を公開して手札に加えてよい。残りを好きな順にデッキの下に置く。</img>",
+    "card_id": "CP01-032",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "アグネスデジタル",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-033.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "SR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト1",
+    "atk": "攻撃力2",
+    "life": "体力1",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】1枚引く。自分の手札1枚を捨てる。</img>",
+    "card_id": "CP01-033",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "見習い魔女と長い夜",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-034.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "スペル",
+    "tribe": "ウマ娘",
+    "rarity": "SR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト1",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "<img alt=\"クイック\" class=\"icon-rectangle\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_quick.png\"><br/>\n相手のフォロワー1体を選ぶ。それに2ダメージ。自分の場に出走したフォロワーがいるなら、代わりに3ダメージ。</img>",
+    "card_id": "CP01-034",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "アドマイヤベガ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-035.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力2",
+    "life": "体力2",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"起動\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_stand.png\"/>これを<img alt=\"アクト\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_act.png\"/>：自分の手札のコスト2以下のスペル1枚を選ぶ。それをEXエリアに置く。このターン、それをプレイする際、コストを0にする。</img>",
+    "card_id": "CP01-035",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "カワカミプリンセス",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-036.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト4",
+    "atk": "攻撃力4",
+    "life": "体力4",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>手札1枚を捨てる：相手のフォロワー1体を選ぶ。それに4ダメージ。</img>",
+    "card_id": "CP01-036",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "ナカヤマフェスタ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-037.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト9",
+    "atk": "攻撃力7",
+    "life": "体力7",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>相手のリーダーすべてと相手のフォロワーすべてに5ダメージ。自分の手札すべてを捨てる。</img>",
+    "card_id": "CP01-037",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "トーセンジョーダン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-038.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力2",
+    "life": "体力1",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ラストワード\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_lastword.png\"/>自分の墓場のスペル1枚を選ぶ。それを手札に加える。</img>",
+    "card_id": "CP01-038",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "ナリタトップロード",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-039.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。2枚引く。自分の手札1枚を捨てる。</img>",
+    "card_id": "CP01-039",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "スペシャルウィーク",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-040.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "LG",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力2",
+    "life": "体力2",
+    "ability": "<img alt=\"進化\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_evolve.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは進化する。<br/>\n<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"/><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分のデッキの上1枚を見る。その中から、ウマ娘・カード1枚を公開して手札に加えてよい。</img>",
+    "card_id": "CP01-040",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "スペシャルウィーク",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-041.png"
+      },
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "スペシャルウィーク",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-041.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー・エボルヴ",
+    "tribe": "ウマ娘",
+    "rarity": "LG",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト-",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "【進化時】【覚醒】状態なら、自分の他のウマ娘・フォロワーすべては<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\">+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。（自分のPP最大値が7以上なら、【覚醒】状態になる）</img>",
+    "card_id": "CP01-041",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "スペシャルウィーク",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-040.png"
+      }
+    ]
+  },
+  {
+    "name": "オグリキャップ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-042.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "LG",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト6",
+    "atk": "攻撃力4",
+    "life": "体力4",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"/><img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"/><img alt=\"コスト2\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost02.png\"/>：これは2回出走する。<br/>\n<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"/><img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"/><img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"/><img alt=\"コスト3\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost03.png\"/>：これは3回出走する。<br/>\n【出走時】これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+2/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。<br/>\n【攻撃時】相手のフォロワーすべてに3ダメージ。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>手札2枚を捨てる：これは【疾走】を持つ。</img>",
+    "card_id": "CP01-042",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "セイウンスカイ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-043.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "GR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力1",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【疾走】【威圧】<br/>\n【攻撃時】これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1する。</img>",
+    "card_id": "CP01-043",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "パッションチャンピオーナ！",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-044.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "アミュレット",
+    "tribe": "ウマ娘",
+    "rarity": "GR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト7",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "自分のメインフェイズが来たとき、相手のリーダー1人か相手のフォロワー1体を選ぶ。それに4ダメージ。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\">自分の場に他のウマ娘・カードがあるなら、相手のフォロワー1体を選ぶ。それに4ダメージ。</img>",
+    "card_id": "CP01-044",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "キングヘイロー",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-045.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "SR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト6",
+    "atk": "攻撃力4",
+    "life": "体力4",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>下記から1つチョイスする。【1】自分のデッキの上1枚をEXエリアに置く。これを3回くり返す。【2】自分のデッキから『カワカミプリンセス』1枚を探し、場に出す。</img>",
+    "card_id": "CP01-045",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "カワカミプリンセス",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-036.png"
+      },
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "タマモクロス",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-046.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "SR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力2",
+    "life": "体力1",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。相手のフォロワー1体まで選ぶ。それに2ダメージ。</img>",
+    "card_id": "CP01-046",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "あなたにささげる",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-047.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "スペル",
+    "tribe": "ウマ娘",
+    "rarity": "SR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト1",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "自分のウマ娘・フォロワー1体を選ぶ。それは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\">+1する。1枚引く。それが『セイウンスカイ』なら、さらに<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。</img>",
+    "card_id": "CP01-047",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "セイウンスカイ",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-043.png"
+      }
+    ]
+  },
+  {
+    "name": "バンブーメモリー",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-048.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力2",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>手札1枚を捨てる：相手のリーダーすべてに2ダメージ。</img>",
+    "card_id": "CP01-048",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "ヤエノムテキ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-049.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。自分の他のフォロワー1体まで選ぶ。それは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。</img>",
+    "card_id": "CP01-049",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "グラスワンダー",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-050.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト5",
+    "atk": "攻撃力5",
+    "life": "体力5",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>相手のフォロワーすべてに2ダメージ。</img>",
+    "card_id": "CP01-050",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "スーパークリーク",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-051.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト6",
+    "atk": "攻撃力5",
+    "life": "体力5",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【守護】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分のリーダーは<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+5する。</img>",
+    "card_id": "CP01-051",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "ヒシアケボノ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-052.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト10",
+    "atk": "攻撃力10",
+    "life": "体力10",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分のリーダーは<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+10する。</img>",
+    "card_id": "CP01-052",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "マルゼンスキー",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-053.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "LG",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "<img alt=\"進化\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_evolve.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは進化する。<br/>\n<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"/><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>【ネクロチャージ_10】相手のフォロワー1体を選ぶ。それは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>-4/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>-4する。（自分の墓場が10枚以上なら、【ネクロチャージ_10】の後の能力が働く）</img>",
+    "card_id": "CP01-053",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "マルゼンスキー",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-054.png"
+      },
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "マルゼンスキー",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-054.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー・エボルヴ",
+    "tribe": "ウマ娘",
+    "rarity": "LG",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト-",
+    "atk": "攻撃力4",
+    "life": "体力4",
+    "ability": "【進化時】相手のフォロワー1体を選ぶ。それは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\">-2/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>-2する。</img>",
+    "card_id": "CP01-054",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "マルゼンスキー",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-053.png"
+      }
+    ]
+  },
+  {
+    "name": "ライスシャワー",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-055.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "LG",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト5",
+    "atk": "攻撃力3",
+    "life": "体力5",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【守護】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>相手のフォロワー1体を選ぶ。それに3ダメージ。自分のデッキの上2枚を墓場に置く。<br/>\n<img alt=\"ラストワード\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_lastword.png\"/>自分の墓場の「これと同名でないウマ娘・フォロワー」1枚を選ぶ。それを手札に加える。</img>",
+    "card_id": "CP01-055",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "ナイスネイチャ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-056.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "GR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>相手のフォロワー1体を選ぶ。それは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>-1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>-1する。<br/>\n<img alt=\"ラストワード\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_lastword.png\"/>相手プレイヤーすべては、自身の手札1枚を捨てる。</img>",
+    "card_id": "CP01-056",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "7センチの先へ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-057.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "スペル",
+    "tribe": "ウマ娘",
+    "rarity": "GR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト5",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "これをプレイする際、自分の墓場のウマ娘・カードが19枚以下なら、プレイできない。<br/>\n相手のフォロワーすべてを破壊する。3枚引く。相手プレイヤーすべては、自身の手札3枚を捨てる。",
+    "card_id": "CP01-057",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "ファインモーション",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-058.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "SR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。自分のリーダーは<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+2する。自分のデッキの上2枚を墓場に置く。</img>",
+    "card_id": "CP01-058",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "マヤノトップガン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-059.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "SR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト1",
+    "atk": "攻撃力2",
+    "life": "体力1",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【突進】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分の他のウマ娘・カードが4枚なら、これは【疾走】を持つ。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分の墓場のウマ娘・カードが5枚以上なら、これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+2する。</img>",
+    "card_id": "CP01-059",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "雨の独奏、私の独創",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-060.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "スペル",
+    "tribe": "ウマ娘",
+    "rarity": "SR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト4",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "<img alt=\"クイック\" class=\"icon-rectangle\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_quick.png\"><br/>\nこれをプレイする際、自分の墓場のウマ娘・カードが10枚以上なら、コストを-2する。<br/>\n相手のフォロワー1体を選ぶ。それを破壊する。</img>",
+    "card_id": "CP01-060",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "カレンチャン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-061.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト1",
+    "atk": "攻撃力1",
+    "life": "体力1",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"起動\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_stand.png\"/><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>これを<img alt=\"アクト\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_act.png\"/>：相手のフォロワー1体を選ぶ。それに1ダメージ。自分のデッキの上1枚を墓場に置く。</img>",
+    "card_id": "CP01-061",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "ツインターボ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-062.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力3",
+    "life": "体力1",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【指定攻撃】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分の墓場のウマ娘・カードが10枚以上なら、これは【疾走】を持つ。</img>",
+    "card_id": "CP01-062",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "サクラチヨノオー",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-063.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。自分の墓場のウマ娘・カード1枚まで選ぶ。それを手札に加える。</img>",
+    "card_id": "CP01-063",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "シーキングザパール",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-064.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力3",
+    "life": "体力2",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ラストワード\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_lastword.png\"/>自分のデッキの上2枚を墓場に置く。</img>",
+    "card_id": "CP01-064",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "マチカネタンホイザ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-065.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト4",
+    "atk": "攻撃力4",
+    "life": "体力4",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>相手のアミュレット1つを選ぶ。それを破壊する。</img>",
+    "card_id": "CP01-065",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "メジロマックイーン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-066.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘・メジロ家",
+    "rarity": "LG",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト4",
+    "atk": "攻撃力4",
+    "life": "体力4",
+    "ability": "<img alt=\"進化\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_evolve.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは進化する。<br/>\n<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"/><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【守護】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>アミュレット1つを墓場に置く：相手のリーダー1人か相手のフォロワー1体を選ぶ。それに3ダメージ。</img>",
+    "card_id": "CP01-066",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "メジロマックイーン",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-067.png"
+      },
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "メジロマックイーン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-067.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー・エボルヴ",
+    "tribe": "ウマ娘・メジロ家",
+    "rarity": "LG",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト-",
+    "atk": "攻撃力5",
+    "life": "体力5",
+    "ability": "【守護】<br/>\n【進化時】自分の墓場のアミュレット1枚を選ぶ。それを手札に加える。",
+    "card_id": "CP01-067",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "メジロマックイーン",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-066.png"
+      }
+    ]
+  },
+  {
+    "name": "ゴールドシップ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-068.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "LG",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト8",
+    "atk": "攻撃力8",
+    "life": "体力8",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分のデッキの上1枚を公開する。相手のリーダーすべてにXダメージ。自分のリーダーは<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+Xする。Xは「公開したカードのコスト」である。<br/>\n<img alt=\"起動\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_stand.png\"/><img alt=\"コスト10\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost10.png\"/>：これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+10/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+10する。</img>",
+    "card_id": "CP01-068",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "イクノディクタス",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-069.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "GR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力2",
+    "life": "体力4",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【守護】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分のデッキの上3枚を見る。その中から、ウマ娘・カードかアミュレット1枚を公開して手札に加えてよい。残りを好きな順にデッキの下に置く。</img>",
+    "card_id": "CP01-069",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "その背中を越えて",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-070.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "アミュレット",
+    "tribe": "ウマ娘",
+    "rarity": "GR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト1",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\">自分のデッキの上3枚を見る。その中から、好きな枚数を好きな順にデッキの上に置く。残りを好きな順にデッキの下に置く。<br/>\n<img alt=\"起動\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_stand.png\"/><img alt=\"コスト2\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost02.png\"/>これを<img alt=\"アクト\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_act.png\"/>墓場に置く：1枚引く。</img>",
+    "card_id": "CP01-070",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "メイショウドトウ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-071.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "SR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。自分のデッキからコスト1のアミュレット1枚を探し、場に出す。</img>",
+    "card_id": "CP01-071",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "メジロライアン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-072.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘・メジロ家",
+    "rarity": "SR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力3",
+    "life": "体力2",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n自分のメジロ家・フォロワーかアミュレットが場を離れたとき、これは【疾走】を持つ。</img>",
+    "card_id": "CP01-072",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "運の行方",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-073.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "アミュレット",
+    "tribe": "ウマ娘",
+    "rarity": "SR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト4",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\">相手のフォロワー1体を選ぶ。それを破壊する。<br/>\n<img alt=\"起動\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_stand.png\"/>これを<img alt=\"アクト\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_act.png\"/>墓場に置く：自分のデッキの上1枚を見る。その中から、コスト7のカード1枚を公開して手札に加えてよい。</img>",
+    "card_id": "CP01-073",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "イナリワン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-074.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力2",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>手札のアミュレット1枚を捨てる：これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+2して、【突進】を持つ。</img>",
+    "card_id": "CP01-074",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "メジロドーベル",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-075.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘・メジロ家",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力2",
+    "life": "体力2",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。自分のリーダーは<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+2する。</img>",
+    "card_id": "CP01-075",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "メジロアルダン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-076.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘・メジロ家",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト1",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【守護】<br/>\n自分のメインフェイズが来たとき、自分の場に「これと同名でないメジロ家・フォロワー」がいないなら、これを手札に戻す。</img>",
+    "card_id": "CP01-076",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "メジロパーマー",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-077.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘・メジロ家",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト4",
+    "atk": "攻撃力4",
+    "life": "体力4",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分のデッキからメジロ家・フォロワー1枚を探し、手札に加える。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分の墓場に『おどれ・さわげ・フェスれ！』があるなら、これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1して、【突進】を持つ。</img>",
+    "card_id": "CP01-077",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "おどれ・さわげ・フェスれ！",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-031.png"
+      },
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "テイエムオペラオー",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-078.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト7",
+    "atk": "攻撃力6",
+    "life": "体力6",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>相手のフォロワー1体を選ぶ。それを消滅させる。1枚引く。</img>",
+    "card_id": "CP01-078",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "〔徹底管理主義〕樫本理子",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-079.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "トレセン学園",
+    "rarity": "LG",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト6",
+    "atk": "攻撃力6",
+    "life": "体力6",
+    "ability": "【突進】<br/>\n【攻撃時】自分の場に他のフォロワーがいないなら、相手のフォロワー1体を選ぶ。それを破壊する。それのリーダーに3ダメージ。",
+    "card_id": "CP01-079",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "紡がれてゆく想い",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-080.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "スペル",
+    "tribe": "ウマ娘",
+    "rarity": "LG",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト10",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "自分のデッキをシャッフルし、上6枚を公開する。その中から、ウマ娘・フォロワーかウマ娘・アミュレットを好きな枚数場に出してよい。残りを手札に加える。",
+    "card_id": "CP01-080",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "ブスッといっとく？",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-081.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "アミュレット",
+    "tribe": "トレセン学園",
+    "rarity": "GR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "自分のメインフェイズが来たとき、サイコロをふる。1なら、自分のリーダーに5ダメージ。2から5なら、1枚引く。6なら、自分のリーダーは<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\">+3して、これを破壊する。</img>",
+    "card_id": "CP01-081",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "〔共に同じ道を！〕 桐生院葵",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-082.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "トレセン学園",
+    "rarity": "SR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力1",
+    "life": "体力3",
+    "ability": "【守護】<br/>\n自分のフォロワーが出走したとき、それは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\">+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分のエボルヴデッキに表向きで置いた『にんじん』1枚を選ぶ。それを裏向きにする。1枚引く。</img>",
+    "card_id": "CP01-082",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "安心沢刺々美",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-083.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "トレセン学園",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力2",
+    "life": "体力2",
+    "ability": "<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\">自分のデッキの上1枚を公開する。それのコストが奇数なら、相手のリーダーすべてに2ダメージ。偶数なら、自分のリーダーに2ダメージ。</img>",
+    "card_id": "CP01-083",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "駿川たづな",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-084.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "トレセン学園",
+    "rarity": "BR",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト4",
+    "atk": "攻撃力3",
+    "life": "体力5",
+    "ability": "【守護】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\">自分のウマ娘・フォロワー1体を選ぶ。それは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+2する。</img>",
+    "card_id": "CP01-084",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "にんじん",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "スペル・エボルヴ",
+    "tribe": "-",
+    "rarity": "-",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト-",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "食事することで、そのウマ娘・フォロワーは出走する。（それは【突進】を持つ）<br/>\n----------<br/>\nこれはエボルヴデッキに10枚まで入れることができる。",
+    "card_id": "CP01-085",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "〔ふるさと直送エール！〕ユキノビジン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-ld01.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "リーダー",
+    "tribe": "-",
+    "rarity": "-",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト-",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "",
+    "card_id": "CP01-LD01",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "〔いじっぱりのマルクト〕ナリタタイシン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-ld02.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "リーダー",
+    "tribe": "-",
+    "rarity": "-",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト-",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "",
+    "card_id": "CP01-LD02",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "〔花嫁たるもの！！〕カワカミプリンセス",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-ld03.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "リーダー",
+    "tribe": "-",
+    "rarity": "-",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト-",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "",
+    "card_id": "CP01-LD03",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "〔押して忍べど燃ゆるもの〕ヤエノムテキ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-ld04.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "リーダー",
+    "tribe": "-",
+    "rarity": "-",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト-",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "",
+    "card_id": "CP01-LD04",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "〔千紫万紅にまぎれぬ一凛〕グラスワンダー",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-ld05.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "リーダー",
+    "tribe": "-",
+    "rarity": "-",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト-",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "",
+    "card_id": "CP01-LD05",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "〔ターボエンジン全開宣言！〕ツインターボ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-ld06.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "リーダー",
+    "tribe": "-",
+    "rarity": "-",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト-",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "",
+    "card_id": "CP01-LD06",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "〔独奏・螺旋追走曲〕マンハッタンカフェ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-ld07.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "リーダー",
+    "tribe": "-",
+    "rarity": "-",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト-",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "",
+    "card_id": "CP01-LD07",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "〔バカと笑え〕メジロパーマー",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-ld08.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "リーダー",
+    "tribe": "-",
+    "rarity": "-",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト-",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "",
+    "card_id": "CP01-LD08",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "ゴールドシチー",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p01.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "GR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト4",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\nお互いの場のカードが8枚以上ある限り、これは【疾走】を持つ。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分のPPを3回復する。</img>",
+    "card_id": "CP01-P01",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "はやい！うまい！はやい！",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p02.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "スペル",
+    "tribe": "ウマ娘",
+    "rarity": "GR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "下記から1つチョイスする。【1】自分のデッキから【疾走】を持つフォロワー1枚を探し、手札に加える。【2】【疾走】を持つ自分のフォロワー1体を選ぶ。それは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\">+3する。</img>",
+    "card_id": "CP01-P02",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "シンコウウインディ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p03.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "SR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト1",
+    "atk": "攻撃力2",
+    "life": "体力1",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分のデッキの上1枚を見る。それをデッキの下に置いてよい。</img>",
+    "card_id": "CP01-P03",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "エイシンフラッシュ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p04.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "SR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。相手のフォロワー1体まで選ぶ。それを手札に戻す。（手札に戻ったトークンはゲームから取り除く）</img>",
+    "card_id": "CP01-P04",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "鍛えぬくトモ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p05.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "アミュレット",
+    "tribe": "ウマ娘",
+    "rarity": "SR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "これが場を離れたとき、自分のウマ娘・フォロワー1体を選ぶ。それは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\">+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>1枚引く。</img>",
+    "card_id": "CP01-P05",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "マーベラスサンデー",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p06.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力2",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>場の他のカード1枚を手札に戻す：自分のリーダーは<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+2する。（手札に戻ったトークンはゲームから取り除く）</img>",
+    "card_id": "CP01-P06",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "ユキノビジン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p07.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【守護】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>場の他のカード1枚を手札に戻す：これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。（手札に戻ったトークンはゲームから取り除く）</img>",
+    "card_id": "CP01-P07",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "アイネスフウジン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p08.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト6",
+    "atk": "攻撃力7",
+    "life": "体力7",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【突進】【指定攻撃】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分の他のカード1枚を選ぶ。それを手札に戻す。（手札に戻ったトークンはゲームから取り除く）</img>",
+    "card_id": "CP01-P08",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "タイキシャトル",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p09.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力2",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\nこれが場から手札に戻ったとき、相手のフォロワー1体を選ぶ。それに2ダメージ。</img>",
+    "card_id": "CP01-P09",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "ハルウララ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p10.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力2",
+    "life": "体力2",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。このターン、これはダメージを受けない。</img>",
+    "card_id": "CP01-P10",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "ウイニングチケット",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p11.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘・BNW",
+    "rarity": "GR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力2",
+    "life": "体力2",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【疾走】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分の墓場に『検証、開始』と『ナリタタイシン』があるなら、これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+3/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。</img>",
+    "card_id": "CP01-P11",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      },
+      {
+        "name": "検証、開始",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p15.png"
+      },
+      {
+        "name": "ナリタタイシン",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p17.png"
+      }
+    ]
+  },
+  {
+    "name": "迫る熱に押されて",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p12.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "スペル",
+    "tribe": "ウマ娘",
+    "rarity": "GR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "自分のフォロワー1体を選ぶ。それは【疾走】を持つ。それがウマ娘・フォロワーなら、それは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\">+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。</img>",
+    "card_id": "CP01-P12",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "エアグルーヴ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p13.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "SR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力2",
+    "life": "体力2",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。自分の他のフォロワー1体まで選ぶ。それをスタンドする。このターン、それは相手を攻撃できない。</img>",
+    "card_id": "CP01-P13",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "ヒシアマゾン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p14.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "SR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力4",
+    "life": "体力2",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【突進】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/><img alt=\"コスト3\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost03.png\"/>：自分のデッキからコスト3のウマ娘・フォロワー1枚を探し、場に出す。</img>",
+    "card_id": "CP01-P14",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "検証、開始",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p15.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "スペル",
+    "tribe": "ウマ娘・BNW",
+    "rarity": "SR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト1",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "下記から1つチョイスする。【1】自分のデッキの上2枚を見る。その中から、ウマ娘・カード1枚を公開して手札に加えてよい。残りを好きな順にデッキの下に置く。【2】自分の墓場のBNW・フォロワー1枚を選ぶ。それを手札に加える。",
+    "card_id": "CP01-P15",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "シリウスシンボリ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p16.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト4",
+    "atk": "攻撃力4",
+    "life": "体力4",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【必殺】</img>",
+    "card_id": "CP01-P16",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "ナリタタイシン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p17.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘・BNW",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力3",
+    "life": "体力2",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【突進】</img>",
+    "card_id": "CP01-P17",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "シンボリルドルフ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p18.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ラストワード\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_lastword.png\"/>自分のデッキから『トウカイテイオー』1枚を探し、手札に加える。</img>",
+    "card_id": "CP01-P18",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "ビコーペガサス",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p19.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト1",
+    "atk": "攻撃力2",
+    "life": "体力1",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】相手のフォロワー1体を選ぶ。それをアクトする。</img>",
+    "card_id": "CP01-P19",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "フジキセキ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p20.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力3",
+    "life": "体力2",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"起動\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_stand.png\"/><img alt=\"コスト3\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost03.png\"/>これを<img alt=\"アクト\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_act.png\"/>：相手のフォロワー1体を選ぶ。それに3ダメージ。</img>",
+    "card_id": "CP01-P20",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "ウオッカ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p21.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "GR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "これをプレイする際、自分の場に『ダイワスカーレット』がいるなら、コストを-2する。<br/>\n<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\nターンごとに1回、自分がスペルをプレイしたとき、自分のウマ娘・フォロワーすべては<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1して、【突進】を持つ。</img>",
+    "card_id": "CP01-P21",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "おどれ・さわげ・フェスれ！",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p22.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "スペル",
+    "tribe": "ウマ娘",
+    "rarity": "GR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "<img alt=\"クイック\" class=\"icon-rectangle\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_quick.png\"><br/>\n相手のフォロワー1体を選ぶ。それに3ダメージ。自分の場にウマ娘・カードがあるなら、代わりに4ダメージ。</img>",
+    "card_id": "CP01-P22",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "ゼンノロブロイ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p23.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "SR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト1",
+    "atk": "攻撃力0",
+    "life": "体力2",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n自分の他のフォロワーが出走したとき、自分のデッキの上4枚を見る。その中から、スペルかアミュレット1枚を公開して手札に加えてよい。残りを好きな順にデッキの下に置く。</img>",
+    "card_id": "CP01-P23",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "アグネスデジタル",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p24.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "SR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト1",
+    "atk": "攻撃力2",
+    "life": "体力1",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】1枚引く。自分の手札1枚を捨てる。</img>",
+    "card_id": "CP01-P24",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "見習い魔女と長い夜",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p25.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "スペル",
+    "tribe": "ウマ娘",
+    "rarity": "SR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト1",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "<img alt=\"クイック\" class=\"icon-rectangle\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_quick.png\"><br/>\n相手のフォロワー1体を選ぶ。それに2ダメージ。自分の場に出走したフォロワーがいるなら、代わりに3ダメージ。</img>",
+    "card_id": "CP01-P25",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "アドマイヤベガ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p26.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力2",
+    "life": "体力2",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"起動\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_stand.png\"/>これを<img alt=\"アクト\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_act.png\"/>：自分の手札のコスト2以下のスペル1枚を選ぶ。それをEXエリアに置く。このターン、それをプレイする際、コストを0にする。</img>",
+    "card_id": "CP01-P26",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "カワカミプリンセス",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p27.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト4",
+    "atk": "攻撃力4",
+    "life": "体力4",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>手札1枚を捨てる：相手のフォロワー1体を選ぶ。それに4ダメージ。</img>",
+    "card_id": "CP01-P27",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "ナカヤマフェスタ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p28.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト9",
+    "atk": "攻撃力7",
+    "life": "体力7",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>相手のリーダーすべてと相手のフォロワーすべてに5ダメージ。自分の手札すべてを捨てる。</img>",
+    "card_id": "CP01-P28",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "トーセンジョーダン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p29.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力2",
+    "life": "体力1",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ラストワード\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_lastword.png\"/>自分の墓場のスペル1枚を選ぶ。それを手札に加える。</img>",
+    "card_id": "CP01-P29",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "ナリタトップロード",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p30.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。2枚引く。自分の手札1枚を捨てる。</img>",
+    "card_id": "CP01-P30",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "セイウンスカイ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p31.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "GR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力1",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【疾走】【威圧】<br/>\n【攻撃時】これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1する。</img>",
+    "card_id": "CP01-P31",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "パッションチャンピオーナ！",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p32.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "アミュレット",
+    "tribe": "ウマ娘",
+    "rarity": "GR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト7",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "自分のメインフェイズが来たとき、相手のリーダー1人か相手のフォロワー1体を選ぶ。それに4ダメージ。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\">自分の場に他のウマ娘・カードがあるなら、相手のフォロワー1体を選ぶ。それに4ダメージ。</img>",
+    "card_id": "CP01-P32",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "キングヘイロー",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p330.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "SR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト6",
+    "atk": "攻撃力4",
+    "life": "体力4",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>下記から1つチョイスする。【1】自分のデッキの上1枚をEXエリアに置く。これを3回くり返す。【2】自分のデッキから『カワカミプリンセス』1枚を探し、場に出す。</img>",
+    "card_id": "CP01-P33",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      },
+      {
+        "name": "カワカミプリンセス",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p27.png"
+      }
+    ]
+  },
+  {
+    "name": "タマモクロス",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p34.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "SR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力2",
+    "life": "体力1",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。相手のフォロワー1体まで選ぶ。それに2ダメージ。</img>",
+    "card_id": "CP01-P34",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "あなたにささげる",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p35.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "スペル",
+    "tribe": "ウマ娘",
+    "rarity": "SR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト1",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "自分のウマ娘・フォロワー1体を選ぶ。それは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\">+1する。1枚引く。それが『セイウンスカイ』なら、さらに<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。</img>",
+    "card_id": "CP01-P35",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "セイウンスカイ",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p31.png"
+      }
+    ]
+  },
+  {
+    "name": "バンブーメモリー",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p36.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力2",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>手札1枚を捨てる：相手のリーダーすべてに2ダメージ。</img>",
+    "card_id": "CP01-P36",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "ヤエノムテキ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p37.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。自分の他のフォロワー1体まで選ぶ。それは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。</img>",
+    "card_id": "CP01-P37",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "グラスワンダー",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p38.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト5",
+    "atk": "攻撃力5",
+    "life": "体力5",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>相手のフォロワーすべてに2ダメージ。</img>",
+    "card_id": "CP01-P38",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "スーパークリーク",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p39.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト6",
+    "atk": "攻撃力5",
+    "life": "体力5",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【守護】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分のリーダーは<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+5する。</img>",
+    "card_id": "CP01-P39",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "ヒシアケボノ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p40.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト10",
+    "atk": "攻撃力10",
+    "life": "体力10",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分のリーダーは<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+10する。</img>",
+    "card_id": "CP01-P40",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "ナイスネイチャ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p41.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "GR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>相手のフォロワー1体を選ぶ。それは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>-1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>-1する。<br/>\n<img alt=\"ラストワード\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_lastword.png\"/>相手プレイヤーすべては、自身の手札1枚を捨てる。</img>",
+    "card_id": "CP01-P41",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "7センチの先へ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p42.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "スペル",
+    "tribe": "ウマ娘",
+    "rarity": "GR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト5",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "これをプレイする際、自分の墓場のウマ娘・カードが19枚以下なら、プレイできない。<br/>\n相手のフォロワーすべてを破壊する。3枚引く。相手プレイヤーすべては、自身の手札3枚を捨てる。",
+    "card_id": "CP01-P42",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "ファインモーション",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p43.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "SR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。自分のリーダーは<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+2する。自分のデッキの上2枚を墓場に置く。</img>",
+    "card_id": "CP01-P43",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "マヤノトップガン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p44.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "SR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト1",
+    "atk": "攻撃力2",
+    "life": "体力1",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【突進】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分の他のウマ娘・カードが4枚なら、これは【疾走】を持つ。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分の墓場のウマ娘・カードが5枚以上なら、これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+2する。</img>",
+    "card_id": "CP01-P44",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "雨の独奏、私の独創",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p45.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "スペル",
+    "tribe": "ウマ娘",
+    "rarity": "SR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト4",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "<img alt=\"クイック\" class=\"icon-rectangle\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_quick.png\"><br/>\nこれをプレイする際、自分の墓場のウマ娘・カードが10枚以上なら、コストを-2する。<br/>\n相手のフォロワー1体を選ぶ。それを破壊する。</img>",
+    "card_id": "CP01-P45",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "カレンチャン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p46.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト1",
+    "atk": "攻撃力1",
+    "life": "体力1",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"起動\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_stand.png\"/><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>これを<img alt=\"アクト\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_act.png\"/>：相手のフォロワー1体を選ぶ。それに1ダメージ。自分のデッキの上1枚を墓場に置く。</img>",
+    "card_id": "CP01-P46",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "ツインターボ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p47.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力3",
+    "life": "体力1",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【指定攻撃】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分の墓場のウマ娘・カードが10枚以上なら、これは【疾走】を持つ。</img>",
+    "card_id": "CP01-P47",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "サクラチヨノオー",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p48.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。自分の墓場のウマ娘・カード1枚まで選ぶ。それを手札に加える。</img>",
+    "card_id": "CP01-P48",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "シーキングザパール",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p49.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力3",
+    "life": "体力2",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ラストワード\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_lastword.png\"/>自分のデッキの上2枚を墓場に置く。</img>",
+    "card_id": "CP01-P49",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "マチカネタンホイザ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p50.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト4",
+    "atk": "攻撃力4",
+    "life": "体力4",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>相手のアミュレット1つを選ぶ。それを破壊する。</img>",
+    "card_id": "CP01-P50",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "イクノディクタス",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p51.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "GR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力2",
+    "life": "体力4",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【守護】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分のデッキの上3枚を見る。その中から、ウマ娘・カードかアミュレット1枚を公開して手札に加えてよい。残りを好きな順にデッキの下に置く。</img>",
+    "card_id": "CP01-P51",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "その背中を越えて",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p52.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "アミュレット",
+    "tribe": "ウマ娘",
+    "rarity": "GR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト1",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\">自分のデッキの上3枚を見る。その中から、好きな枚数を好きな順にデッキの上に置く。残りを好きな順にデッキの下に置く。<br/>\n<img alt=\"起動\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_stand.png\"/><img alt=\"コスト2\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost02.png\"/>これを<img alt=\"アクト\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_act.png\"/>墓場に置く：1枚引く。</img>",
+    "card_id": "CP01-P52",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "メイショウドトウ",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p53.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "SR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト3",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。自分のデッキからコスト1のアミュレット1枚を探し、場に出す。</img>",
+    "card_id": "CP01-P53",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "メジロライアン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p54.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘・メジロ家",
+    "rarity": "SR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力3",
+    "life": "体力2",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n自分のメジロ家・フォロワーかアミュレットが場を離れたとき、これは【疾走】を持つ。</img>",
+    "card_id": "CP01-P54",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "運の行方",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p55.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "アミュレット",
+    "tribe": "ウマ娘",
+    "rarity": "SR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト4",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\">相手のフォロワー1体を選ぶ。それを破壊する。<br/>\n<img alt=\"起動\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_stand.png\"/>これを<img alt=\"アクト\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_act.png\"/>墓場に置く：自分のデッキの上1枚を見る。その中から、コスト7のカード1枚を公開して手札に加えてよい。</img>",
+    "card_id": "CP01-P55",
+    "illustrator": "",
+    "related": []
+  },
+  {
+    "name": "イナリワン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p56.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力2",
+    "life": "体力3",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>手札のアミュレット1枚を捨てる：これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+2して、【突進】を持つ。</img>",
+    "card_id": "CP01-P56",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
+    "name": "メジロドーベル",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p57.png",
+    "clan": "ウマ娘 プリティーダービー",
+    "type": "フォロワー",
+    "tribe": "ウマ娘・メジロ家",
+    "rarity": "BR・プレミアム",
+    "product": "コラボパック「ウマ娘 プリティーダービー」",
+    "cost": "コスト2",
+    "atk": "攻撃力2",
+    "life": "体力2",
+    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。自分のリーダーは<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+2する。</img>",
+    "card_id": "CP01-P57",
+    "illustrator": "",
+    "related": [
+      {
+        "name": "にんじん",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
+      }
+    ]
+  },
+  {
     "name": "メジロアルダン",
     "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-p58.png",
     "clan": "ウマ娘 プリティーダービー",
@@ -109429,6 +112329,27 @@
     "illustrator": "hikaru",
     "card_id": "BP02-066",
     "related": []
+  },
+  {
+    "name": "ツインヘッドドラゴン",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/BP02/bp02_067.png",
+    "clan": "ドラゴン",
+    "type": "フォロワー",
+    "tribe": "竜族",
+    "rarity": "BR",
+    "product": "ブースターパック第2弾「黒銀のバハムート」",
+    "cost": "コスト4",
+    "atk": "攻撃力2",
+    "life": "体力5",
+    "ability": "これが与える「リーダーへの攻撃ダメージ」と「交戦ダメージ」を2倍にする。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"><img alt=\"コスト3\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost03.png\"/>：『ドラゴン』1体を出す。<br/>\n―――――――――――――――<br/>\n『ドラゴン』<img alt=\"ドラゴン\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_dragon.png\"/>竜族・フォロワー<img alt=\"コスト4\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost04.png\"/><img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>5/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>5</img>",
+    "illustrator": "永守浩太",
+    "card_id": "BP02-067",
+    "related": [
+      {
+        "name": "ドラゴン",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/BP02/bp02_t16.png"
+      }
+    ]
   },
   {
     "name": "ドラゴニックアーマー",
@@ -129536,551 +132457,6 @@
       {
         "name": "シェフィ",
         "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP04/cp04-056.png"
-      }
-    ]
-  },
-  {
-    "name": "リザードソルジャー ガンルー",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP03/cp03-078.png",
-    "clan": "カードファイト!! ヴァンガード",
-    "type": "フォロワー",
-    "tribe": "ヴァンガード・かげろう",
-    "rarity": "BR",
-    "product": "コラボパック「カードファイト!! ヴァンガード」",
-    "cost": "コスト1",
-    "atk": "攻撃力1",
-    "life": "体力2",
-    "ability": "<img alt=\"起動\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_stand.png\">これを<img alt=\"アクト\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_act.png\"/>：相手の場のフォロワー1体を選ぶ。それに1ダメージ。この能力は自分の場に他のかげろう・フォロワーがいるなら使える。<br/>\n<img alt=\"起動\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_stand.png\"/><img alt=\"コスト2\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost02.png\"/>：これをスタンドする。このターン、これは相手を攻撃できない。<br/>\n----------<br/>\n（ドライブチェックによってこれが捲れたなら、自分の場のフォロワー1体をスタンドする。このターン、それは相手のリーダーを攻撃できない）</img>",
-    "illustrator": "山宗",
-    "card_id": "CP03-078",
-    "related": []
-  },
-  {
-    "name": "ドラゴンモンク ゲンジョウ",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP03/cp03-079.png",
-    "clan": "カードファイト!! ヴァンガード",
-    "type": "フォロワー",
-    "tribe": "ヴァンガード・かげろう",
-    "rarity": "BR",
-    "product": "コラボパック「カードファイト!! ヴァンガード」",
-    "cost": "コスト1",
-    "atk": "攻撃力1",
-    "life": "体力1",
-    "ability": "【守護】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\">自分のリーダーは<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。【覚醒】状態なら、代わりに<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+2する。（自分のPP最大値が7以上なら、【覚醒】状態になる）<br/>\n----------<br/>\n（ドライブチェックによってこれが捲れたなら、自分のリーダーは<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+3する）</img>",
-    "illustrator": "百瀬寿",
-    "card_id": "CP03-079",
-    "related": []
-  },
-  {
-    "name": "ユキノビジン",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-010.png",
-    "clan": "ウマ娘 プリティーダービー",
-    "type": "フォロワー",
-    "tribe": "ウマ娘",
-    "rarity": "BR",
-    "product": "コラボパック「ウマ娘 プリティーダービー」",
-    "cost": "コスト3",
-    "atk": "攻撃力3",
-    "life": "体力3",
-    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【守護】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>場の他のカード1枚を手札に戻す：これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。（手札に戻ったトークンはゲームから取り除く）</img>",
-    "card_id": "CP01-010",
-    "illustrator": "",
-    "related": [
-      {
-        "name": "にんじん",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
-      }
-    ]
-  },
-  {
-    "name": "アイネスフウジン",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-011.png",
-    "clan": "ウマ娘 プリティーダービー",
-    "type": "フォロワー",
-    "tribe": "ウマ娘",
-    "rarity": "BR",
-    "product": "コラボパック「ウマ娘 プリティーダービー」",
-    "cost": "コスト6",
-    "atk": "攻撃力7",
-    "life": "体力7",
-    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【突進】【指定攻撃】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分の他のカード1枚を選ぶ。それを手札に戻す。（手札に戻ったトークンはゲームから取り除く）</img>",
-    "card_id": "CP01-011",
-    "illustrator": "",
-    "related": [
-      {
-        "name": "にんじん",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
-      }
-    ]
-  },
-  {
-    "name": "タイキシャトル",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-012.png",
-    "clan": "ウマ娘 プリティーダービー",
-    "type": "フォロワー",
-    "tribe": "ウマ娘",
-    "rarity": "BR",
-    "product": "コラボパック「ウマ娘 プリティーダービー」",
-    "cost": "コスト2",
-    "atk": "攻撃力2",
-    "life": "体力3",
-    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\nこれが場から手札に戻ったとき、相手のフォロワー1体を選ぶ。それに2ダメージ。</img>",
-    "card_id": "CP01-012",
-    "illustrator": "",
-    "related": [
-      {
-        "name": "にんじん",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
-      }
-    ]
-  },
-  {
-    "name": "ハルウララ",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-013.png",
-    "clan": "ウマ娘 プリティーダービー",
-    "type": "フォロワー",
-    "tribe": "ウマ娘",
-    "rarity": "BR",
-    "product": "コラボパック「ウマ娘 プリティーダービー」",
-    "cost": "コスト2",
-    "atk": "攻撃力2",
-    "life": "体力2",
-    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。このターン、これはダメージを受けない。</img>",
-    "card_id": "CP01-013",
-    "illustrator": "",
-    "related": [
-      {
-        "name": "にんじん",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
-      }
-    ]
-  },
-  {
-    "name": "トウカイテイオー",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-014.png",
-    "clan": "ウマ娘 プリティーダービー",
-    "type": "フォロワー",
-    "tribe": "ウマ娘",
-    "rarity": "LG",
-    "product": "コラボパック「ウマ娘 プリティーダービー」",
-    "cost": "コスト5",
-    "atk": "攻撃力4",
-    "life": "体力4",
-    "ability": "<img alt=\"進化\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_evolve.png\"><img alt=\"コスト2\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost02.png\"/>：これは進化する。<br/>\n<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"/><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>相手のフォロワー1体を選ぶ。それに「自分の場のフォロワーの数」の2倍のダメージ。</img>",
-    "card_id": "CP01-014",
-    "illustrator": "",
-    "related": [
-      {
-        "name": "トウカイテイオー",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-015.png"
-      },
-      {
-        "name": "にんじん",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
-      }
-    ]
-  },
-  {
-    "name": "トウカイテイオー",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-015.png",
-    "clan": "ウマ娘 プリティーダービー",
-    "type": "フォロワー・エボルヴ",
-    "tribe": "ウマ娘",
-    "rarity": "LG",
-    "product": "コラボパック「ウマ娘 プリティーダービー」",
-    "cost": "コスト-",
-    "atk": "攻撃力5",
-    "life": "体力5",
-    "ability": "【疾走】",
-    "card_id": "CP01-015",
-    "illustrator": "",
-    "related": [
-      {
-        "name": "トウカイテイオー",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-014.png"
-      }
-    ]
-  },
-  {
-    "name": "ナリタブライアン",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-016.png",
-    "clan": "ウマ娘 プリティーダービー",
-    "type": "フォロワー",
-    "tribe": "ウマ娘",
-    "rarity": "LG",
-    "product": "コラボパック「ウマ娘 プリティーダービー」",
-    "cost": "コスト8",
-    "atk": "攻撃力6",
-    "life": "体力8",
-    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【必殺】【守護】【オーラ】<br/>\n<img alt=\"起動\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_stand.png\"/>これを<img alt=\"アクト\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_act.png\"/>：相手のリーダー1人か相手のフォロワー1体を選ぶ。それに5ダメージ。</img>",
-    "card_id": "CP01-016",
-    "illustrator": "",
-    "related": [
-      {
-        "name": "にんじん",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
-      }
-    ]
-  },
-  {
-    "name": "ウイニングチケット",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-017.png",
-    "clan": "ウマ娘 プリティーダービー",
-    "type": "フォロワー",
-    "tribe": "ウマ娘・BNW",
-    "rarity": "GR",
-    "product": "コラボパック「ウマ娘 プリティーダービー」",
-    "cost": "コスト3",
-    "atk": "攻撃力2",
-    "life": "体力2",
-    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【疾走】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分の墓場に『検証、開始』と『ナリタタイシン』があるなら、これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+3/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。</img>",
-    "card_id": "CP01-017",
-    "illustrator": "",
-    "related": [
-      {
-        "name": "検証、開始",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-021.png"
-      },
-      {
-        "name": "ナリタタイシン",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-023.png"
-      },
-      {
-        "name": "にんじん",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
-      }
-    ]
-  },
-  {
-    "name": "迫る熱に押されて",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-018.png",
-    "clan": "ウマ娘 プリティーダービー",
-    "type": "スペル",
-    "tribe": "ウマ娘",
-    "rarity": "GR",
-    "product": "コラボパック「ウマ娘 プリティーダービー」",
-    "cost": "コスト2",
-    "atk": "攻撃力-",
-    "life": "体力-",
-    "ability": "自分のフォロワー1体を選ぶ。それは【疾走】を持つ。それがウマ娘・フォロワーなら、それは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\">+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。</img>",
-    "card_id": "CP01-018",
-    "illustrator": "",
-    "related": []
-  },
-  {
-    "name": "エアグルーヴ",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-019.png",
-    "clan": "ウマ娘 プリティーダービー",
-    "type": "フォロワー",
-    "tribe": "ウマ娘",
-    "rarity": "SR",
-    "product": "コラボパック「ウマ娘 プリティーダービー」",
-    "cost": "コスト2",
-    "atk": "攻撃力2",
-    "life": "体力2",
-    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1する。自分の他のフォロワー1体まで選ぶ。それをスタンドする。このターン、それは相手を攻撃できない。</img>",
-    "card_id": "CP01-019",
-    "illustrator": "",
-    "related": [
-      {
-        "name": "にんじん",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
-      }
-    ]
-  },
-  {
-    "name": "ヒシアマゾン",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-020.png",
-    "clan": "ウマ娘 プリティーダービー",
-    "type": "フォロワー",
-    "tribe": "ウマ娘",
-    "rarity": "SR",
-    "product": "コラボパック「ウマ娘 プリティーダービー」",
-    "cost": "コスト3",
-    "atk": "攻撃力4",
-    "life": "体力2",
-    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【突進】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/><img alt=\"コスト3\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost03.png\"/>：自分のデッキからコスト3のウマ娘・フォロワー1枚を探し、場に出す。</img>",
-    "card_id": "CP01-020",
-    "illustrator": "",
-    "related": [
-      {
-        "name": "にんじん",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
-      }
-    ]
-  },
-  {
-    "name": "検証、開始",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-021.png",
-    "clan": "ウマ娘 プリティーダービー",
-    "type": "スペル",
-    "tribe": "ウマ娘・BNW",
-    "rarity": "SR",
-    "product": "コラボパック「ウマ娘 プリティーダービー」",
-    "cost": "コスト1",
-    "atk": "攻撃力-",
-    "life": "体力-",
-    "ability": "下記から1つチョイスする。【1】自分のデッキの上2枚を見る。その中から、ウマ娘・カード1枚を公開して手札に加えてよい。残りを好きな順にデッキの下に置く。【2】自分の墓場のBNW・フォロワー1枚を選ぶ。それを手札に加える。",
-    "card_id": "CP01-021",
-    "illustrator": "",
-    "related": []
-  },
-  {
-    "name": "シリウスシンボリ",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-022.png",
-    "clan": "ウマ娘 プリティーダービー",
-    "type": "フォロワー",
-    "tribe": "ウマ娘",
-    "rarity": "BR",
-    "product": "コラボパック「ウマ娘 プリティーダービー」",
-    "cost": "コスト4",
-    "atk": "攻撃力4",
-    "life": "体力4",
-    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【必殺】</img>",
-    "card_id": "CP01-022",
-    "illustrator": "",
-    "related": [
-      {
-        "name": "にんじん",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
-      }
-    ]
-  },
-  {
-    "name": "ナリタタイシン",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-023.png",
-    "clan": "ウマ娘 プリティーダービー",
-    "type": "フォロワー",
-    "tribe": "ウマ娘・BNW",
-    "rarity": "BR",
-    "product": "コラボパック「ウマ娘 プリティーダービー」",
-    "cost": "コスト2",
-    "atk": "攻撃力3",
-    "life": "体力2",
-    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【突進】</img>",
-    "card_id": "CP01-023",
-    "illustrator": "",
-    "related": [
-      {
-        "name": "にんじん",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
-      }
-    ]
-  },
-  {
-    "name": "シンボリルドルフ",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-024.png",
-    "clan": "ウマ娘 プリティーダービー",
-    "type": "フォロワー",
-    "tribe": "ウマ娘",
-    "rarity": "BR",
-    "product": "コラボパック「ウマ娘 プリティーダービー」",
-    "cost": "コスト3",
-    "atk": "攻撃力3",
-    "life": "体力3",
-    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"ラストワード\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_lastword.png\"/>自分のデッキから『トウカイテイオー』1枚を探し、手札に加える。</img>",
-    "card_id": "CP01-024",
-    "illustrator": "",
-    "related": [
-      {
-        "name": "トウカイテイオー",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-014.png"
-      },
-      {
-        "name": "にんじん",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
-      }
-    ]
-  },
-  {
-    "name": "ビコーペガサス",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-025.png",
-    "clan": "ウマ娘 プリティーダービー",
-    "type": "フォロワー",
-    "tribe": "ウマ娘",
-    "rarity": "BR",
-    "product": "コラボパック「ウマ娘 プリティーダービー」",
-    "cost": "コスト1",
-    "atk": "攻撃力2",
-    "life": "体力1",
-    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】相手のフォロワー1体を選ぶ。それをアクトする。</img>",
-    "card_id": "CP01-025",
-    "illustrator": "",
-    "related": [
-      {
-        "name": "にんじん",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
-      }
-    ]
-  },
-  {
-    "name": "フジキセキ",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-026.png",
-    "clan": "ウマ娘 プリティーダービー",
-    "type": "フォロワー",
-    "tribe": "ウマ娘",
-    "rarity": "BR",
-    "product": "コラボパック「ウマ娘 プリティーダービー」",
-    "cost": "コスト2",
-    "atk": "攻撃力3",
-    "life": "体力2",
-    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n<img alt=\"起動\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_stand.png\"/><img alt=\"コスト3\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost03.png\"/>これを<img alt=\"アクト\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_act.png\"/>：相手のフォロワー1体を選ぶ。それに3ダメージ。</img>",
-    "card_id": "CP01-026",
-    "illustrator": "",
-    "related": [
-      {
-        "name": "にんじん",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
-      }
-    ]
-  },
-  {
-    "name": "アグネスタキオン",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-027.png",
-    "clan": "ウマ娘 プリティーダービー",
-    "type": "フォロワー",
-    "tribe": "ウマ娘",
-    "rarity": "LG",
-    "product": "コラボパック「ウマ娘 プリティーダービー」",
-    "cost": "コスト2",
-    "atk": "攻撃力2",
-    "life": "体力2",
-    "ability": "<img alt=\"進化\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_evolve.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは進化する。<br/>\n<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"/><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n自分がスペルをプレイしたとき、相手のフォロワー1体を選ぶ。それは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>-1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>-1する。</img>",
-    "card_id": "CP01-027",
-    "illustrator": "",
-    "related": [
-      {
-        "name": "アグネスタキオン",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-028.png"
-      },
-      {
-        "name": "にんじん",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
-      }
-    ]
-  },
-  {
-    "name": "アグネスタキオン",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-028.png",
-    "clan": "ウマ娘 プリティーダービー",
-    "type": "フォロワー・エボルヴ",
-    "tribe": "ウマ娘",
-    "rarity": "LG",
-    "product": "コラボパック「ウマ娘 プリティーダービー」",
-    "cost": "コスト-",
-    "atk": "攻撃力3",
-    "life": "体力3",
-    "ability": "自分がスペルをプレイしたとき、相手のフォロワー1体を選ぶ。それは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\">-1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>-1する。<br/>\n【進化時】自分の墓場のスペル1枚を選ぶ。それを手札に加える。</img>",
-    "card_id": "CP01-028",
-    "illustrator": "",
-    "related": [
-      {
-        "name": "アグネスタキオン",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-027.png"
-      }
-    ]
-  },
-  {
-    "name": "ダイワスカーレット",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-029.png",
-    "clan": "ウマ娘 プリティーダービー",
-    "type": "フォロワー",
-    "tribe": "ウマ娘",
-    "rarity": "LG",
-    "product": "コラボパック「ウマ娘 プリティーダービー」",
-    "cost": "コスト4",
-    "atk": "攻撃力3",
-    "life": "体力4",
-    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\nこれがいる限り、自分がウマ娘・スペルをプレイする際、このターン中に1枚目のウマ娘・スペルなら、コストを-1する。<br/>\n自分がスペルをプレイしたとき、このターン中に3枚目のスペルなら、自分のウマ娘・フォロワー1体を選ぶ。それとこれは【疾走】を持つ。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分のデッキからウマ娘・スペル1枚を探し、手札に加える。</img>",
-    "card_id": "CP01-029",
-    "illustrator": "",
-    "related": [
-      {
-        "name": "にんじん",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
-      }
-    ]
-  },
-  {
-    "name": "ウオッカ",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-030.png",
-    "clan": "ウマ娘 プリティーダービー",
-    "type": "フォロワー",
-    "tribe": "ウマ娘",
-    "rarity": "GR",
-    "product": "コラボパック「ウマ娘 プリティーダービー」",
-    "cost": "コスト3",
-    "atk": "攻撃力3",
-    "life": "体力3",
-    "ability": "これをプレイする際、自分の場に『ダイワスカーレット』がいるなら、コストを-2する。<br/>\n<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\nターンごとに1回、自分がスペルをプレイしたとき、自分のウマ娘・フォロワーすべては<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+1して、【突進】を持つ。</img>",
-    "card_id": "CP01-030",
-    "illustrator": "",
-    "related": [
-      {
-        "name": "ダイワスカーレット",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-029.png"
-      },
-      {
-        "name": "にんじん",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
-      }
-    ]
-  },
-  {
-    "name": "おどれ・さわげ・フェスれ！",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-031.png",
-    "clan": "ウマ娘 プリティーダービー",
-    "type": "スペル",
-    "tribe": "ウマ娘",
-    "rarity": "GR",
-    "product": "コラボパック「ウマ娘 プリティーダービー」",
-    "cost": "コスト2",
-    "atk": "攻撃力-",
-    "life": "体力-",
-    "ability": "<img alt=\"クイック\" class=\"icon-rectangle\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_quick.png\"><br/>\n相手のフォロワー1体を選ぶ。それに3ダメージ。自分の場にウマ娘・カードがあるなら、代わりに4ダメージ。</img>",
-    "card_id": "CP01-031",
-    "illustrator": "",
-    "related": []
-  },
-  {
-    "name": "ゼンノロブロイ",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-032.png",
-    "clan": "ウマ娘 プリティーダービー",
-    "type": "フォロワー",
-    "tribe": "ウマ娘",
-    "rarity": "SR",
-    "product": "コラボパック「ウマ娘 プリティーダービー」",
-    "cost": "コスト1",
-    "atk": "攻撃力0",
-    "life": "体力2",
-    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n自分の他のフォロワーが出走したとき、自分のデッキの上4枚を見る。その中から、スペルかアミュレット1枚を公開して手札に加えてよい。残りを好きな順にデッキの下に置く。</img>",
-    "card_id": "CP01-032",
-    "illustrator": "",
-    "related": [
-      {
-        "name": "にんじん",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
-      }
-    ]
-  },
-  {
-    "name": "アグネスデジタル",
-    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-033.png",
-    "clan": "ウマ娘 プリティーダービー",
-    "type": "フォロワー",
-    "tribe": "ウマ娘",
-    "rarity": "SR",
-    "product": "コラボパック「ウマ娘 プリティーダービー」",
-    "cost": "コスト1",
-    "atk": "攻撃力2",
-    "life": "体力1",
-    "ability": "<img alt=\"食事\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_syokuzi.png\"><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは出走する。<br/>\n【出走時】1枚引く。自分の手札1枚を捨てる。</img>",
-    "card_id": "CP01-033",
-    "illustrator": "",
-    "related": [
-      {
-        "name": "にんじん",
-        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/CP01/cp01-085.png"
       }
     ]
   }
