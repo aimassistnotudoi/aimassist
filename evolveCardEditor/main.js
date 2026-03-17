@@ -21,6 +21,7 @@ import {
     setConditionsTribeOp,
     changeConditionsRarity,
     setConditionsAbility,
+    setCurrentDeck,
 
     // setConditionsCost,
     // setConditionsType,
@@ -39,8 +40,8 @@ import {
 } from './ui.js';
 import {
     loadCardJson,
-    // loadEffectJson,
-    // exportEffectJson
+    importDeckJson,
+    exportDeckJson,
 } from './io.js';
 
 // ====================
@@ -63,7 +64,7 @@ async function init() {
             renderAll();
         },
         onBtnSaveEffect:(value)=>{
-            getCardDict()[getEditingCardId()].custom_effect = value
+            getCurrentDeck()[getEditingCardId()]["custom_ability"] = value
             renderEffectList(getCurrentDeck(), getCardDict(), {onBtnEdit: setEditingCardId});
         },
         onClan: (clan, op) => {
@@ -102,6 +103,18 @@ async function init() {
             if(checked) setDisplayCards(getUniqueCards());
             else setDisplayCards(getAllCards());
             renderAll();
+        },
+        onImportDeck:(deckFile)=>{
+            importDeckJson(deckFile).then(deckData => {
+                console.log('Deck imported successfully:', deckData);
+                setCurrentDeck(deckData);
+                renderAll();
+            }).catch(error => {
+                console.error('Error importing deck:', error);
+            });
+        },
+        onExportDeck:()=>{
+            return exportDeckJson(getCurrentDeck());
         }
     })
 }

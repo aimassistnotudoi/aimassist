@@ -14,11 +14,13 @@ export function bindEvents(handlers) {
         onRarity,
         onAbility,
         onSameName,
+        onImportDeck,
+        onExportDeck,
     } = handlers;
     //検索
     document.getElementById('filter-name').addEventListener('input', e => {onSearch(e.target.value)});//name
     document.getElementById("filter-clan").addEventListener("change", e => {//clan
-        if(!e.target.type === "checkbox") return;
+        if(!e.target.type == "checkbox") return;
         const clan = e.target.value;
         if(e.target.checked){
             onClan(clan, "add");
@@ -27,7 +29,7 @@ export function bindEvents(handlers) {
         }
     })
     document.getElementById("filter-type-1").addEventListener("change", e => {//type1
-        if(!e.target.type === "checkbox") return;
+        if(!e.target.type == "checkbox") return;
         const type = e.target.value;
         if(e.target.checked){
             onType1(type, "add");
@@ -36,7 +38,7 @@ export function bindEvents(handlers) {
         }
     })
     document.getElementById("filter-type-2").addEventListener("change", e => {//type2
-        if(!e.target.type === "checkbox") return;
+        if(!e.target.type == "checkbox") return;
         const type = e.target.value;
         if(e.target.checked){
             onType2(type, "add");
@@ -60,7 +62,7 @@ export function bindEvents(handlers) {
         }
     })
     document.getElementById("filter-rarity").addEventListener("change", e => {//rarity
-        if(!e.target.type === "checkbox") return;
+        if(!e.target.type == "checkbox") return;
         const rarity = e.target.value;
         if(e.target.checked){
             onRarity(rarity, "add");
@@ -87,7 +89,25 @@ export function bindEvents(handlers) {
     document.getElementById('tab-view').addEventListener('click', renderTabView);
     //デッキ完成
     document.getElementById('complete-deck').addEventListener('click', renderTabView);
+    //デッキインポート
+    document.getElementById('import-deck').addEventListener('change', e => {
+        const deckFile = e.target.files[0];
+        if(deckFile) onImportDeck(deckFile);
+        
+        e.target.value = ""; //同じファイルを連続で選択できるようにする
+    });
+    //デッキエクスポート
+    document.getElementById('export-deck').addEventListener('click', () => {
+        const url = onExportDeck();
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = (document.getElementById("export-deck-name").value || "my_deck") + ".json";
+        a.click();
 
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+    })
+    //効果編集モーダル
+    //---------
     document.getElementById("btn-cancel-effect").addEventListener("click", () => {
         document.getElementById('effect-modal').classList.remove('show');
     })
@@ -116,6 +136,7 @@ export function bindEvents(handlers) {
         const clone = img.cloneNode();
         insertAtCursor(clone, range);
     })
+    //--------
 }
 
 function renderTabDeck(){
@@ -253,7 +274,7 @@ export function renderDeck(deck, dict) {
 
             const name = document.createElement('span');
             name.className = "deck-card-title";
-            name.textContent = `${dict[key].name} × ${deck[key]}`;
+            name.textContent = `${dict[key].name} × ${deck[key]["count"]}`;
 
             const thumbnail = document.createElement('div');
             thumbnail.className = "deck-card-thumbnail";
@@ -269,7 +290,7 @@ export function renderDeck(deck, dict) {
         }
         else {
             li.className = "deck-card loaded";
-            li.querySelector('.deck-card-title').textContent = `${dict[key].name} × ${deck[key]}`;
+            li.querySelector('.deck-card-title').textContent = `${dict[key].name} × ${deck[key]["count"]}`;
         }
     }
 }
@@ -294,7 +315,7 @@ export function renderEffectList(currentDeck, cardDict, handlers) {
 
         const count = document.createElement('span');
         count.className = "card-count";
-        count.textContent = `×${currentDeck[cardId]}`;
+        count.textContent = `×${currentDeck[cardId]["count"]}`;
         imgWrap.appendChild(img);
         imgWrap.appendChild(count);
 
@@ -304,7 +325,7 @@ export function renderEffectList(currentDeck, cardDict, handlers) {
         strong.textContent = card.name;
         const br = document.createElement('br');
         const effect = document.createElement('span');
-        const effectText = card.custom_effect || card.ability;
+        const effectText = currentDeck[cardId]["custom_ability"] || card.ability;
         effect.innerHTML = effectText;
         info.appendChild(strong);
         info.appendChild(br);
@@ -332,13 +353,13 @@ export function renderEffectList(currentDeck, cardDict, handlers) {
             onBtnEdit(cardId);
 
             const content = document.getElementById('effect-editable');
-            content.innerHTML = card.custom_effect || card.ability;
+            content.innerHTML = currentDeck[cardId]["custom_ability"] || card.ability;
 
             document.getElementById('effect-modal').classList.add('show');
         });
 
         div.querySelector('.btn-reset').addEventListener('click', () => {
-            card.custom_effect = null;
+            currentDeck[cardId]["custom_effect"] = null;
             renderEffectList(currentDeck, cardDict, handlers);
         });
     

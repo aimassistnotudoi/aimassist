@@ -66,6 +66,7 @@ export function setConditionsTribe1(tribe){filterConditions.tribe1 = tribe;}
 export function setConditionsTribe2(tribe){filterConditions.tribe2 = tribe;}
 export function setConditionsAbility(ability){filterConditions.ability = ability;}
 export function setDisplayCards(cards){displayCards = cards;}
+export function setCurrentDeck(deck){currentDeck = {...deck};}
 
 export function changeConditionsClan(clan, op){changeConditionsOfList("clan", clan, op);}
 export function changeConditionsType1(type, op){changeConditionsOfList("type1", type, op);}
@@ -163,14 +164,17 @@ export function getFilteredCards(cards, conditions) {
 // デッキ操作
 // ====================
 export function addCardToDeck(card) {
-    if(!currentDeck[card.card_id]) currentDeck[card.card_id] = 1;
-    else if(currentDeck[card.card_id] < 3) currentDeck[card.card_id] += 1; // 3枚上限
-    if(currentDeck[card.card_id] > 3) currentDeck[card.card_id] = 3; // 上限を超えないように
+    const cardId = card.card_id;
+    const cardInfo = currentDeck[cardId];
+    if(!currentDeck[cardId]) currentDeck[cardId] = {count: 1, custom_ability: ""}; // デッキにカードがない場合は新規追加
+    else if(currentDeck[cardId]["count"] < 3) currentDeck[cardId]["count"] += 1; // 3枚上限
+    if(currentDeck[cardId]["count"] > 3) currentDeck[cardId]["count"] = 3; // 上限を超えないように
 }
 
 export function removeCardFromDeck(card) {
-    if(currentDeck[card.card_id]) {
-        currentDeck[card.card_id] -=1;
-        if(currentDeck[card.card_id]<=0) delete currentDeck[card.card_id];
+    const cardId = card.card_id;
+    if(currentDeck[cardId]) {
+        currentDeck[cardId]["count"] -=1;
+        if(currentDeck[cardId]["count"]<=0) delete currentDeck[cardId];
     }
 }
