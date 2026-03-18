@@ -100,7 +100,7 @@ img{
 
 .page{
     display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px, 1fr));
+    grid-template-columns:repeat(auto-fit,minmax(160px, 1fr));
 }
 
 .card{
@@ -200,3 +200,24 @@ button{
         opacity: 1;
     }
 }
+
+
+
+/*応急処置*/
+.effect-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .effect-img-wrap {
+    position: relative;
+    width: 100px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+  .effect-img-wrap img {
+    width: 80px;
+    object-fit: fill;
+  }

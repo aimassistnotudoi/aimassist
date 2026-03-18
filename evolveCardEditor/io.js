@@ -6,7 +6,7 @@ export async function loadCardJson() {
         const cards = await cardsRes.json();
         const uniqueCards = await uniqueRes.json();
 
-        return [cards, uniqueCards];
+        return [cards["cards"], uniqueCards["cards"]];
     } catch (error) {
         console.error('Error loading card JSON:', error);
         return [[], []];
