@@ -89,18 +89,18 @@ img{
 }
 
 .pane.left{
-    width: calc(100vw - 300px);
+    width: calc(100vw - 25vw);
     margin: 0px;
     padding: 0px;
 }
 
 .pane.right{
-    width: 300px;
+    width: 25vw;
 }
 
 .page{
     display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(160px, 1fr));
+    grid-template-columns:repeat(auto-fit,minmax(14vw, 1fr));
 }
 
 .card{
