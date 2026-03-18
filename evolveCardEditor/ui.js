@@ -223,8 +223,10 @@ export function renderCardList(list, handlers) {
 
 
 function createPagination(totalPages, currentPage) {
-    const index = document.getElementById('page-index');
-    index.innerHTML = '';
+    const indexTop = document.getElementById('page-index-top');
+    const indexBottom = document.getElementById('page-index-bottom');
+    indexTop.innerHTML = '';
+    indexBottom.innerHTML = '';
   
     const showPage = (page) => {
         document.querySelectorAll('.page').forEach(div => {
@@ -252,8 +254,17 @@ function createPagination(totalPages, currentPage) {
         const btn = document.createElement('button');
         btn.textContent = p;
         btn.disabled = (p === currentPage || p === '…');
-        if (p !== '…') btn.addEventListener('click', () => showPage(p));
-        index.appendChild(btn);
+        const btn2 = btn.cloneNode(true);
+        if (p !== '…'){
+            function onPageBtn(){
+                showPage(p);
+                indexTop.scrollIntoView({behavior: "smooth", block: "nearest"});
+            }
+            btn.addEventListener('click', () => onPageBtn());
+            btn2.addEventListener('click', () => onPageBtn());
+        };
+        indexTop.appendChild(btn);
+        indexBottom.appendChild(btn2); // 下部にも同じボタンを追加
     });
 }
 

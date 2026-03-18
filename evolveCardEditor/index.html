@@ -22,7 +22,7 @@
 
     <!-- デッキ作成 -->
     <section id="deck-section" class="flex">
-        <div class="pane left">
+        <div class="pane left" id="scroll-left">
         <section id="filter">
             <input type="text" id="filter-name" placeholder="カード名で検索">
             <div id="filter-clan">
@@ -73,8 +73,9 @@
 
         
         <h2>デッキ作成</h2>
+        <div id="page-index-top"></div>
             <div id="card-list"></div>
-            <div id="page-index"></div>
+            <div id="page-index-bottom"></div>
         </div>
         <div class="pane right">
             <aside id="deck-list">
