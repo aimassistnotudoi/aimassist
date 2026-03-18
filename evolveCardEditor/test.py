@@ -1,7 +1,9 @@
 import json
 
 with open("cards.json", "r", encoding="utf-8") as f:
-    cards = json.load(f)
+    data = json.load(f)
+
+cards = data["cards"]
 
 products = {
   "プレミアムカードセット「プリンセスコネクト！Re:Dive」": 0,
@@ -89,11 +91,19 @@ for card in cards:
         current_product = filtered_cards[key]["product"]
         current_rarity = filtered_cards[key]["rarity"]
         if products[product] > products[current_product]:
+            del filtered_cards[key]
             filtered_cards[key] = card
         elif products[product] == products[current_product] and rarities[rarity] > rarities[current_rarity]:
+            del filtered_cards[key]
             filtered_cards[key] = card
 
 new_cards = list(filtered_cards.values())
 
+result = {
+    "version": "1.0",
+    "cards": new_cards
+}
+
+
 with open("unique_cards.json", "w", encoding="utf-8") as f:
-    json.dump(new_cards, f, ensure_ascii=False, indent=2)
+    json.dump(result, f, ensure_ascii=False, indent=2)

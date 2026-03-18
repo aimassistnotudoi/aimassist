@@ -228,7 +228,7 @@ function createPagination(totalPages, currentPage) {
   
     const showPage = (page) => {
         document.querySelectorAll('.page').forEach(div => {
-            div.style.display = (div.dataset.page == page) ? 'flex' : 'none';
+            div.style.display = (div.dataset.page == page) ? '' : 'none';
         });
         createPagination(totalPages, page);
     };
