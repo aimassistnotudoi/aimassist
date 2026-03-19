@@ -1,7 +1,7 @@
 let displayCards = []; //表示対象カード配列
 let allCards = []; //全カード配列
 let uniqueCards = []; //ユニークカード配列
-let currentDeck = {}; // 現在のデッキ（card_idをキー、枚数を値とした辞書）
+let currentDeck = {deckId: null, deckName: null, cards: {}}; // 現在のデッキ {id: id, name: deckName, cards: {cardId: {count: num, custom_ability: str}}}
 let cardDict = {}; // card_idをキーとしたカード辞書
 let editingCardId;
 
@@ -53,7 +53,7 @@ let filterConditions = {
 export function getDisplayCards(){return displayCards;}
 export function getAllCards(){return allCards;}
 export function getUniqueCards(){return uniqueCards;}
-export function getCurrentDeck(){return {...currentDeck};}
+export function getCurrentDeck(){return {...currentDeck["cards"]};}
 export function getCardDict(){return cardDict;}
 export function getFilterConditions(){return {...filterConditions};}
 export function getEditingCardId(){return editingCardId;}
@@ -66,7 +66,7 @@ export function setConditionsTribe1(tribe){filterConditions.tribe1 = tribe;}
 export function setConditionsTribe2(tribe){filterConditions.tribe2 = tribe;}
 export function setConditionsAbility(ability){filterConditions.ability = ability;}
 export function setDisplayCards(cards){displayCards = cards;}
-export function setCurrentDeck(deck){currentDeck = {...deck};}
+export function setCurrentDeck(deck){currentDeck["cards"] = {...deck};}
 
 export function changeConditionsClan(clan, op){changeConditionsOfList("clan", clan, op);}
 export function changeConditionsType1(type, op){changeConditionsOfList("type1", type, op);}
@@ -165,16 +165,17 @@ export function getFilteredCards(cards, conditions) {
 // ====================
 export function addCardToDeck(card) {
     const cardId = card.card_id;
-    const cardInfo = currentDeck[cardId];
-    if(!currentDeck[cardId]) currentDeck[cardId] = {count: 1, custom_ability: ""}; // デッキにカードがない場合は新規追加
-    else if(currentDeck[cardId]["count"] < 3) currentDeck[cardId]["count"] += 1; // 3枚上限
-    if(currentDeck[cardId]["count"] > 3) currentDeck[cardId]["count"] = 3; // 上限を超えないように
+    const cardInfo = currentDeck["cards"][cardId];
+    if(!cardInfo) currentDeck["cards"][cardId] = {count: 1, custom_ability: ""}; // デッキにカードがない場合は新規追加
+    else if(cardInfo["count"] < 3) cardInfo["count"] += 1; // 3枚上限
+    else if(cardInfo["count"] > 3) cardInfo["count"] = 3; // 上限を超えないように
 }
 
 export function removeCardFromDeck(card) {
     const cardId = card.card_id;
-    if(currentDeck[cardId]) {
-        currentDeck[cardId]["count"] -=1;
-        if(currentDeck[cardId]["count"]<=0) delete currentDeck[cardId];
+    const cardInfo = currentDeck["cards"][cardId];
+    if(cardInfo) {
+        cardInfo["count"] -=1;
+        if(cardInfo["count"]<=0) delete currentDeck["cards"][cardId];
     }
 }
