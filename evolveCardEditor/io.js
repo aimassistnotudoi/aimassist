@@ -35,3 +35,12 @@ export function exportDeckJson(deckData) {
         throw error;
     }
 }
+
+// export function saveDeckToLocal(deckData) {
+//     try{
+//         localStorage.setItem('currentDeck', JSON.stringify(deckData));
+//     }
+//     catch(error){
+//         console.error('Error saving deck to localStorage:', error);
+//     }
+// }   
