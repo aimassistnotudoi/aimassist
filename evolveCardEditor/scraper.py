@@ -17,7 +17,9 @@ cards = []
 card_urls = []
 page_index = 0
 while True:
-    response = requests.get(ALLCARD_URL.format(page_index), headers=headers)
+    if page_index % 10 == 0:
+        print(f"ページ {page_index} を取得中...")
+    response = requests.get(ALLCARD_URL.format(page_index), headers=headers, timeout=10)
     if response.status_code != 200:
         print(f"ページ {page_index} の取得に失敗しました。終了します。")
         break
