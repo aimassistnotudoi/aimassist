@@ -2,7 +2,7 @@ name: Auto Scrape
 
 on:
   schedule:
-    - cron: '0 15 * * 5' # Runs every day at midnight in JST
+    - cron: '0 15 * * 3' # Runs every day at midnight in JST
   workflow_dispatch:
 
 permissions:
