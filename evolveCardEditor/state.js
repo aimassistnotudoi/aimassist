@@ -1,9 +1,23 @@
 let displayCards = []; //表示対象カード配列
 let allCards = []; //全カード配列
 let uniqueCards = []; //ユニークカード配列
-let currentDeck = {deckId: null, deckName: null, cards: {}}; // 現在のデッキ {id: id, name: deckName, cards: {cardId: {count: num, custom_ability: str}}}
+let currentDeck;
+try{
+    const savedDeck = localStorage.getItem('currentDeck');
+    const parsedDeck = savedDeck ? JSON.parse(savedDeck) : null;
+    currentDeck = {
+        deckId : parsedDeck?.deckId ?? null,
+        name : parsedDeck?.name ?? null,
+        cards : parsedDeck?.cards ?? {},
+    }
+}
+catch(error){
+    console.error('Error loading deck from localStorage:', error);
+    currentDeck = {deckId : null, name : null, cards : {},}
+}
 let cardDict = {}; // card_idをキーとしたカード辞書
 let editingCardId;
+//localStorage {decks[deck,...], currentDeck}
 
 export const tribes = [" ", '植物族', 'エルフ族', '虫族', '狩人', 'プリンセス', '妖精', '獣', '精霊', '指揮官', '暗殺者', '盗賊', 
     '兵士', 'メイド', '忍者', '魔法使い', '錬金術師', '魔法生物', '土の印', '竜使い', 'ドラゴニュート', '竜族', '不死鳥', 
@@ -54,6 +68,7 @@ export function getDisplayCards(){return displayCards;}
 export function getAllCards(){return allCards;}
 export function getUniqueCards(){return uniqueCards;}
 export function getCurrentDeck(){return {...currentDeck["cards"]};}
+export function getCurrentDeckData(){return {...currentDeck};}
 export function getCardDict(){return cardDict;}
 export function getFilterConditions(){return {...filterConditions};}
 export function getEditingCardId(){return editingCardId;}
@@ -165,6 +180,8 @@ export function getFilteredCards(cards, conditions) {
 // ====================
 export function addCardToDeck(card) {
     const cardId = card.card_id;
+    console.log("Adding card to deck:", card.name);
+    console.log(currentDeck["cards"]);
     const cardInfo = currentDeck["cards"][cardId];
     if(!cardInfo) currentDeck["cards"][cardId] = {count: 1, custom_ability: ""}; // デッキにカードがない場合は新規追加
     else if(cardInfo["count"] < 3) cardInfo["count"] += 1; // 3枚上限

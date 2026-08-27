@@ -8,6 +8,7 @@ import {
     getUniqueCards,
     getCardDict,
     getCurrentDeck,
+    getCurrentDeckData,
     getFilterConditions,
     getEditingCardId,
     setConditionsName,
@@ -65,7 +66,7 @@ async function init() {
         },
         onBtnSaveEffect:(value)=>{
             getCurrentDeck()[getEditingCardId()]["custom_ability"] = value
-            renderEffectList(getCurrentDeck(), getCardDict(), {onBtnEdit: setEditingCardId});
+            renderEffectList(getCurrentDeckData(), getCardDict(), {onBtnEdit: setEditingCardId});
         },
         onClan: (clan, op) => {
             changeConditionsClan(clan, op);
@@ -125,23 +126,20 @@ async function init() {
 
 function handleAdd(card) {
     addCardToDeck(card);
-    const deck = getCurrentDeck();
     const dict = getCardDict();
-    renderDeck(deck, dict);
-    renderEffectList(deck, dict, {onBtnEdit: setEditingCardId});
+    renderDeck(getCurrentDeck(), dict);
+    renderEffectList(getCurrentDeckData(), dict, {onBtnEdit: setEditingCardId});
 }
 function handleRemove(card) {
     removeCardFromDeck(card);
-    const deck = getCurrentDeck();
     const dict = getCardDict();
-    renderDeck(deck, dict);
-    renderEffectList(deck, dict, {onBtnEdit: setEditingCardId});
+    renderDeck(getCurrentDeck(), dict);
+    renderEffectList(getCurrentDeckData(), dict, {onBtnEdit: setEditingCardId});
 }
 
 function renderAll() {
     const displayCards = getDisplayCards();
     const filterConditions = getFilterConditions();
-    const currentDeck = getCurrentDeck();
     const cardDict = getCardDict();
     const cards = getFilteredCards(displayCards, filterConditions);
 
@@ -152,8 +150,8 @@ function renderAll() {
             onRemove: handleRemove
         }
     );
-    renderDeck(currentDeck, cardDict);
-    renderEffectList(currentDeck, cardDict, {onBtnEdit: setEditingCardId});
+    renderDeck(getCurrentDeck(), cardDict);
+    renderEffectList(getCurrentDeckData(), cardDict, {onBtnEdit: setEditingCardId});
 }
 
 // ====================

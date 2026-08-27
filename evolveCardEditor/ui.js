@@ -307,8 +307,9 @@ export function renderDeck(deck, dict) {
 }
 
 
-export function renderEffectList(currentDeck, cardDict, handlers) {
+export function renderEffectList(currentDeckData, cardDict, handlers) {
     const {onBtnEdit} = handlers;
+    const currentDeck = currentDeckData["cards"];
     const area = document.getElementById('effect-list');
     area.innerHTML = '';
   
@@ -373,8 +374,9 @@ export function renderEffectList(currentDeck, cardDict, handlers) {
             currentDeck[cardId]["custom_effect"] = null;
             renderEffectList(currentDeck, cardDict, handlers);
         });
-    
     }
+
+    localStorage.setItem("currentDeck", JSON.stringify(currentDeckData));
 }
 export function renderAbilityIcons(icons){
     const area = document.querySelector('.modal-buttons');
