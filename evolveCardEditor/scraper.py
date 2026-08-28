@@ -175,22 +175,34 @@ with open("card_properties.json", "r", encoding="utf-8") as f:
 
 filtered_cards = {}
 change_log = []
+
+new_products = []
+new_rarities = []
+for card in cards:
+    product = card["product"]
+    rarity = card["rarity"]
+    if product not in product_dic and product not in new_products:
+        new_products.append(product)
+    if rarity not in rarity_dic and rarity not in new_rarities:
+        new_rarities.append(rarity)
+
+for product in reversed(new_products):
+    index = len(product_dic)
+    product_dic[product] = index
+    change_log.append(f'product: "{product}" -> {index}')
+
+for rarity in reversed(new_rarities):
+    index = len(rarity_dic) - 1
+    rarity_dic[rarity] = index
+    change_log.append(f'rarity: "{rarity}" -> {index}')
+
+
 for card in cards:
     product = card["product"]
     rarity = card["rarity"]
     name = card["name"]
     Type = card["type"]
     key = (name, Type)
-
-    if product not in product_dic:
-        index = len(product_dic)
-        product_dic[product] = index
-        change_log.append(f'product: "{product}" -> {index}')
-    
-    if rarity not in rarity_dic:
-        index = len(rarity_dic) - 1
-        rarity_dic[rarity] = index
-        change_log.append(f'rarity: "{rarity}" -> {index}')
 
     if key not in filtered_cards:
         filtered_cards[key] = card
