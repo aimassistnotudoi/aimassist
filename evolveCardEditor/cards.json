@@ -1,5 +1,63 @@
 [
   {
+    "name": "暴食のアナテマ・ララアンセム",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/PCS02/pcs02-001.png",
+    "clan": "ウィッチ",
+    "type": "フォロワー",
+    "tribe": "アナテマ・魔法使い",
+    "rarity": "UR",
+    "product": "プレミアムカードセット「サマーエディションvol.1」",
+    "cost": "コスト4",
+    "atk": "攻撃力4",
+    "life": "体力4",
+    "ability": "<img alt=\"進化\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_evolve.png\"/><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>：これは進化する。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>相手の場のフォロワー1体を選ぶ。それに2ダメージ。<br/>\n<img alt=\"起動\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_stand.png\"/>【土の秘術】：これは【指定攻撃】を持つ。",
+    "illustrator": "ヘスン",
+    "card_id": "PCS02-001",
+    "related": [
+      {
+        "name": "暴食のアナテマ・ララアンセム",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/BP16/bp16-039.png"
+      }
+    ]
+  },
+  {
+    "name": "呪いの言霊・ジンジャー",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/PCS02/pcs02-002.png",
+    "clan": "ウィッチ",
+    "type": "フォロワー",
+    "tribe": "魔法使い",
+    "rarity": "UR",
+    "product": "プレミアムカードセット「サマーエディションvol.1」",
+    "cost": "コスト10",
+    "atk": "攻撃力3",
+    "life": "体力3",
+    "ability": "これをプレイする際、コストを-Xする。Xは「自分の消滅領域の枚数」である。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>『ジンジャーの言霊』1枚をEXエリアに置く。",
+    "illustrator": "ソーイチ",
+    "card_id": "PCS02-002",
+    "related": [
+      {
+        "name": "ジンジャーの言霊",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/BP18/bp18-t04.png"
+      }
+    ]
+  },
+  {
+    "name": "新たなる少女・エース",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/PCS02/pcs02-003.png",
+    "clan": "ニュートラル",
+    "type": "フォロワー",
+    "tribe": "超克",
+    "rarity": "UR",
+    "product": "プレミアムカードセット「サマーエディションvol.1」",
+    "cost": "コスト2",
+    "atk": "攻撃力2",
+    "life": "体力3",
+    "ability": "【守護】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>1枚引く。自分のSEPが0なら、これは<img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>+2/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+2する。自分のリーダーは<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>+2する。",
+    "illustrator": "みけぼし",
+    "card_id": "PCS02-003",
+    "related": []
+  },
+  {
     "name": "新緑の新入生・カステル",
     "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/BP21/bp21-001.png",
     "clan": "エルフ",
@@ -148902,6 +148960,122 @@
     "ability": "<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>相手の場のフォロワーすべてに6ダメージ。<br/>\n<img alt=\"起動\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_stand.png\"/><img alt=\"コスト1\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost01.png\"/>手札のこれを捨てる：1枚引く。",
     "illustrator": "apt",
     "card_id": "PR-589",
+    "related": []
+  },
+  {
+    "name": "ギガブレード",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/BP18/bp18-027.png",
+    "clan": "ロイヤル",
+    "type": "アミュレット",
+    "tribe": "透京・探偵",
+    "rarity": "GR",
+    "product": "ブースターパック「新約都市・透京」",
+    "cost": "コスト1",
+    "atk": "攻撃力-",
+    "life": "体力-",
+    "ability": "これは能力によって破壊されず、消滅しない。<br/>\n自分の場に透京・フォロワーが出たときか自分の場のフォロワーが進化したとき、自分の場の『ギガブレード』すべてにギガカウンター1個を置く。<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>自分の場の『ギガブレード』すべてにギガカウンター2個を置く。自分の場に他の『ギガブレード』があるなら、これを墓場に置く。",
+    "illustrator": "巻",
+    "card_id": "BP18-027",
+    "related": []
+  },
+  {
+    "name": "エルフバード",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/BP02/bp02_016.png",
+    "clan": "エルフ",
+    "type": "フォロワー",
+    "tribe": "エルフ族",
+    "rarity": "BR",
+    "product": "ブースターパック第2弾「黒銀のバハムート」",
+    "cost": "コスト2",
+    "atk": "攻撃力2",
+    "life": "体力2",
+    "ability": "自分のフォロワーが進化したとき、『フェアリーウィスプ』1枚をEXエリアに置く。<br/>\n―――――――――――――――<br/>\n『フェアリーウィスプ』<img alt=\"エルフ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_elf.png\"/>妖精・フォロワー<img alt=\"コスト0\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost00.png\"/><img alt=\"攻撃力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_power.png\"/>1/<img alt=\"体力\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_hp.png\"/>1",
+    "illustrator": "掲載不可",
+    "card_id": "BP02-016",
+    "related": [
+      {
+        "name": "フェアリーウィスプ",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/BP02/bp02_t10.png"
+      }
+    ]
+  },
+  {
+    "name": "ローズディアー",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/BP02/bp02_017.png",
+    "clan": "エルフ",
+    "type": "フォロワー",
+    "tribe": "精霊・植物族",
+    "rarity": "BR",
+    "product": "ブースターパック第2弾「黒銀のバハムート」",
+    "cost": "コスト4",
+    "atk": "攻撃力4",
+    "life": "体力3",
+    "ability": "【突進】<br/>\n<img alt=\"ファンファーレ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_fanfare.png\"/>『薔薇の一撃』1枚をEXエリアに置く。<br/>\n―――――――――――――――<br/>\n『薔薇の一撃』<img alt=\"エルフ\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_elf.png\"/>植物族・スペル<img alt=\"コスト2\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost02.png\"/>相手のリーダー1人か相手のフォロワー1体を選ぶ。それに3ダメージ。1枚引く。",
+    "illustrator": "タツヤキ",
+    "card_id": "BP02-017",
+    "related": [
+      {
+        "name": "薔薇の一撃",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/BP02/bp02_t09.png"
+      }
+    ]
+  },
+  {
+    "name": "レヴィオンセイバー・アルベール",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/BP02/bp02_018.png",
+    "clan": "ロイヤル",
+    "type": "フォロワー",
+    "tribe": "指揮官・レヴィオン",
+    "rarity": "LG",
+    "product": "ブースターパック第2弾「黒銀のバハムート」",
+    "cost": "コスト4",
+    "atk": "攻撃力3",
+    "life": "体力5",
+    "ability": "<img alt=\"進化\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_evolve.png\"/><img alt=\"コスト3\" class=\"icon-square\" src=\"https://shadowverse-evolve.com/wordpress/wp-content/images/texticon/icon_cost03.png\"/>：これは進化する。<br/>\n【疾走】",
+    "illustrator": "虫麻呂",
+    "card_id": "BP02-018",
+    "related": [
+      {
+        "name": "レヴィオンセイバー・アルベール",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/BP02/bp02_019.png"
+      }
+    ]
+  },
+  {
+    "name": "レヴィオンセイバー・アルベール",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/BP02/bp02_019.png",
+    "clan": "ロイヤル",
+    "type": "フォロワー・エボルヴ",
+    "tribe": "指揮官・レヴィオン",
+    "rarity": "LG",
+    "product": "ブースターパック第2弾「黒銀のバハムート」",
+    "cost": "コスト-",
+    "atk": "攻撃力3",
+    "life": "体力5",
+    "ability": "【疾走】<br/>\n【攻撃時】これをスタンドする。この能力は1ターンに1回働く。<br/>\n【進化時】このターン、これは交戦ダメージを受けない。",
+    "illustrator": "虫麻呂",
+    "card_id": "BP02-019",
+    "related": [
+      {
+        "name": "レヴィオンセイバー・アルベール",
+        "image": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/BP02/bp02_018.png"
+      }
+    ]
+  },
+  {
+    "name": "アレキサンダー",
+    "img": "https://shadowverse-evolve.com/wordpress/wp-content/images/cardlist/BP02/bp02_020.png",
+    "clan": "ロイヤル",
+    "type": "フォロワー",
+    "tribe": "指揮官",
+    "rarity": "LG",
+    "product": "ブースターパック第2弾「黒銀のバハムート」",
+    "cost": "コスト6",
+    "atk": "攻撃力5",
+    "life": "体力9",
+    "ability": "【突進】【指定攻撃】<br/>\n自分のターン中、これが交戦ダメージを与えたとき、これをスタンドする。",
+    "illustrator": "相場良祐",
+    "card_id": "BP02-020",
     "related": []
   }
 ]
