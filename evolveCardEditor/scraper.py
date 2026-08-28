@@ -4,6 +4,8 @@ import time
 import json
 import random
 from datetime import datetime
+from urllib.parse import urlparse, parse_qs
+import sys
 
 ALLCARD_URL = "https://shadowverse-evolve.com/cardlist/cardsearch_ex?view=image&page={}"
 BASE_URL = "https://shadowverse-evolve.com"
@@ -13,11 +15,21 @@ headers = {
                   "Chrome/117.0.0.0 Safari/537.36"
 }
 
+with open("cards.json", "r", encoding="utf-8") as f:
+    existing_cards = json.load(f)
+    print(f"既存のカード情報を読み込みました。枚数: {len(existing_cards)}")
 
-cards = []
-card_urls = []
-page_index = 0
+existing_card_ids = {card["card_id"] for card in existing_cards}
+
+
+new_card_urls = []
+new_PRcard_urls = []
+is_PR = False
+page_index = 1
 while True:
+    if page_index > 5000:
+        print("ページ数が上限に達しました。終了します。")
+        break
     if page_index % 10 == 0:
         print(f"ページ {page_index} を取得中...")
     response = requests.get(ALLCARD_URL.format(page_index), headers=headers, timeout=10)
@@ -34,99 +46,118 @@ while True:
         a = li.select_one("a")
         href = a["href"]
         url = BASE_URL + href
-        card_urls.append(url)
-    
+
+        query = parse_qs(urlparse(url).query)
+        card_id = query["cardno"][0]
+
+        if card_id not in existing_card_ids:
+            if is_PR:
+                new_PRcard_urls.append(url)
+            else:
+                new_card_urls.append(url)
+        elif not new_card_urls:
+            print("カード情報が最新です。")
+            sys.exit()
+        else:
+            is_PR = True
+
     page_index += 1
-    if(page_index%100==0):
-        print(f"ページ {page_index} までのカードURLを取得しました。")
     
     time.sleep(random.uniform(0.1, 0.3))  # サーバーへの負荷を避けるための待機
 
-print(f"合計 {len(card_urls)} 枚のカードURLを取得しました。")
+print(
+        f" {len(new_card_urls)} 枚の新規カードURLを取得しました。\n"
+        f"{len(new_PRcard_urls)} 枚の新規PRカードURLを取得しました。"
+    )
 
 
-for url in card_urls:
-    try:
-        response = requests.get(url, headers=headers, timeout=10)
-    except requests.exceptions.Timeout:
-        print("timeout:", url)
-        continue
-    if response.status_code != 200:
-        print("failed to get card page:", url)
-        continue
-    soup = BeautifulSoup(response.text, "html.parser")
-    box = soup.select_one(".cardlist-Detail_Box")
-    if not box:
-        print("failed to get card box:", url)
-        continue
+def scrape(urls):
+    cards = []
+    for url in urls:
+        try:
+            response = requests.get(url, headers=headers, timeout=10)
+        except requests.exceptions.Timeout:
+            print("timeout:", url)
+            continue
+        if response.status_code != 200:
+            print("failed to get card page:", url)
+            continue
+        soup = BeautifulSoup(response.text, "html.parser")
+        box = soup.select_one(".cardlist-Detail_Box")
+        if not box:
+            print("failed to get card box:", url)
+            continue
 
-    card = {}
+        card = {}
 
-    # カード名
-    card["name"] = box.select_one("h1.ttl").text.strip()
+        # カード名
+        card["name"] = box.select_one("h1.ttl").text.strip()
 
-    # 画像URL
-    img_tag = box.select_one("img")
-    if img_tag:
-        card["img"] = BASE_URL + img_tag["src"]
+        # 画像URL
+        img_tag = box.select_one("img")
+        if img_tag:
+            card["img"] = BASE_URL + img_tag["src"]
 
-    # 基本情報
-    for dl in box.select("dl"):
-        if dl.select_one("dt").text.strip() == "クラス":
-            dt = "clan"
-        elif dl.select_one("dt").text.strip() == "カード種類":
-            dt = "type"
-        elif dl.select_one("dt").text.strip() == "タイプ":
-            dt = "tribe"
-        elif dl.select_one("dt").text.strip() == "レアリティ":
-            dt = "rarity"
-        elif dl.select_one("dt").text.strip() == "収録商品":
-            dt = "product"
-        dd = dl.select_one("dd").text.strip()
-        card[dt] = dd
+        # 基本情報
+        for dl in box.select("dl"):
+            if dl.select_one("dt").text.strip() == "クラス":
+                dt = "clan"
+            elif dl.select_one("dt").text.strip() == "カード種類":
+                dt = "type"
+            elif dl.select_one("dt").text.strip() == "タイプ":
+                dt = "tribe"
+            elif dl.select_one("dt").text.strip() == "レアリティ":
+                dt = "rarity"
+            elif dl.select_one("dt").text.strip() == "収録商品":
+                dt = "product"
+            dd = dl.select_one("dd").text.strip()
+            card[dt] = dd
 
-    # ステータス
-    for s in box.select(".status-Item"):
-        if s.select_one(".heading").text.strip() == "コスト":
-            heading = "cost"
-        elif s.select_one(".heading").text.strip() == "攻撃力":
-            heading = "atk"
-        elif s.select_one(".heading").text.strip() == "体力":
-            heading = "life"
-        value = s.text.replace(heading, "").strip()
-        card[heading] = value
+        # ステータス
+        for s in box.select(".status-Item"):
+            if s.select_one(".heading").text.strip() == "コスト":
+                heading = "cost"
+            elif s.select_one(".heading").text.strip() == "攻撃力":
+                heading = "atk"
+            elif s.select_one(".heading").text.strip() == "体力":
+                heading = "life"
+            value = s.text.replace(heading, "").strip()
+            card[heading] = value
 
-    # 能力テキスト
-    detail = box.select_one(".detail p")
-    card["ability"] = detail.decode_contents().replace('src="/wordpress/',
-            f'src="{BASE_URL}/wordpress/').strip() if detail else ""
+        # 能力テキスト
+        detail = box.select_one(".detail p")
+        card["ability"] = detail.decode_contents().replace('src="/wordpress/',
+                f'src="{BASE_URL}/wordpress/').strip() if detail else ""
 
-    # イラスト・カード番号
-    illust = box.select_one(".illustrator")
-    if illust:
-        spans = illust.select("span")
-        if len(spans) >= 2:
-            card["illustrator"] = spans[0].text.strip()
-            card["card_id"] = spans[1].text.strip()
-        elif len(spans) == 1:
-            card["card_id"] = spans[0].text.strip()
-            card["illustrator"] = ""
+        # イラスト・カード番号
+        illust = box.select_one(".illustrator")
+        if illust:
+            spans = illust.select("span")
+            if len(spans) >= 2:
+                card["illustrator"] = spans[0].text.strip()
+                card["card_id"] = spans[1].text.strip()
+            elif len(spans) == 1:
+                card["card_id"] = spans[0].text.strip()
+                card["illustrator"] = ""
 
 
-    # 関連カード
+        # 関連カード
 
-    rel_cards = []
-    for rel in soup.select(".cardlist-Detail_Relation img"):
-        rel_cards.append({
-            "name": rel.get("alt"),
-            "image": BASE_URL + rel.get("src")
-        })
-    card["related"] = rel_cards
+        rel_cards = []
+        for rel in soup.select(".cardlist-Detail_Relation img"):
+            rel_cards.append({
+                "name": rel.get("alt"),
+                "image": BASE_URL + rel.get("src")
+            })
+        card["related"] = rel_cards
 
-    cards.append(card)
+        cards.append(card)
 
-    # サーバーへの負荷を避けるための待機（重要！）
-    time.sleep(random.uniform(0.1, 0.3))
+        # サーバーへの負荷を避けるための待機（重要！）
+        time.sleep(random.uniform(0.1, 0.3))
+    return cards
+
+cards = scrape(new_card_urls) + existing_cards + scrape(new_PRcard_urls)
 
 # JSON保存
 with open("cards.json", "w", encoding="utf-8") as f:
