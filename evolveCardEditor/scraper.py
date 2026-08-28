@@ -187,7 +187,7 @@ for card in cards:
         new_rarities.append(rarity)
 
 for product in reversed(new_products):
-    index = len(product_dic)
+    index = len(product_dic) - 1
     product_dic[product] = index
     change_log.append(f'product: "{product}" -> {index}')
 
