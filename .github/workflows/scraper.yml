@@ -31,7 +31,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add evolveCardEditor/cards.json evolveCardEditor/unique_cards.json
+          git add evolveCardEditor/cards.json evolveCardEditor/unique_cards.json evolveCardEditor/card_properties.json evolveCardEditor/card_properties.log
           
           if git diff --cached --quiet; then
             echo "No changes to commit"
