@@ -5,5 +5,5 @@ document.getElementById("deck-button").addEventListener("click", () => {
         location.href = "deck/index.html";
     }
 
-    location.href = `deck/index.html?clan=${clan.id}`;
+    location.href = `deck/index.html?clan=${clan.value}`;
 })

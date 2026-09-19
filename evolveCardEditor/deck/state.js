@@ -49,16 +49,18 @@ export const abilityIcons = {
 }
 
 //検索条件
+const parms = new URLSearchParams(location.search);
 let filterConditions = {
-    //カード名
-    //コスト or検索
-    //タイプ1
-    //タイプ2
-    //レアリティ or検索
-    //クラス
+    name: "",
+    cost: [],
     tribe1: " ",
     tribe2: " ",
     tribeOp: "or", //or,and
+    type1: [],
+    type2: [],
+    rarity: [],
+    clan: parms.get("clan") ? [parms.get("clan")] : [],
+    ability: "",
 };
 
 // ====================
@@ -91,15 +93,11 @@ export function changeConditionsRarity(rarity, op){changeConditionsOfList("rarit
 
 function changeConditionsOfList(key, value, op){
     if(op == "add"){
-        if(!filterConditions[key]) filterConditions[key] = [value];
-        else if(!filterConditions[key].includes(value)) filterConditions[key].push(value);
+        if(!filterConditions[key].includes(value)) filterConditions[key].push(value);
         return;
     }
     if(op == "remove"){
-        if(filterConditions[key]) {
-            filterConditions[key] = filterConditions[key].filter(v => v !== value);
-            if(filterConditions[key].length === 0) delete filterConditions[key];
-        }
+        filterConditions[key] = filterConditions[key].filter(v => v !== value);
         return;
     }
 }
@@ -121,24 +119,19 @@ export function initCards(all, unique){
 // カード検索
 // ====================
 export function getFilteredCards(cards, conditions) {
-    let filteredCards = cards.filter(card => {
-        if(conditions.name){
-            if(!card.name.includes(conditions.name)) return false; //名前検索
-        }
-        if(conditions.cost){
-            if(!conditions.cost.includes(card.cost)) return false; //コスト検索
-        }
-
-        if(conditions.type1 && conditions.type2){//タイプ検索
+    let filteredCards = cards.filter(card => { 
+        const flag1 = conditions.type1.length > 0;
+        const flag2 = conditions.type2.length > 0;
+        if(flag1 && flag2){//タイプ検索
             const hasType1 = conditions.type1.some(t => card.type.includes(t));
             const hasType2 = conditions.type2.some(t => {
                 if(t == "通常") return !card.type.includes("エボルヴ") && !card.type.includes("アドバンス") && !card.type.includes("トークン");
                 return card.type.includes(t);
             });
             if(!hasType1 || !hasType2) return false; //タイプ1とタイプ2両方検索
-        }else if(conditions.type1){
+        }else if(flag1){
             if(!conditions.type1.some(t => card.type.includes(t))) return false; //タイプ1検索
-        }else if(conditions.type2){
+        }else if(flag2){
             if(!conditions.type2.some(t => {
                 if(t == "通常") return !card.type.includes("エボルヴ") && !card.type.includes("アドバンス") && !card.type.includes("トークン");
                 return card.type.includes(t);
@@ -157,19 +150,13 @@ export function getFilteredCards(cards, conditions) {
             if(!(hasTribe(tribe1) || hasTribe(tribe2))) return false; //種族検索(or)
         }else if(!(hasTribe(tribe1) && hasTribe(tribe2))) return false; //種族検索(and)
 
-        if(conditions.rarity){
-            if(!conditions.rarity.includes(card.rarity)) return false; //レアリティ検索
-        }
-        if(conditions.clan){
-            if(!conditions.clan.includes(card.clan)) return false; //クラス検索
-        }
 
-        if(conditions.ability){
-            const abilities = conditions.ability.trim().split(/\s+/);
-            if(!abilities.every(ab => card.ability.includes(ab))) return false; //能力検索（スペース区切りで複数指定可能、すべての条件を満たすカードを表示）
-        }
-        
-        return true;
+        const abilities = conditions.ability.trim().split(/\s+/);
+        return (!conditions.name || card.name.includes(conditions.name))
+            && (conditions.cost.length == 0 || conditions.cost.includes(card.cost))
+            && (conditions.rarity.length == 0 || conditions.rarity.includes(card.rarity))
+            && (conditions.clan.length == 0 || conditions.clan.includes(card.clan))
+            && (conditions.ability.length == 0 || abilities.every(ab => card.ability.includes(ab)))
     })
 
     return filteredCards;
