@@ -1,0 +1,185 @@
+let displayCards = []; //表示対象カード配列
+let allCards = []; //全カード配列
+let uniqueCards = []; //ユニークカード配列
+let currentDeck;
+try{
+    const savedDeck = localStorage.getItem('currentDeck');
+    const parsedDeck = savedDeck ? JSON.parse(savedDeck) : null;
+    currentDeck = {
+        deckId : parsedDeck?.deckId ?? null,
+        name : parsedDeck?.name ?? null,
+        cards : parsedDeck?.cards ?? {},
+    }
+}
+catch(error){
+    console.error('Error loading deck from localStorage:', error);
+    currentDeck = {deckId : null, name : null, cards : {},}
+}
+let cardDict = {}; // card_idをキーとしたカード辞書
+let editingCardId;
+//localStorage {decks[deck,...], currentDeck}
+
+export const tribes = [" ", '植物族', 'エルフ族', '虫族', '狩人', 'プリンセス', '妖精', '獣', '精霊', '指揮官', '暗殺者', '盗賊', 
+    '兵士', 'メイド', '忍者', '魔法使い', '錬金術師', '魔法生物', '土の印', '竜使い', 'ドラゴニュート', '竜族', '不死鳥', 
+    '魔界', '死者', 'キラー', '死霊術師', '先導', '信仰', '狂信', '天使', '堕天使', '魔王', '大神', '傭兵', 'ゴブリン', 
+    '悪魔', '光輝', '巨人', 'クリスタリア', 'レヴィオン', '貴族', 'ヒーロー', 'ダンサー', '学院', 'ゴーレム', 'チェス', 
+    '海洋', '武装', '吸血鬼', '偶像', '超克', 'コック', '童話', '鳥族', 'シンガー', '星神', '円卓', 'プリンス', '禁忌', 
+    'ゴルゴーン', '絶傑', '人形', 'マグナ', 'アイドル', '挑戦者', '陰陽師', '妖怪', '探偵', '自然', '機械', '商人', 
+    '武闘竜人', 'アルカナ', '荒野', '宴楽', '財宝', '式神', 'ルミナス', 'アナテマ'
+]
+export const abilityIcons = {
+    fanfare : "ファンファーレ",
+    lastword : "ラストワード",
+    evolve : "進化",
+    stand : "起動",
+    act : "アクト",
+    quick : "クイック",
+    power : "攻撃力",
+    hp : "体力",
+    cost01 : "コスト1",
+    cost02 : "コスト2",
+    cost03 : "コスト3",
+    cost04 : "コスト4",
+    cost05 : "コスト5",
+    cost06 : "コスト6",
+    cost07 : "コスト7",
+    cost08 : "コスト8",
+    cost09 : "コスト9",
+    cost10 : "コスト10",
+}
+
+//検索条件
+const parms = new URLSearchParams(location.search);
+let filterConditions = {
+    name: "",
+    cost: [],
+    tribe1: " ",
+    tribe2: " ",
+    tribeOp: "or", //or,and
+    type1: [],
+    type2: [],
+    rarity: [],
+    clan: parms.get("clan") ? [parms.get("clan")] : [],
+    ability: "",
+};
+
+// ====================
+// getter/setter
+// ====================
+export function getDisplayCards(){return displayCards;}
+export function getAllCards(){return allCards;}
+export function getUniqueCards(){return uniqueCards;}
+export function getCurrentDeck(){return {...currentDeck["cards"]};}
+export function getCurrentDeckData(){return {...currentDeck};}
+export function getCardDict(){return cardDict;}
+export function getFilterConditions(){return {...filterConditions};}
+export function getEditingCardId(){return editingCardId;}
+
+export function setConditionsName(name){filterConditions.name = name;}
+export function setConditionsCost(cost){filterConditions.cost = cost;}
+export function setEditingCardId(cardId){editingCardId = cardId;}
+export function setConditionsTribeOp(op){filterConditions.tribeOp = op}
+export function setConditionsTribe1(tribe){filterConditions.tribe1 = tribe;}
+export function setConditionsTribe2(tribe){filterConditions.tribe2 = tribe;}
+export function setConditionsAbility(ability){filterConditions.ability = ability;}
+export function setDisplayCards(cards){displayCards = cards;}
+export function setCurrentDeck(deck){currentDeck["cards"] = {...deck};}
+
+export function changeConditionsClan(clan, op){changeConditionsOfList("clan", clan, op);}
+export function changeConditionsType1(type, op){changeConditionsOfList("type1", type, op);}
+export function changeConditionsType2(type, op){changeConditionsOfList("type2", type, op);}
+export function changeConditionsRarity(rarity, op){changeConditionsOfList("rarity", rarity, op);}
+
+
+function changeConditionsOfList(key, value, op){
+    if(op == "add"){
+        if(!filterConditions[key].includes(value)) filterConditions[key].push(value);
+        return;
+    }
+    if(op == "remove"){
+        filterConditions[key] = filterConditions[key].filter(v => v !== value);
+        return;
+    }
+}
+
+
+// ====================
+// 初期化
+// ====================
+export function initCards(all, unique){
+    allCards = all;
+    uniqueCards = unique;
+    allCards.forEach(card => {
+        cardDict[card.card_id] = card;
+    });
+    displayCards = uniqueCards;
+}
+
+// ====================
+// カード検索
+// ====================
+export function getFilteredCards(cards, conditions) {
+    let filteredCards = cards.filter(card => { 
+        const flag1 = conditions.type1.length > 0;
+        const flag2 = conditions.type2.length > 0;
+        if(flag1 && flag2){//タイプ検索
+            const hasType1 = conditions.type1.some(t => card.type.includes(t));
+            const hasType2 = conditions.type2.some(t => {
+                if(t == "通常") return !card.type.includes("エボルヴ") && !card.type.includes("アドバンス") && !card.type.includes("トークン");
+                return card.type.includes(t);
+            });
+            if(!hasType1 || !hasType2) return false; //タイプ1とタイプ2両方検索
+        }else if(flag1){
+            if(!conditions.type1.some(t => card.type.includes(t))) return false; //タイプ1検索
+        }else if(flag2){
+            if(!conditions.type2.some(t => {
+                if(t == "通常") return !card.type.includes("エボルヴ") && !card.type.includes("アドバンス") && !card.type.includes("トークン");
+                return card.type.includes(t);
+            })) return false; //タイプ2検索
+        }
+
+        const tribes = card.tribe.split("・")
+        const tribe1 = conditions.tribe1;
+        const tribe2 = conditions.tribe2;
+        function hasTribe(tribe) {
+            if(tribe === " ") return false; //条件なし
+            return tribes.includes(tribe);
+        }
+        if(tribe1 === " " && tribe2 === " "){}
+        else if(conditions.tribeOp === "or"){
+            if(!(hasTribe(tribe1) || hasTribe(tribe2))) return false; //種族検索(or)
+        }else if(!(hasTribe(tribe1) && hasTribe(tribe2))) return false; //種族検索(and)
+
+
+        const abilities = conditions.ability.trim().split(/\s+/);
+        return (!conditions.name || card.name.includes(conditions.name))
+            && (conditions.cost.length == 0 || conditions.cost.includes(card.cost))
+            && (conditions.rarity.length == 0 || conditions.rarity.includes(card.rarity))
+            && (conditions.clan.length == 0 || conditions.clan.includes(card.clan))
+            && (conditions.ability.length == 0 || abilities.every(ab => card.ability.includes(ab)))
+    })
+
+    return filteredCards;
+}
+
+// ====================
+// デッキ操作
+// ====================
+export function addCardToDeck(card) {
+    const cardId = card.card_id;
+    console.log("Adding card to deck:", card.name);
+    console.log(currentDeck["cards"]);
+    const cardInfo = currentDeck["cards"][cardId];
+    if(!cardInfo) currentDeck["cards"][cardId] = {count: 1, custom_ability: ""}; // デッキにカードがない場合は新規追加
+    else if(cardInfo["count"] < 3) cardInfo["count"] += 1; // 3枚上限
+    else if(cardInfo["count"] > 3) cardInfo["count"] = 3; // 上限を超えないように
+}
+
+export function removeCardFromDeck(card) {
+    const cardId = card.card_id;
+    const cardInfo = currentDeck["cards"][cardId];
+    if(cardInfo) {
+        cardInfo["count"] -=1;
+        if(cardInfo["count"]<=0) delete currentDeck["cards"][cardId];
+    }
+}

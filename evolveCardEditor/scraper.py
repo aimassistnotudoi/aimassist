@@ -159,9 +159,13 @@ def scrape(urls):
 
 cards = scrape(new_card_urls) + existing_cards + scrape(new_PRcard_urls)
 
+result = {
+    "cards": cards
+}
+
 # JSON保存
 with open("cards.json", "w", encoding="utf-8") as f:
-    json.dump(cards, f, ensure_ascii=False, indent=2)
+    json.dump(result, f, ensure_ascii=False, indent=2)
 
 print(f"{len(cards)} 枚のカード情報を保存しました！")
 

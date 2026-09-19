@@ -1,7 +1,7 @@
 export async function loadCardJson() {
     try {
-        const cardsRes = await fetch('cards.json');
-        const uniqueRes = await fetch('unique_cards.json');
+        const cardsRes = await fetch('../cards.json');
+        const uniqueRes = await fetch('../unique_cards.json');
 
         const cards = await cardsRes.json();
         const uniqueCards = await uniqueRes.json();
