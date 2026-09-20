@@ -20,6 +20,7 @@ document.getElementById("deck-button").addEventListener("click", () => {
 
     if (!clan) {
         location.href = "deck/index.html";
+        return;
     }
 
     location.href = `deck/index.html?clan=${clan.value}`;
