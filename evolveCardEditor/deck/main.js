@@ -1,3 +1,6 @@
+import { getLoginData } from '../login.js';
+let { savedUserId, savedUserName, isSignedIn } = await getLoginData();
+
 import {
     initCards,
     addCardToDeck,

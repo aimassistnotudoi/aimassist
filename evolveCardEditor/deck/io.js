@@ -1,3 +1,64 @@
+import { supabase } from '../supabase.js';
+
+export async function saveDeckToServer(userId, deckData){
+    const {id, name, cards} = deckData;
+    if(!cards){
+        console.error('Deck data is missing cards:', deckData);
+        throw new Error('Deck data is missing cards');
+    }
+    if(id !== null && id !== undefined){
+        // Update existing deck
+        const { data, error } = await supabase.rpc(
+            'update_deck',
+            {
+                target_user_id: userId,
+                target_id: id,
+                target_name: name,
+                target_cards: cards
+            }
+        )
+        if(error){
+            console.error('Error updating deck:', error);
+            throw error;
+        }
+
+        if(data) return;
+        deckData.id = null;
+    }
+
+    // Insert new deck
+    const { data, error } = await supabase.rpc(
+        'create_deck',
+        {
+            target_user_id: userId,
+            target_name: name,
+            target_cards: cards
+        }
+    )
+    if(error){
+        console.error('Error inserting deck:', error);
+        throw error;
+    }
+    // Set the new id to deckData
+    deckData.id = data;
+}
+
+export async function loadDecksFromServer(userId){
+    const { data, error } = await supabase.rpc(
+        'get_decks',
+        {
+            target_user_id: userId
+        }
+    );
+
+    if(error){
+        console.error('Error fetching decks:', error);
+        throw error;
+    }
+
+    return data ?? [];
+}
+
 export async function loadCardJson() {
     try {
         const cardsRes = await fetch('../cards.json');
