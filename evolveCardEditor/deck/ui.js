@@ -142,10 +142,17 @@ export function bindEvents(handlers) {
 function renderTabDeck(){
     document.getElementById('deck-section').classList.remove('hidden');
     document.getElementById('view-section').classList.add('hidden');
+    document.getElementById('my-decks-section').classList.add('hidden');
 }
 function renderTabView(){
     document.getElementById('deck-section').classList.add('hidden');
     document.getElementById('view-section').classList.remove('hidden');
+    document.getElementById('my-decks-section').classList.add('hidden');
+}
+function renderTabMyDecks(){
+    document.getElementById('my-decks-section').classList.remove('hidden');
+    document.getElementById('view-section').classList.add('hidden');
+    document.getElementById('deck-section').classList.add('hidden');
 }
 
 // ====================
@@ -438,4 +445,11 @@ export function renderFilterConditions(tribes, abilityIcons){
         label.appendChild(img);
         area.appendChild(label);
     }
+}
+
+export function renderMyDecks(handlers){
+    const {onLoadDeck} = handlers;
+    const area = document.getElementById('my-decks-storage');
+    area.innerHTML = '';
+    
 }

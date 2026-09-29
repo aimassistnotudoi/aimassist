@@ -43,6 +43,8 @@ import {
     renderFilterConditions,
 } from './ui.js';
 import {
+    saveDeckToServer,
+    loadDecksFromServer,
     loadCardJson,
     importDeckJson,
     exportDeckJson,
@@ -119,6 +121,21 @@ async function init() {
         },
         onExportDeck:()=>{
             return exportDeckJson(getCurrentDeck());
+        },
+        onSaveDeck: async()=>{
+            if(!isSignedIn){
+                alert('ログインしていません。保存できません。');
+                return;
+            }
+            const deckData = getCurrentDeck();
+            try{
+                await saveDeckToServer(savedUserId, savedUserName, deckData);
+                alert('デッキを保存しました。');
+            }
+            catch(error){
+                console.error('Error saving deck to server:', error);
+                alert('デッキの保存に失敗しました。');
+            }
         }
     })
 }
