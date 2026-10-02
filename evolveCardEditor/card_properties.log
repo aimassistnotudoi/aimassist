@@ -5,3 +5,140 @@ product: "ブースターパック「絶傑を継ぐ者」" -> 50
 product: "「Special Card Selection Vol.1」" -> 51
 product: "ブースターパック「Academy Royale/アカデミー・ロワイヤル」" -> 52
 product: "プレミアムカードセット「サマーエディションvol.1」" -> 53
+
+[2026-10-02 11:00:19] 変更ログ:
+product: "ブースターパック「Over the Calamity/オーバー・ザ・カラミティ」" -> 54
+tribe: "妖精" -> エルフ
+tribe: "エルフ族" -> エルフ
+new tribe_clan: "neutral"
+tribe: "キラー" -> neutral
+tribe: "クリスタリア" -> エルフ
+tribe: "植物族" -> エルフ
+tribe: "獣" -> neutral
+tribe: "プリンセス" -> neutral
+tribe: "精霊" -> エルフ
+tribe: "指揮官" -> ロイヤル
+tribe: "兵士" -> ロイヤル
+tribe: "貴族" -> ロイヤル
+tribe: "盗賊" -> ロイヤル
+tribe: "魔法使い" -> ウィッチ
+tribe: "ゴーレム" -> ウィッチ
+tribe: "魔法生物" -> ウィッチ
+tribe: "超克" -> neutral
+tribe: "錬金術師" -> ウィッチ
+tribe: "竜族" -> ドラゴン
+tribe: "ドラゴニュート" -> ドラゴン
+tribe: "海洋" -> ドラゴン
+tribe: "死者" -> ナイトメア
+tribe: "魔界" -> ナイトメア
+tribe: "ゴブリン" -> ニュートラル
+tribe: "吸血鬼" -> ナイトメア
+tribe: "狂信" -> ビショップ
+tribe: "先導" -> ビショップ
+tribe: "信仰" -> ビショップ
+tribe: "光輝" -> neutral
+tribe: "鳥族" -> ビショップ
+tribe: "傭兵" -> ニュートラル
+new tribe_clan: "ウマ娘 プリティーダービー"
+tribe: "ウマ娘" -> ウマ娘 プリティーダービー
+tribe: "学院" -> neutral
+tribe: "人形" -> エルフ
+tribe: "コック" -> ニュートラル
+tribe: "レヴィオン" -> ロイヤル
+tribe: "禁忌" -> ウィッチ
+tribe: "土の印" -> ウィッチ
+tribe: "竜使い" -> ドラゴン
+tribe: "死霊術師" -> ナイトメア
+tribe: "挑戦者" -> neutral
+tribe: "機械" -> neutral
+tribe: "シンガー" -> ニュートラル
+tribe: "-" -> neutral
+tribe: "絶傑" -> neutral
+tribe: "狩人" -> エルフ
+tribe: "継承者" -> neutral
+tribe: "財宝" -> ロイヤル
+tribe: "アイドル" -> ウィッチ
+tribe: "陰陽師" -> ウィッチ
+tribe: "アサイラント" -> ナイトメア
+tribe: "妖怪" -> ナイトメア
+tribe: "八獄" -> neutral
+tribe: "虫族" -> エルフ
+tribe: "商人" -> neutral
+tribe: "アナテマ" -> ロイヤル
+tribe: "メイド" -> ロイヤル
+tribe: "忍者" -> ロイヤル
+tribe: "ダンサー" -> ロイヤル
+tribe: "武闘竜人" -> ドラゴン
+tribe: "宴楽" -> neutral
+tribe: "偶像" -> ビショップ
+tribe: "大神" -> ニュートラル
+tribe: "天使" -> ニュートラル
+new tribe_clan: "プリンセスコネクト！Re:Dive"
+tribe: "プリコネ" -> プリンセスコネクト！Re:Dive
+tribe: "ラビリンス" -> プリンセスコネクト！Re:Dive
+tribe: "リトルリリカル" -> プリンセスコネクト！Re:Dive
+tribe: "サレンディア救護院" -> プリンセスコネクト！Re:Dive
+tribe: "美食殿" -> プリンセスコネクト！Re:Dive
+tribe: "〈ジオ" -> プリンセスコネクト！Re:Dive
+tribe: "ゲヘナ〉" -> プリンセスコネクト！Re:Dive
+tribe: "エリザベスパーク" -> プリンセスコネクト！Re:Dive
+tribe: "カォン" -> プリンセスコネクト！Re:Dive
+tribe: "テオゴニア〉" -> プリンセスコネクト！Re:Dive
+tribe: "〈レイジ" -> プリンセスコネクト！Re:Dive
+tribe: "レギオン〉" -> プリンセスコネクト！Re:Dive
+tribe: "フォレスティエ" -> プリンセスコネクト！Re:Dive
+tribe: "ルーセント学院" -> プリンセスコネクト！Re:Dive
+tribe: "NIGHTMARE" -> プリンセスコネクト！Re:Dive
+tribe: "七冠" -> プリンセスコネクト！Re:Dive
+tribe: "アルターメイデン" -> プリンセスコネクト！Re:Dive
+tribe: "リッチモンド商工会" -> プリンセスコネクト！Re:Dive
+tribe: "トワイライトキャラバン" -> プリンセスコネクト！Re:Dive
+tribe: "メルクリウス財団" -> プリンセスコネクト！Re:Dive
+tribe: "ヴァイスフリューゲル" -> プリンセスコネクト！Re:Dive
+tribe: "なかよし部" -> プリンセスコネクト！Re:Dive
+tribe: "ドラゴンズネスト" -> プリンセスコネクト！Re:Dive
+tribe: "トゥインクルウィッシュ" -> プリンセスコネクト！Re:Dive
+tribe: "ディアボロス" -> プリンセスコネクト！Re:Dive
+tribe: "ニヴルヘル〉" -> プリンセスコネクト！Re:Dive
+tribe: "カルミナ" -> プリンセスコネクト！Re:Dive
+tribe: "ギルド管理協会" -> プリンセスコネクト！Re:Dive
+tribe: "透京" -> neutral
+tribe: "探偵" -> ロイヤル
+tribe: "円卓" -> ロイヤル
+tribe: "ルミナス" -> ロイヤル
+tribe: "区役所" -> ニュートラル
+tribe: "自然" -> neutral
+tribe: "暗殺者" -> ロイヤル
+new tribe_clan: "アイドルマスター シンデレラガールズ"
+tribe: "デレマス" -> アイドルマスター シンデレラガールズ
+tribe: "クール" -> アイドルマスター シンデレラガールズ
+tribe: "パッション" -> アイドルマスター シンデレラガールズ
+tribe: "キュート" -> アイドルマスター シンデレラガールズ
+tribe: "荒野" -> neutral
+tribe: "堕天使" -> ニュートラル
+tribe: "魔王" -> ニュートラル
+tribe: "式神" -> ウィッチ
+tribe: "巨人" -> ニュートラル
+tribe: "星神" -> neutral
+tribe: "マグナ" -> ニュートラル
+tribe: "BNW" -> ウマ娘 プリティーダービー
+tribe: "メジロ家" -> ウマ娘 プリティーダービー
+tribe: "トレセン学園" -> ウマ娘 プリティーダービー
+tribe: "ヒーロー" -> ロイヤル
+tribe: "チェス" -> ウィッチ
+tribe: "不死鳥" -> ドラゴン
+tribe: "武装" -> ドラゴン
+tribe: "ゴルゴーン" -> ナイトメア
+tribe: "童話" -> neutral
+tribe: "乗物" -> ニュートラル
+new tribe_clan: "カードファイト!! ヴァンガード"
+tribe: "ヴァンガード" -> カードファイト!! ヴァンガード
+tribe: "かげろう" -> カードファイト!! ヴァンガード
+tribe: "ロイヤルパラディン" -> カードファイト!! ヴァンガード
+tribe: "アクアフォース" -> カードファイト!! ヴァンガード
+tribe: "ペイルムーン" -> カードファイト!! ヴァンガード
+tribe: "シャドウパラディン" -> カードファイト!! ヴァンガード
+tribe: "オラクルシンクタンク" -> カードファイト!! ヴァンガード
+tribe: "アルカナ" -> neutral
+tribe: "プリンス" -> ロイヤル
+tribe: "悪魔" -> ニュートラル
