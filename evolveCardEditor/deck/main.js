@@ -49,6 +49,7 @@ import {
     importDeckJson,
     exportDeckJson,
 } from './io.js';
+import { on } from 'events';
 
 // ====================
 // 初期化
@@ -135,6 +136,19 @@ async function init() {
             catch(error){
                 console.error('Error saving deck to server:', error);
                 alert('デッキの保存に失敗しました。');
+            }
+        },
+        onLoadDecks: async()=>{
+            if(!isSignedIn){
+                alert('ログインしていません。ロードできません。');
+                return;
+            }
+            try{
+                return await loadDecksFromServer(savedUserId);
+            }
+            catch(error){
+                console.error('Error loading decks from server:', error);
+                alert('デッキのロードに失敗しました。');
             }
         }
     })
