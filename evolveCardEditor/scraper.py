@@ -15,8 +15,8 @@ headers = {
                   "Chrome/117.0.0.0 Safari/537.36"
 }
 
-with open("cards.json", "r", encoding="utf-8") as f:
-    existing_cards = json.load(f)
+with open("./public/cards.json", "r", encoding="utf-8") as f:
+    existing_cards = json.load(f)["cards"]
     print(f"既存のカード情報を読み込みました。枚数: {len(existing_cards)}")
 
 existing_card_ids = {card["card_id"] for card in existing_cards}
@@ -164,7 +164,7 @@ result = {
 }
 
 # JSON保存
-with open("cards.json", "w", encoding="utf-8") as f:
+with open("./public/cards.json", "w", encoding="utf-8") as f:
     json.dump(result, f, ensure_ascii=False, indent=2)
 
 print(f"{len(cards)} 枚のカード情報を保存しました！")
@@ -175,6 +175,7 @@ with open("card_properties.json", "r", encoding="utf-8") as f:
     properties = json.load(f)
     product_dic = properties["product"]
     rarity_dic = properties["rarity"]
+    tribe_dic = properties["tribe"]
 
 
 filtered_cards = {}
@@ -182,6 +183,7 @@ change_log = []
 
 new_products = []
 new_rarities = []
+new_tribes = {}
 for card in cards:
     product = card["product"]
     rarity = card["rarity"]
@@ -199,7 +201,7 @@ for rarity in reversed(new_rarities):
     index = len(rarity_dic) - 1
     rarity_dic[rarity] = index
     change_log.append(f'rarity: "{rarity}" -> {index}')
-
+    
 
 for card in cards:
     product = card["product"]
@@ -226,8 +228,23 @@ result = {
     "cards": new_cards
 }
 
-with open("unique_cards.json", "w", encoding="utf-8") as f:
+with open("./public/unique_cards.json", "w", encoding="utf-8") as f:
     json.dump(result, f, ensure_ascii=False, indent=2)
+
+for card in new_cards:
+    tribes = card["tribe"].split("・")
+    for t in tribes:
+        if t not in tribe_dic:
+            new_tribes.setdefault(t, {})
+            new_tribes[t][card["clan"]] = new_tribes[t].get(card["clan"], 0) + 1
+
+for tribe, counts in new_tribes.items():
+    tribe_clan = max(counts, key=counts.get) if sum(counts.values()) - max(counts.values()) < 10 else "neutral"
+    if tribe_clan not in tribe_dic:
+        tribe_dic[tribe_clan] = []
+        change_log.append(f'new tribe_clan: "{tribe_clan}"')
+    tribe_dic[tribe_clan].append(tribe)
+    change_log.append(f'tribe: "{tribe}" -> {tribe_clan}')
 
 if change_log:
     with open("card_properties.log", "a", encoding="utf-8") as f:
