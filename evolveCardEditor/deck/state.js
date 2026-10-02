@@ -6,14 +6,14 @@ try{
     const savedDeck = localStorage.getItem('currentDeck');
     const parsedDeck = savedDeck ? JSON.parse(savedDeck) : null;
     currentDeck = {
-        deckId : parsedDeck?.deckId ?? null,
+        id : parsedDeck?.id ?? null,
         name : parsedDeck?.name ?? null,
         cards : parsedDeck?.cards ?? {},
     }
 }
 catch(error){
     console.error('Error loading deck from localStorage:', error);
-    currentDeck = {deckId : null, name : null, cards : {},}
+    currentDeck = {id : null, name : null, cards : {},}
 }
 let cardDict = {}; // card_idをキーとしたカード辞書
 let editingCardId;
