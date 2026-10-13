@@ -41,6 +41,7 @@ import {
     renderEffectList,
     renderAbilityIcons,
     renderFilterConditions,
+    renderMyDecks,
 } from './ui.js';
 import {
     saveDeckToServer,
@@ -49,7 +50,6 @@ import {
     importDeckJson,
     exportDeckJson,
 } from './io.js';
-import { on } from 'events';
 
 // ====================
 // 初期化
@@ -128,9 +128,9 @@ async function init() {
                 alert('ログインしていません。保存できません。');
                 return;
             }
-            const deckData = getCurrentDeck();
+            const deckData = getCurrentDeckData();
             try{
-                await saveDeckToServer(savedUserId, savedUserName, deckData);
+                await saveDeckToServer(savedUserId, deckData);
                 alert('デッキを保存しました。');
             }
             catch(error){
@@ -144,12 +144,17 @@ async function init() {
                 return;
             }
             try{
-                return await loadDecksFromServer(savedUserId);
+                const decks = await loadDecksFromServer(savedUserId, savedUserName);
+                renderMyDecks(decks, {
+                    setCurrentDeck: (deckData) => setCurrentDeck(deckData),
+                    renderAll: () => renderAll()
+                });
             }
             catch(error){
                 console.error('Error loading decks from server:', error);
                 alert('デッキのロードに失敗しました。');
             }
+
         }
     })
 }

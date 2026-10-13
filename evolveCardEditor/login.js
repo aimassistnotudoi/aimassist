@@ -1,3 +1,5 @@
+import { supabase } from "./supabase.js";
+
 export async function getLoginData() {
     let savedUserId = localStorage.getItem("userId");
     let savedUserName = null;
