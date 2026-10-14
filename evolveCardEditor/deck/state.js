@@ -2,6 +2,7 @@ let displayCards = []; //表示対象カード配列
 let allCards = []; //全カード配列
 let uniqueCards = []; //ユニークカード配列
 let currentDeck;
+
 try{
     const savedDeck = localStorage.getItem('currentDeck');
     const parsedDeck = savedDeck ? JSON.parse(savedDeck) : null;

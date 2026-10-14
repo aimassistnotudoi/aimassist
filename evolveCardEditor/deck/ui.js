@@ -1,5 +1,5 @@
-// ====================
-// イベント登録
+
+
 // ====================
 export function bindEvents(handlers) {
     const {
@@ -16,6 +16,8 @@ export function bindEvents(handlers) {
         onSameName,
         onImportDeck,
         onExportDeck,
+        onSaveDeck,
+        onLoadDecks
     } = handlers;
     //検索
     document.getElementById('filter-name').addEventListener('input', e => {onSearch(e.target.value)});//name
@@ -87,6 +89,10 @@ export function bindEvents(handlers) {
     //タブ切り替え
     document.getElementById('tab-deck').addEventListener('click', renderTabDeck);
     document.getElementById('tab-view').addEventListener('click', renderTabView);
+    document.getElementById('tab-my-decks').addEventListener('click', () => {
+        renderTabMyDecks();
+        onLoadDecks();
+    });
     //デッキ完成
     document.getElementById('complete-deck').addEventListener('click', renderTabView);
     //デッキインポート
@@ -137,6 +143,9 @@ export function bindEvents(handlers) {
         insertAtCursor(clone, range);
     })
     //--------
+    //デッキ保存
+    document.getElementById('save-deck').addEventListener('click', () => {onSaveDeck()});
+    //マイデッキ読み込み
 }
 
 function renderTabDeck(){
@@ -447,9 +456,31 @@ export function renderFilterConditions(tribes, abilityIcons){
     }
 }
 
-export function renderMyDecks(handlers){
-    const {onLoadDeck} = handlers;
+export function renderMyDecks(decks, handlers){
+    const {setCurrentDeck, renderAll} = handlers;
     const area = document.getElementById('my-decks-storage');
     area.innerHTML = '';
-    
+    for(const deck of decks){
+        const div = document.createElement('div');
+        div.className = "my-deck-item";
+
+        const name = document.createElement('span');
+        name.className = "my-deck-name";
+        name.textContent = deck.name;
+
+        const btnLoad = document.createElement('button');
+        btnLoad.className = "btn-load";
+        btnLoad.textContent = "読み込み";
+
+        div.appendChild(name);
+        div.appendChild(btnLoad);
+
+        area.appendChild(div);
+
+        btnLoad.addEventListener('click', () => {
+            setCurrentDeck(deck.cards);
+            renderTabDeck();
+            renderAll();
+        });
+    }
 }
